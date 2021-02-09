@@ -1,0 +1,17 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "sort-imports": "off",
+    "import/order": "off"
+  },
+  "plugins": ["simple-import-sort"],
+  "globals": {
+    "React": "writable"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  }
+}
