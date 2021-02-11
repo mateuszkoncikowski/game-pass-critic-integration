@@ -1,5 +1,7 @@
 import puppeteer from 'puppeteer'
 
+import { logger } from '../shared/logger.js'
+
 export async function getGameScore(game) {
   let score = 0
   const url = `https://www.metacritic.com/game/pc/${game.metaCriticId}`
@@ -31,20 +33,19 @@ export async function getMetaCriticId(titleToSearch, gameId) {
   const page = await browser.newPage()
   await page.setDefaultNavigationTimeout(15000)
   const url = `https://www.metacritic.com/search/game/${titleToSearch}/results?plats[3]=1&search_type=advanced&sort=score`
-  let metaCriticId
   try {
     await page.goto(url)
     const metacriticGameUrl = await page.$$eval('.product_title a', (el) =>
       el.map((x) => x.getAttribute('href'))
     )
-    metaCriticId = metacriticGameUrl[0].slice(9)
+    return metacriticGameUrl[0].slice(9)
   } catch (error) {
     logger.error('Looking for HowLongToBeat id crashed', {
       service: 'MetacriticId service',
       title: titleToSearch,
       gameId,
     })
+  } finally {
+    await browser.close()
   }
-  await browser.close()
-  return metaCriticId
 }

@@ -1,5 +1,4 @@
-import { Sema } from 'async-sema'
-import { writeFileSync } from 'fs'
+import { appendFile, existsSync, unlinkSync } from 'fs'
 import Timer from 'timer-node'
 
 import { logger } from './logger.js'
@@ -14,24 +13,20 @@ export const runWithTimer = async (fn) => {
   logger.info(`${timer.format()}`)
 }
 
-export const storeData = (data, path) => {
-  try {
-    writeFileSync(path, JSON.stringify(data))
-  } catch (err) {
-    logger.error(err)
+const path = '../logs/result.log'
+
+export const removeResultsFile = () => {
+  if (existsSync(path)) {
+    unlinkSync(path)
   }
 }
 
-const s = new Sema(5, {
-  capacity: 100,
-})
-
-export const runWithConcurrency = async (fn) => {
-  await s.acquire()
-
+export const storeData = (data) => {
   try {
-    await fn()
-  } finally {
-    s.release()
+    appendFile(path, `${JSON.stringify(data)},\n`, (error) => {
+      if (error) throw error
+    })
+  } catch (err) {
+    logger.error(err)
   }
 }

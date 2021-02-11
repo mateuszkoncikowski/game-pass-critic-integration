@@ -32,7 +32,6 @@ export async function getHowLongToBeatId(titleToSearch, gameId) {
   const browser = await puppeteer.launch({ headless: true })
   const page = await browser.newPage()
   await page.setDefaultNavigationTimeout(15000)
-  let howLongToBeatId
   try {
     await page.goto('https://howlongtobeat.com/')
     await page.type('#global_search_box', titleToSearch)
@@ -40,14 +39,14 @@ export async function getHowLongToBeatId(titleToSearch, gameId) {
     const howLongToBeatUrl = await page.$$eval('.search_list_details a', (el) =>
       el.map((x) => x.getAttribute('href'))
     )
-    howLongToBeatId = howLongToBeatUrl[0].slice(8)
+    return howLongToBeatUrl[0].slice(8)
   } catch (error) {
     logger.error('Looking for HowLongToBeat id crashed', {
       service: 'howLongToBeatId service',
       title: titleToSearch,
       gameId,
     })
+  } finally {
+    await browser.close()
   }
-  await browser.close()
-  return howLongToBeatId
 }

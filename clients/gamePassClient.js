@@ -1,7 +1,8 @@
 import fetch from 'node-fetch'
-import { join, map, pipe, prop, tail } from 'ramda'
+import { concat, map, pipe, prop, tail, uniq } from 'ramda'
 
 import {
+  GAME_PASS,
   getGamesContentUrl,
   getGamesListUrl,
 } from '../constants/gamePassContants.js'
@@ -11,12 +12,24 @@ const addGamePassIdPropIntoGame = (game) => ({
   gamePassId: game['ProductId'],
 })
 
-export async function fetchGamePassGames() {
-  const gamePassGamesIds = await fetch(getGamesListUrl())
-    .then((res) => res.json())
-    .then((data) => pipe(tail, map(prop('id')), join(','))(data))
+const getGamesData = pipe(tail, map(prop('id')))
 
-  return await fetch(getGamesContentUrl(gamePassGamesIds))
+export async function fetchGamePassGames() {
+  const gamePassPcGamesIds = await fetch(
+    getGamesListUrl(GAME_PASS.allPcGamesId)
+  )
+    .then((res) => res.json())
+    .then((data) => getGamesData(data))
+
+  const gamePassConsoleGamesIds = await fetch(
+    getGamesListUrl(GAME_PASS.allConsoleGamesId)
+  )
+    .then((res) => res.json())
+    .then((data) => getGamesData(data))
+
+  const uniqGameList = uniq(concat(gamePassPcGamesIds, gamePassConsoleGamesIds))
+
+  return await fetch(getGamesContentUrl(uniqGameList))
     .then((res) => res.json())
     .then((data) => data['Products'])
     .then(map(addGamePassIdPropIntoGame))
