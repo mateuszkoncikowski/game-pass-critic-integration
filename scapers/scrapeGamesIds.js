@@ -12,7 +12,7 @@ import {
 } from '../shared/scrapers.js'
 
 const scrapeGamesIds = async () => {
-  const games = await fetchGamePassGames()
+  const games = await fetchGamePassGames(5)
   removeResultsFile()
   await Promise.all(games.slice(0, 10).map(fetchGameIds))
 }
@@ -33,7 +33,6 @@ const fetchGameIds = async (game) => {
     ])
 
     logger.info(`Scraped game: ${getTitleFromGamePass(game)}`, {
-      service: 'getIds scraper',
       titleToSearch,
       howLongToBeatId,
       metaCriticId,

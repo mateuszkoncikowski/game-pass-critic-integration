@@ -3,8 +3,10 @@ export const GAME_PASS = {
     catalog: 'https://catalog.gamepass.com/',
     displayCatalog: 'https://displaycatalog.mp.microsoft.com',
   },
-  allPcGamesId: 'fdd9e2a7-0fee-49f6-ad69-4354098401ff',
-  allConsoleGamesId: 'f6f1f99f-9b49-4ccd-b3bf-4d9767a77f5e',
+  categories: {
+    allPcGamesId: 'fdd9e2a7-0fee-49f6-ad69-4354098401ff',
+    allConsoleGamesId: 'f6f1f99f-9b49-4ccd-b3bf-4d9767a77f5e',
+  },
   market: 'US',
   language: 'en-us',
   msCv: 'DGU1mcuYo0WMMp+F.1',

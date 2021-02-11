@@ -14,22 +14,23 @@ const addGamePassIdPropIntoGame = (game) => ({
 
 const getGamesData = pipe(tail, map(prop('id')))
 
-export async function fetchGamePassGames() {
-  const gamePassPcGamesIds = await fetch(
-    getGamesListUrl(GAME_PASS.allPcGamesId)
-  )
+const fetchGamePassCategory = async (gamesCategoryId) =>
+  await fetch(getGamesListUrl(gamesCategoryId))
     .then((res) => res.json())
     .then((data) => getGamesData(data))
 
-  const gamePassConsoleGamesIds = await fetch(
-    getGamesListUrl(GAME_PASS.allConsoleGamesId)
-  )
-    .then((res) => res.json())
-    .then((data) => getGamesData(data))
+export async function fetchGamePassGames(limit = null) {
+  const [gamePassPcGamesIds, gamePassConsoleGamesIds] = await Promise.all([
+    fetchGamePassCategory(GAME_PASS.categories.allPcGamesId),
+    fetchGamePassCategory(GAME_PASS.categories.allConsoleGamesId),
+  ])
 
   const uniqGameList = uniq(concat(gamePassPcGamesIds, gamePassConsoleGamesIds))
+  const limitedUniqGameList = limit
+    ? uniqGameList.slice(0, limit)
+    : uniqGameList
 
-  return await fetch(getGamesContentUrl(uniqGameList))
+  return await fetch(getGamesContentUrl(limitedUniqGameList))
     .then((res) => res.json())
     .then((data) => data['Products'])
     .then(map(addGamePassIdPropIntoGame))

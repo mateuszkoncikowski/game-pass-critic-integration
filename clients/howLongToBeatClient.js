@@ -1,10 +1,13 @@
 import puppeteer from 'puppeteer'
 
 import { logger } from '../shared/logger.js'
+import { openPage } from './puppeteerClient.js'
+
+const HOW_LONG_URL = 'https://howlongtobeat.com'
 
 export async function getGameTimeToBeat(game) {
   let timeToBeat = 'N/A'
-  const url = `https://howlongtobeat.com/game?id=${game.howLongToBeatId}`
+  const url = `${HOW_LONG_URL}/game?id=${game.howLongToBeatId}`
   try {
     const browser = await puppeteer.launch({
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
@@ -19,7 +22,6 @@ export async function getGameTimeToBeat(game) {
     await browser.close()
   } catch (error) {
     logger.error('Issue with HowLongToBeat game fetching', {
-      service: 'howLongToBeatId service',
       title: game.title,
       url,
       error,
@@ -29,11 +31,8 @@ export async function getGameTimeToBeat(game) {
 }
 
 export async function getHowLongToBeatId(titleToSearch, gameId) {
-  const browser = await puppeteer.launch({ headless: true })
-  const page = await browser.newPage()
-  await page.setDefaultNavigationTimeout(15000)
+  const [page, browser] = await openPage(HOW_LONG_URL)
   try {
-    await page.goto('https://howlongtobeat.com/')
     await page.type('#global_search_box', titleToSearch)
     await page.waitForSelector('.search_list_details')
     const howLongToBeatUrl = await page.$$eval('.search_list_details a', (el) =>
@@ -42,7 +41,6 @@ export async function getHowLongToBeatId(titleToSearch, gameId) {
     return howLongToBeatUrl[0].slice(8)
   } catch (error) {
     logger.error('Looking for HowLongToBeat id crashed', {
-      service: 'howLongToBeatId service',
       title: titleToSearch,
       gameId,
     })
