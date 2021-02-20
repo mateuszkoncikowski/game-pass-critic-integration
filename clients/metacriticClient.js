@@ -30,19 +30,20 @@ export async function getGameScore(game) {
   }
 }
 
-export async function getMetaCriticId(titleToSearch, gameId) {
-  const url = `${METACRITIC_URL}/search/game/${titleToSearch}/results?plats[3]=1&search_type=advanced&sort=score`
+export async function getMetaCriticSearchResult(titleToSearch, gameId) {
+  const url = `${METACRITIC_URL}/search/game/${titleToSearch}/results?plats[3]=1&search_type=advanced`
   const [page, browser] = await openPage(url)
 
   try {
-    const metacriticGameUrl = await page.$$eval('.product_title a', (el) =>
-      el.map((x) => x.getAttribute('href'))
-    )
-    return metacriticGameUrl[0].slice(9)
+    return await page.$eval('.product_title a', (el) => ({
+      href: el.getAttribute('href').slice(9),
+      text: el.textContent.replace(/\s+/g, ' ').trim(),
+    }))
   } catch (error) {
-    logger.error('Looking for HowLongToBeat id crashed', {
+    logger.error('Issue with Metacritic game fetching', {
       title: titleToSearch,
       gameId,
+      error,
     })
   } finally {
     await browser.close()

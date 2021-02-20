@@ -2,8 +2,8 @@ import { Sema } from 'async-sema'
 import { find, head, pipe, prop, propEq, replace, split } from 'ramda'
 
 import { fetchGamePassGames } from '../clients/gamePassClient.js'
-import { getHowLongToBeatId } from '../clients/howLongToBeatClient.js'
-import { getMetaCriticId } from '../clients/metacriticClient.js'
+import { getHowLongToBeatSearchResult } from '../clients/howLongToBeatClient.js'
+import { getMetaCriticSearchResult } from '../clients/metacriticClient.js'
 import { logger } from '../shared/logger.js'
 import {
   removeResultsFile,
@@ -12,38 +12,44 @@ import {
 } from '../shared/scrapers.js'
 
 const scrapeGamesIds = async () => {
-  const games = await fetchGamePassGames(5)
+  const games = await fetchGamePassGames()
   removeResultsFile()
-  await Promise.all(games.slice(0, 10).map(fetchGameIds))
+  await Promise.all(games.map(fetchGameIds))
 }
 
 const s = new Sema(5, {
   capacity: 100,
 })
 
-const fetchGameIds = async (game) => {
+const fetchGameIds = async (game, index, games) => {
   await s.acquire()
 
+  s.release()
   try {
     const gamePassTitle = getTitleFromGamePass(game)
     const titleToSearch = getTitleToSearch(game)
-    const [metaCriticId, howLongToBeatId] = await Promise.all([
-      getMetaCriticId(titleToSearch, game.gamePassId),
-      getHowLongToBeatId(titleToSearch, game.gamePassId),
+    const [metaCriticGameResult, howLongToBeatResult] = await Promise.all([
+      getMetaCriticSearchResult(titleToSearch, game.gamePassId),
+      getHowLongToBeatSearchResult(titleToSearch, game.gamePassId),
     ])
 
-    logger.info(`Scraped game: ${getTitleFromGamePass(game)}`, {
-      titleToSearch,
-      howLongToBeatId,
-      metaCriticId,
-    })
+    logger.info(
+      `Scraped game (${index + 1} / ${games.length}): ${getTitleFromGamePass(
+        game
+      )}`,
+      {
+        titleToSearch,
+        howLongToBeatResult,
+        metaCriticGameResult,
+      }
+    )
 
     const scrapedGame = {
       title: titleToSearch,
       gamePassTitle,
       gamePassId: game.gamePassId,
-      howLongToBeatId,
-      metaCriticId,
+      howLongToBeatResult,
+      metaCriticGameResult,
     }
 
     storeData(scrapedGame)

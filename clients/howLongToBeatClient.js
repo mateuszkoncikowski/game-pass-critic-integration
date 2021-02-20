@@ -30,15 +30,15 @@ export async function getGameTimeToBeat(game) {
   return timeToBeat
 }
 
-export async function getHowLongToBeatId(titleToSearch, gameId) {
+export async function getHowLongToBeatSearchResult(titleToSearch, gameId) {
   const [page, browser] = await openPage(HOW_LONG_URL)
   try {
     await page.type('#global_search_box', titleToSearch)
     await page.waitForSelector('.search_list_details')
-    const howLongToBeatUrl = await page.$$eval('.search_list_details a', (el) =>
-      el.map((x) => x.getAttribute('href'))
-    )
-    return howLongToBeatUrl[0].slice(8)
+    return await page.$eval('.search_list_details a', (el) => ({
+      href: el.getAttribute('href').slice(8),
+      text: el.textContent.replace(/\s+/g, ' ').trim(),
+    }))
   } catch (error) {
     logger.error('Looking for HowLongToBeat id crashed', {
       title: titleToSearch,
