@@ -1,4 +1,4 @@
-export const game = [
+export const GAME_IDS = [
   {
     title: 'Age of Empires III',
     gamePassTitle: 'Age of Empires III: Definitive Edition',

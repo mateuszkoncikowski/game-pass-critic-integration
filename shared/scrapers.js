@@ -13,15 +13,13 @@ export const runWithTimer = async (fn) => {
   logger.info(`${timer.format()}`)
 }
 
-const path = '../logs/result.log'
-
-export const removeResultsFile = () => {
+export const removeResultsFile = (path) => {
   if (existsSync(path)) {
     unlinkSync(path)
   }
 }
 
-export const storeData = (data) => {
+export const storeData = (path, data) => {
   try {
     appendFile(path, `${JSON.stringify(data)},\n`, (error) => {
       if (error) throw error

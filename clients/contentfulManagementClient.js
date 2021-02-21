@@ -1,3 +1,4 @@
+import Bottleneck from 'bottleneck'
 import contentful from 'contentful-management'
 
 import { CONTENTFUL_SPACE, CONTENTFUL_TOKEN } from '../shared/config.js'
@@ -29,3 +30,25 @@ export const createContentfulGamePass = (game) =>
       },
     })
   )
+
+export const removeAllContentfulGames = () => {
+  const limiter = new Bottleneck({
+    minTime: 1000,
+  })
+
+  getEnvironment().then((environment) =>
+    environment.getEntries({ content_type: 'gamePassGame' }).then((response) =>
+      limiter.schedule(() => {
+        const allTasks = response.items.map((entry) => {
+          if (entry.sys.publishedCounter === 0) {
+            entry.delete()
+          } else {
+            entry.unpublish().then(() => entry.delete())
+          }
+        })
+
+        return Promise.all(allTasks)
+      })
+    )
+  )
+}

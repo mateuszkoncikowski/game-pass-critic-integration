@@ -11,9 +11,11 @@ import {
   storeData,
 } from '../shared/scrapers.js'
 
+const RESULTS_FILE_PATH = '../logs/gameIdsResults.log'
+
 const scrapeGamesIds = async () => {
   const games = await fetchGamePassGames()
-  removeResultsFile()
+  removeResultsFile(RESULTS_FILE_PATH)
   await Promise.all(games.map(fetchGameIds))
 }
 
@@ -52,7 +54,7 @@ const fetchGameIds = async (game, index, games) => {
       metaCriticGameResult,
     }
 
-    storeData(scrapedGame)
+    storeData(RESULTS_FILE_PATH, scrapedGame)
   } finally {
     s.release()
   }

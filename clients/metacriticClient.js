@@ -1,23 +1,22 @@
-import puppeteer from 'puppeteer'
-
 import { logger } from '../shared/logger.js'
 import { openPage } from './puppeteerClient.js'
 
 const METACRITIC_URL = 'https://www.metacritic.com'
 
 export async function getGameScore(game) {
-  const url = `${METACRITIC_URL}/game/pc/${game.metaCriticId}`
-  const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  })
-  const page = await browser.newPage()
-  await page.goto(url, {
-    waitUntil: 'load',
-    timeout: 0,
-  })
+  const url = `${METACRITIC_URL}/game/pc/${game.metaCriticGameResult.href}`
+  let metaScore, userScore
+  const [page, browser] = await openPage(url)
+
   try {
-    const element = await page.$('.main_details .metascore_w')
-    return parseInt(await page.evaluate((el) => el.textContent, element))
+    userScore = await page.$eval(
+      '.userscore_wrap .metascore_w',
+      (el) => el.textContent
+    )
+    metaScore = await page.$eval(
+      '.main_details .metascore_w',
+      (el) => el.textContent
+    )
   } catch (error) {
     logger.error('Issue with Metacritic game fetching', {
       service: 'howLongToBeatId service',
@@ -27,6 +26,11 @@ export async function getGameScore(game) {
     })
   } finally {
     await browser.close()
+  }
+
+  return {
+    metaScore: metaScore ? metaScore : 'N/A',
+    userScore: userScore ? userScore : 'N/A',
   }
 }
 

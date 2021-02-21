@@ -1,15 +1,21 @@
 import { Sema } from 'async-sema'
 import { find, propEq } from 'ramda'
 
-import { createContentfulGamePass } from '../clients/contentfulManagementClient.js'
 import { fetchGamePassGames } from '../clients/gamePassClient.js'
 import { getGameTimeToBeat } from '../clients/howLongToBeatClient.js'
 import { getGameScore } from '../clients/metacriticClient.js'
-import { GAME_IDS } from '../constants/gamesIds.js'
-import { runWithTimer } from '../shared/scrapers.js'
+import { GAME_IDS } from '../data/scrapedIds.js'
+import {
+  removeResultsFile,
+  runWithTimer,
+  storeData,
+} from '../shared/scrapers.js'
+
+const RESULTS_FILE_PATH = '../logs/gameContentResults.log'
 
 const scrapeGamesContent = async () => {
   const games = await fetchGamePassGames()
+  removeResultsFile(RESULTS_FILE_PATH)
   await Promise.all(games.map(fetchGameContent))
 }
 
@@ -23,16 +29,19 @@ const fetchGameContent = async (game) => {
   try {
     const gameIds = find(propEq('gamePassId', game.gamePassId))(GAME_IDS)
 
-    const [metaCriticScore, howLongToBeatInAverage] = await Promise.all([
+    const [metaCriticContent, howLongToBeatContent] = await Promise.all([
       getGameScore(gameIds),
       getGameTimeToBeat(gameIds),
     ])
 
-    await createContentfulGamePass({
-      ...game,
-      howLongToBeatInAverage,
-      metaCriticScore,
-    }).then((entry) => entry.publish())
+    const scrapedGame = {
+      gameIds,
+      gamePassId: game.gamePassId,
+      metaCriticContent,
+      howLongToBeatContent,
+    }
+
+    storeData(RESULTS_FILE_PATH, scrapedGame)
   } finally {
     s.release()
   }

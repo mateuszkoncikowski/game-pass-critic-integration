@@ -1,33 +1,30 @@
-import puppeteer from 'puppeteer'
-
 import { logger } from '../shared/logger.js'
 import { openPage } from './puppeteerClient.js'
 
 const HOW_LONG_URL = 'https://howlongtobeat.com'
 
 export async function getGameTimeToBeat(game) {
-  let timeToBeat = 'N/A'
-  const url = `${HOW_LONG_URL}/game?id=${game.howLongToBeatId}`
+  const url = `${HOW_LONG_URL}/game?id=${game.howLongToBeatResult.href}`
+  const [page, browser] = await openPage(url)
   try {
-    const browser = await puppeteer.launch({
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    })
-    const page = await browser.newPage()
-    await page.goto(url, {
-      waitUntil: 'load',
-      timeout: 0,
-    })
-    const element = await page.$('.game_times li div')
-    timeToBeat = await page.evaluate((el) => el.textContent, element)
-    await browser.close()
+    const gameTimes = await page.$$eval('.game_times li', (gameTimes) =>
+      gameTimes.map((gt) =>
+        gt.textContent.trim().replace(/\t/g, '').split('\n')
+      )
+    )
+
+    return {
+      gameTimes,
+    }
   } catch (error) {
     logger.error('Issue with HowLongToBeat game fetching', {
       title: game.title,
       url,
       error,
     })
+  } finally {
+    await browser.close()
   }
-  return timeToBeat
 }
 
 export async function getHowLongToBeatSearchResult(titleToSearch, gameId) {
