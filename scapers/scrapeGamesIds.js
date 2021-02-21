@@ -4,6 +4,7 @@ import { find, head, pipe, prop, propEq, replace, split } from 'ramda'
 import { fetchGamePassGames } from '../clients/gamePassClient.js'
 import { getHowLongToBeatSearchResult } from '../clients/howLongToBeatClient.js'
 import { getMetaCriticSearchResult } from '../clients/metacriticClient.js'
+import { isPcOnly } from '../meta/gamePassGame.js'
 import { logger } from '../shared/logger.js'
 import {
   removeResultsFile,
@@ -19,7 +20,7 @@ const scrapeGamesIds = async () => {
   await Promise.all(games.map(fetchGameIds))
 }
 
-const s = new Sema(5, {
+const s = new Sema(4, {
   capacity: 100,
 })
 
@@ -29,8 +30,9 @@ const fetchGameIds = async (game, index, games) => {
   try {
     const gamePassTitle = getTitleFromGamePass(game)
     const titleToSearch = getTitleToSearch(game)
+
     const [metaCriticGameResult, howLongToBeatResult] = await Promise.all([
-      getMetaCriticSearchResult(titleToSearch, game.gamePassId),
+      getMetaCriticSearchResult(titleToSearch, game.gamePassId, isPcOnly(game)),
       getHowLongToBeatSearchResult(titleToSearch, game.gamePassId),
     ])
 
@@ -112,7 +114,8 @@ const getTitleFromGamePassAndClean = pipe(
   replace(/for windows 10/i, ''),
   replace(/bundle/i, ''),
   replace(/win10/i, ''),
-  replace(/game of the year edition/i, '')
+  replace(/game of the year edition/i, ''),
+  replace(/EA SPORTS /i, '')
 )
 
 ;(async () => {

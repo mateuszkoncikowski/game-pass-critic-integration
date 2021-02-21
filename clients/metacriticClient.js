@@ -34,8 +34,18 @@ export async function getGameScore(game) {
   }
 }
 
-export async function getMetaCriticSearchResult(titleToSearch, gameId) {
-  const url = `${METACRITIC_URL}/search/game/${titleToSearch}/results?plats[3]=1&search_type=advanced`
+export async function getMetaCriticSearchResult(
+  titleToSearch,
+  gameId,
+  isPcOnly
+) {
+  const platform = {
+    pc: '3',
+    xbox: '80000',
+  }
+  const url = `${METACRITIC_URL}/search/game/${titleToSearch}/results?plats[${
+    isPcOnly ? platform.pc : platform.xbox
+  }]=1&search_type=advanced`
   const [page, browser] = await openPage(url)
 
   try {
@@ -46,6 +56,7 @@ export async function getMetaCriticSearchResult(titleToSearch, gameId) {
   } catch (error) {
     logger.error('Issue with Metacritic game fetching', {
       title: titleToSearch,
+      url,
       gameId,
       error,
     })
