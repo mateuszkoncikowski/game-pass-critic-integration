@@ -1,12 +1,25 @@
 export const GAME_IDS = [
   {
-    title: 'Age of Empires III',
-    gamePassTitle: 'Age of Empires III: Definitive Edition',
-    gamePassId: '9N1HF804QXN4',
-    howLongToBeatResult: { href: '270', text: 'Age of Empires III' },
+    title: 'Age of Empires II',
+    gamePassTitle: 'Age of Empires II: Definitive Edition',
+    gamePassId: '9NJDD0JGPP2Q',
+    howLongToBeatResult: {
+      href: '12193',
+      text: 'Age of Empires II: HD Edition',
+    },
     metaCriticGameResult: {
-      href: 'age-of-empires-iii',
-      text: 'Age of Empires III',
+      text: 'Age of Empires II: HD Edition',
+      href: '/game/pc/age-of-empires-ii-hd-edition',
+    },
+  },
+  {
+    title: 'A Plague Tale',
+    gamePassTitle: 'A Plague Tale: Innocence - Windows 10',
+    gamePassId: '9ND0CG3LM22K',
+    howLongToBeatResult: { href: '65080', text: 'A Plague Tale: Innocence' },
+    metaCriticGameResult: {
+      text: 'A Plague Tale: Innocence',
+      href: '/game/pc/a-plague-tale-innocence',
     },
   },
   {
@@ -18,8 +31,18 @@ export const GAME_IDS = [
       text: 'Age of Empires II: Definitive Edition',
     },
     metaCriticGameResult: {
-      href: 'age-of-empires-ii-definitive-edition',
-      text: 'Age of Empires II: Definitive Edition',
+      text: 'Age of Empires: Definitive Edition',
+      href: '/game/pc/age-of-empires-definitive-edition',
+    },
+  },
+  {
+    title: 'Age of Empires III',
+    gamePassTitle: 'Age of Empires III: Definitive Edition',
+    gamePassId: '9N1HF804QXN4',
+    howLongToBeatResult: { href: '270', text: 'Age of Empires III' },
+    metaCriticGameResult: {
+      text: 'Age of Empires III',
+      href: '/game/pc/age-of-empires-iii',
     },
   },
   {
@@ -27,30 +50,7 @@ export const GAME_IDS = [
     gamePassTitle: 'Alan Wake',
     gamePassId: '9NKV44QF1R68',
     howLongToBeatResult: { href: '319', text: 'Alan Wake' },
-    metaCriticGameResult: { href: 'alan-wake', text: 'Alan Wake' },
-  },
-  {
-    title: 'A Plague Tale',
-    gamePassTitle: 'A Plague Tale: Innocence - Windows 10',
-    gamePassId: '9ND0CG3LM22K',
-    howLongToBeatResult: { href: '65080', text: 'A Plague Tale: Innocence' },
-    metaCriticGameResult: {
-      href: 'a-plague-tale-innocence',
-      text: 'A Plague Tale: Innocence',
-    },
-  },
-  {
-    title: 'Age of Empires II',
-    gamePassTitle: 'Age of Empires II: Definitive Edition',
-    gamePassId: '9NJDD0JGPP2Q',
-    howLongToBeatResult: {
-      href: '12193',
-      text: 'Age of Empires II: HD Edition',
-    },
-    metaCriticGameResult: {
-      href: 'age-of-empires-ii-the-age-of-kings',
-      text: 'Age of Empires II: The Age of Kings',
-    },
+    metaCriticGameResult: { text: 'Alan Wake', href: '/game/pc/alan-wake' },
   },
   {
     title: 'Alvastia Chronicles',
@@ -58,8 +58,8 @@ export const GAME_IDS = [
     gamePassId: '9MVJGBNNFPPS',
     howLongToBeatResult: { href: '67659', text: 'Alvastia Chronicles' },
     metaCriticGameResult: {
-      href: 'alvastia-chronicles',
       text: 'Alvastia Chronicles',
+      href: '/game/pc/alvastia-chronicles',
     },
   },
   {
@@ -68,8 +68,8 @@ export const GAME_IDS = [
     gamePassId: '9NSRJ872SGH7',
     howLongToBeatResult: { href: '22425', text: 'Alien (1982)' },
     metaCriticGameResult: {
-      href: 'aliens-versus-predator-2',
-      text: 'Aliens Versus Predator 2',
+      text: 'Alien: Isolation',
+      href: '/game/pc/alien-isolation',
     },
   },
   {
@@ -78,8 +78,8 @@ export const GAME_IDS = [
     gamePassId: '9NG07QJNK38J',
     howLongToBeatResult: { href: '74207', text: 'Among Us' },
     metaCriticGameResult: {
-      href: 'the-wolf-among-us-episode-1---faith',
-      text: 'The Wolf Among Us: Episode 1 - Faith',
+      text: 'The Wolf Among Us',
+      href: '/game/pc/the-wolf-among-us',
     },
   },
   {
@@ -87,7 +87,7 @@ export const GAME_IDS = [
     gamePassTitle: 'Ape Out',
     gamePassId: '9NR6DZ9F76P8',
     howLongToBeatResult: { href: '56938', text: 'Ape Out' },
-    metaCriticGameResult: { href: 'ape-out', text: 'Ape Out' },
+    metaCriticGameResult: { text: 'Ape Out', href: '/game/pc/ape-out' },
   },
   {
     title: 'ARK: Survival Evolved',
@@ -95,8 +95,8 @@ export const GAME_IDS = [
     gamePassId: '9MT8ND8BS6NB',
     howLongToBeatResult: { href: '26629', text: 'ARK: Survival Evolved' },
     metaCriticGameResult: {
-      href: 'ark-survival-evolved',
       text: 'ARK: Survival Evolved',
+      href: '/game/pc/ark-survival-evolved',
     },
   },
   {
@@ -104,14 +104,20 @@ export const GAME_IDS = [
     gamePassTitle: 'Astrologaster',
     gamePassId: '9NFT0CMC62DX',
     howLongToBeatResult: { href: '67977', text: 'Astrologaster' },
-    metaCriticGameResult: { href: 'astrologaster', text: 'Astrologaster' },
+    metaCriticGameResult: {
+      text: 'Astrologaster',
+      href: '/game/pc/astrologaster',
+    },
   },
   {
     title: 'ASTRONEER',
     gamePassTitle: 'ASTRONEER',
     gamePassId: '9NBLGGH43KZB',
     howLongToBeatResult: { href: '42182', text: 'Astroneer' },
-    metaCriticGameResult: { href: 'astroneer', text: 'ASTRONEER' },
+    metaCriticGameResult: {
+      text: 'ASTRONEER',
+      href: '/game/xbox-one/astroneer',
+    },
   },
   {
     title: 'Battle Chasers',
@@ -119,8 +125,8 @@ export const GAME_IDS = [
     gamePassId: '9NT8XR7D5L00',
     howLongToBeatResult: { href: '30017', text: 'Battle Chasers: Nightwar' },
     metaCriticGameResult: {
-      href: 'battle-chasers-nightwar',
       text: 'Battle Chasers: Nightwar',
+      href: '/game/pc/battle-chasers-nightwar',
     },
   },
   {
@@ -129,8 +135,8 @@ export const GAME_IDS = [
     gamePassId: '9NGWKW55M85P',
     howLongToBeatResult: { href: '36586', text: 'Battlefleet Gothic: Armada' },
     metaCriticGameResult: {
-      href: 'battlefleet-gothic-armada',
       text: 'Battlefleet Gothic: Armada',
+      href: '/game/pc/battlefleet-gothic-armada',
     },
   },
   {
@@ -138,14 +144,17 @@ export const GAME_IDS = [
     gamePassTitle: 'BATTLETECH',
     gamePassId: '9NQVDQS2BC10',
     howLongToBeatResult: { href: '55977', text: 'BattleTech (2018)' },
-    metaCriticGameResult: { href: 'battletech', text: 'BattleTech' },
+    metaCriticGameResult: { text: 'BattleTech', href: '/game/pc/battletech' },
   },
   {
     title: 'Battletoads',
     gamePassTitle: 'Battletoads',
     gamePassId: '9N7GCF5SGCXC',
     howLongToBeatResult: { href: '80699', text: 'Battletoads (2020)' },
-    metaCriticGameResult: { href: 'battletoads', text: 'Battletoads' },
+    metaCriticGameResult: {
+      text: 'Battletoads',
+      href: '/game/xbox-one/battletoads',
+    },
   },
   {
     title: 'Blair Witch',
@@ -153,8 +162,8 @@ export const GAME_IDS = [
     gamePassId: '9NG7LG421V0Q',
     howLongToBeatResult: { href: '68319', text: 'Blair Witch' },
     metaCriticGameResult: {
-      href: 'blair-witch-volume-i-rustin-parr',
-      text: 'Blair Witch Volume I: Rustin Parr',
+      text: 'Blair Witch',
+      href: '/game/xbox-one/blair-witch',
     },
   },
   {
@@ -162,7 +171,20 @@ export const GAME_IDS = [
     gamePassTitle: 'Bleeding Edge',
     gamePassId: '9NX6XGVJ0J3D',
     howLongToBeatResult: { href: '68093', text: 'Bleeding Edge' },
-    metaCriticGameResult: { href: 'bleeding-edge', text: 'Bleeding Edge' },
+    metaCriticGameResult: {
+      text: 'Bleeding Edge',
+      href: '/game/xbox-one/bleeding-edge',
+    },
+  },
+  {
+    title: 'Bridge Constructor Portal',
+    gamePassTitle: 'Bridge Constructor Portal',
+    gamePassId: '9PDXF172R7VJ',
+    howLongToBeatResult: { href: '51365', text: 'Bridge Constructor Portal' },
+    metaCriticGameResult: {
+      text: 'Bridge Constructor Portal',
+      href: '/game/pc/bridge-constructor-portal',
+    },
   },
   {
     title: 'Bloodstained: Ritual of the Night',
@@ -173,40 +195,33 @@ export const GAME_IDS = [
       text: 'Bloodstained: Ritual of the Night',
     },
     metaCriticGameResult: {
-      href: 'bloodstained-ritual-of-the-night',
       text: 'Bloodstained: Ritual of the Night',
+      href: '/game/pc/bloodstained-ritual-of-the-night',
     },
-  },
-  {
-    title: 'Bridge Constructor Portal',
-    gamePassTitle: 'Bridge Constructor Portal',
-    gamePassId: '9PDXF172R7VJ',
-    howLongToBeatResult: { href: '51365', text: 'Bridge Constructor Portal' },
-    metaCriticGameResult: {
-      href: 'bridge-constructor-portal',
-      text: 'Bridge Constructor Portal',
-    },
-  },
-  {
-    title: 'Broforce',
-    gamePassTitle: 'Broforce',
-    gamePassId: '9P03ZQMBMV65',
-    howLongToBeatResult: { href: '17638', text: 'Broforce' },
-    metaCriticGameResult: { href: 'broforce', text: 'Broforce' },
   },
   {
     title: 'Call of the Sea',
     gamePassTitle: 'Call of the Sea',
     gamePassId: '9NNG78K7N91K',
     howLongToBeatResult: { href: '77918', text: 'Call of the Sea' },
-    metaCriticGameResult: { href: 'call-of-the-sea', text: 'Call of the Sea' },
+    metaCriticGameResult: {
+      text: 'Call of the Sea',
+      href: '/game/pc/call-of-the-sea',
+    },
   },
   {
     title: 'Carrion',
     gamePassTitle: 'Carrion',
     gamePassId: '9MSMJH3C6TKR',
     howLongToBeatResult: { href: '68169', text: 'Carrion' },
-    metaCriticGameResult: { href: 'carrion', text: 'Carrion' },
+    metaCriticGameResult: { text: 'Carrion', href: '/game/pc/carrion' },
+  },
+  {
+    title: 'Broforce',
+    gamePassTitle: 'Broforce',
+    gamePassId: '9P03ZQMBMV65',
+    howLongToBeatResult: { href: '17638', text: 'Broforce' },
+    metaCriticGameResult: { text: 'Broforce', href: '/game/pc/broforce' },
   },
   {
     title: 'Carto',
@@ -214,8 +229,8 @@ export const GAME_IDS = [
     gamePassId: '9PFS8Q01C2C4',
     howLongToBeatResult: { href: '80570', text: 'Carto' },
     metaCriticGameResult: {
-      href: 'cartoon-network-universe-fusionfall',
       text: 'Cartoon Network Universe: FusionFall',
+      href: '/game/pc/cartoon-network-universe-fusionfall',
     },
   },
   {
@@ -223,30 +238,16 @@ export const GAME_IDS = [
     gamePassTitle: 'Celeste',
     gamePassId: 'BWMQL2RPWBHB',
     howLongToBeatResult: { href: '42818', text: 'Celeste' },
-    metaCriticGameResult: { href: 'celeste', text: 'Celeste' },
+    metaCriticGameResult: { text: 'Celeste', href: '/game/xbox-one/celeste' },
   },
   {
     title: 'Cities',
     gamePassTitle: 'Cities: Skylines - Windows 10 Edition',
     gamePassId: '9NWVC7XP3PFD',
     howLongToBeatResult: { href: '24640', text: 'Cities: Skylines' },
-    metaCriticGameResult: { href: 'cities-skylines', text: 'Cities: Skylines' },
-  },
-  {
-    title: 'Clustertruck',
-    gamePassTitle: 'Clustertruck',
-    gamePassId: '9N8WVMD7J5GQ',
-    howLongToBeatResult: { href: '40215', text: 'Clustertruck' },
-    metaCriticGameResult: { href: 'clustertruck', text: 'Clustertruck' },
-  },
-  {
-    title: 'Comanche',
-    gamePassTitle: 'Comanche (Game Preview)',
-    gamePassId: '9N2H2GRB4D0K',
-    howLongToBeatResult: { href: '72601', text: 'Comanche' },
     metaCriticGameResult: {
-      href: 'enemy-engaged-rah-66-comanche-versus-ka-52-hokum',
-      text: 'Enemy Engaged: RAH-66 Comanche Versus Ka-52 Hokum',
+      text: 'Cities: Skylines',
+      href: '/game/pc/cities-skylines',
     },
   },
   {
@@ -255,9 +256,26 @@ export const GAME_IDS = [
     gamePassId: '9P675WH90SB4',
     howLongToBeatResult: { href: '22534', text: 'Children of Morta' },
     metaCriticGameResult: {
-      href: 'children-of-morta',
       text: 'Children of Morta',
+      href: '/game/xbox-one/children-of-morta',
     },
+  },
+  {
+    title: 'Clustertruck',
+    gamePassTitle: 'Clustertruck',
+    gamePassId: '9N8WVMD7J5GQ',
+    howLongToBeatResult: { href: '40215', text: 'Clustertruck' },
+    metaCriticGameResult: {
+      text: 'Clustertruck',
+      href: '/game/pc/clustertruck',
+    },
+  },
+  {
+    title: 'CODE VEIN',
+    gamePassTitle: 'CODE VEIN',
+    gamePassId: '9P59LFQSNB6R',
+    howLongToBeatResult: { href: '46470', text: 'Code Vein' },
+    metaCriticGameResult: { text: 'Code Vein', href: '/game/pc/code-vein' },
   },
   {
     title: 'Company of Heroes 2',
@@ -265,8 +283,28 @@ export const GAME_IDS = [
     gamePassId: '9NX9WH5F0RZD',
     howLongToBeatResult: { href: '1875', text: 'Company of Heroes 2' },
     metaCriticGameResult: {
-      href: 'company-of-heroes-2-ardennes-assault',
-      text: 'Company of Heroes 2: Ardennes Assault',
+      text: 'Company of Heroes 2',
+      href: '/game/pc/company-of-heroes-2',
+    },
+  },
+  {
+    title: 'Comanche',
+    gamePassTitle: 'Comanche (Game Preview)',
+    gamePassId: '9N2H2GRB4D0K',
+    howLongToBeatResult: { href: '72601', text: 'Comanche' },
+    metaCriticGameResult: {
+      text: 'Enemy Engaged: RAH-66 Comanche Versus Ka-52 Hokum',
+      href: '/game/pc/enemy-engaged-rah-66-comanche-versus-ka-52-hokum',
+    },
+  },
+  {
+    title: 'Crackdown 3',
+    gamePassTitle: 'Crackdown 3',
+    gamePassId: '9NXR6469DM2P',
+    howLongToBeatResult: { href: '38828', text: 'Crackdown 3' },
+    metaCriticGameResult: {
+      text: 'Crackdown 3',
+      href: '/game/xbox-one/crackdown-3',
     },
   },
   {
@@ -274,28 +312,27 @@ export const GAME_IDS = [
     gamePassTitle: 'Control Standard Edition',
     gamePassId: '9PL1J8PJKH29',
     howLongToBeatResult: { href: '57507', text: 'Control' },
-    metaCriticGameResult: { href: 'star-control-3', text: 'Star Control 3' },
+    metaCriticGameResult: {
+      text: 'SUPERHOT: MIND CONTROL DELETE',
+      href: '/game/pc/superhot-mind-control-delete',
+    },
   },
   {
     title: 'CrossCode',
     gamePassTitle: 'CrossCode',
     gamePassId: '9NFDPQ0KZ6RN',
     howLongToBeatResult: { href: '24970', text: 'CrossCode' },
-    metaCriticGameResult: { href: 'crosscode', text: 'CrossCode' },
+    metaCriticGameResult: { text: 'CrossCode', href: '/game/pc/crosscode' },
   },
   {
     title: 'Crossing Souls',
     gamePassTitle: 'Crossing Souls',
     gamePassId: '9PD1Z95CNTW4',
     howLongToBeatResult: { href: '25103', text: 'Crossing Souls' },
-    metaCriticGameResult: { href: 'crossing-souls', text: 'Crossing Souls' },
-  },
-  {
-    title: 'Crackdown 3',
-    gamePassTitle: 'Crackdown 3',
-    gamePassId: '9NXR6469DM2P',
-    howLongToBeatResult: { href: '38828', text: 'Crackdown 3' },
-    metaCriticGameResult: { href: 'crackdown-3', text: 'Crackdown 3' },
+    metaCriticGameResult: {
+      text: 'Crossing Souls',
+      href: '/game/pc/crossing-souls',
+    },
   },
   {
     title: 'Crusader Kings III',
@@ -303,8 +340,8 @@ export const GAME_IDS = [
     gamePassId: '9N7GG222GTTH',
     howLongToBeatResult: { href: '71763', text: 'Crusader Kings III' },
     metaCriticGameResult: {
-      href: 'crusader-kings-iii',
       text: 'Crusader Kings III',
+      href: '/game/pc/crusader-kings-iii',
     },
   },
   {
@@ -312,16 +349,9 @@ export const GAME_IDS = [
     gamePassTitle: 'Cyber Shadow',
     gamePassId: '9NX9LJ5JSWH8',
     howLongToBeatResult: { href: '42816', text: 'Cyber Shadow' },
-    metaCriticGameResult: { href: 'cyber-shadow', text: 'Cyber Shadow' },
-  },
-  {
-    title: 'Dead by Daylight ',
-    gamePassTitle: 'Dead by Daylight Windows',
-    gamePassId: '9NMS4SFNBGBH',
-    howLongToBeatResult: { href: '37986', text: 'Dead by Daylight' },
     metaCriticGameResult: {
-      href: 'dead-by-daylight',
-      text: 'Dead by Daylight',
+      text: 'Cyber Shadow',
+      href: '/game/xbox-one/cyber-shadow',
     },
   },
   {
@@ -330,8 +360,18 @@ export const GAME_IDS = [
     gamePassId: '9NJ5X04M30HN',
     howLongToBeatResult: { href: '68043', text: 'Darksiders: Genesis' },
     metaCriticGameResult: {
-      href: 'darksiders-genesis',
       text: 'Darksiders Genesis',
+      href: '/game/pc/darksiders-genesis',
+    },
+  },
+  {
+    title: 'Dead by Daylight ',
+    gamePassTitle: 'Dead by Daylight Windows',
+    gamePassId: '9NMS4SFNBGBH',
+    howLongToBeatResult: { href: '37986', text: 'Dead by Daylight' },
+    metaCriticGameResult: {
+      text: 'Dead by Daylight',
+      href: '/game/pc/dead-by-daylight',
     },
   },
   {
@@ -343,16 +383,9 @@ export const GAME_IDS = [
       text: 'Day of the Tentacle: Remastered',
     },
     metaCriticGameResult: {
-      href: 'day-of-the-tentacle-remastered',
       text: 'Day of the Tentacle Remastered',
+      href: '/game/xbox-one/day-of-the-tentacle-remastered',
     },
-  },
-  {
-    title: 'Dead Cells',
-    gamePassTitle: 'Dead Cells',
-    gamePassId: '9NKVX66J0ZSK',
-    howLongToBeatResult: { href: '45727', text: 'Dead Cells' },
-    metaCriticGameResult: { href: 'dead-cells', text: 'Dead Cells' },
   },
   {
     title: 'Deep Rock Galactic',
@@ -360,9 +393,16 @@ export const GAME_IDS = [
     gamePassId: '9NHFVWX1V7QJ',
     howLongToBeatResult: { href: '47169', text: 'Deep Rock Galactic' },
     metaCriticGameResult: {
-      href: 'deep-rock-galactic',
       text: 'Deep Rock Galactic',
+      href: '/game/xbox-one/deep-rock-galactic',
     },
+  },
+  {
+    title: 'Dead Cells',
+    gamePassTitle: 'Dead Cells',
+    gamePassId: '9NKVX66J0ZSK',
+    howLongToBeatResult: { href: '45727', text: 'Dead Cells' },
+    metaCriticGameResult: { text: 'Dead Cells', href: '/game/pc/dead-cells' },
   },
   {
     title: 'Deliver Us The Moon',
@@ -370,23 +410,19 @@ export const GAME_IDS = [
     gamePassId: '9PF6BS5DGNLX',
     howLongToBeatResult: { href: '71372', text: 'Deliver Us The Moon' },
     metaCriticGameResult: {
-      href: 'deliver-us-the-moon',
       text: 'Deliver Us The Moon',
+      href: '/game/pc/deliver-us-the-moon',
     },
-  },
-  {
-    title: 'Desperados III',
-    gamePassTitle: 'Desperados III',
-    gamePassId: '9P1ZX74WPL68',
-    howLongToBeatResult: { href: '60291', text: 'Desperados III' },
-    metaCriticGameResult: { href: 'desperados-iii', text: 'Desperados III' },
   },
   {
     title: 'Descenders',
     gamePassTitle: 'Descenders',
     gamePassId: 'C37XBX7DCBZ0',
     howLongToBeatResult: { href: '55598', text: 'Descenders' },
-    metaCriticGameResult: { href: 'descenders', text: 'Descenders' },
+    metaCriticGameResult: {
+      text: 'Descenders',
+      href: '/game/xbox-one/descenders',
+    },
   },
   {
     title: 'Disgaea 4 Complete',
@@ -394,8 +430,18 @@ export const GAME_IDS = [
     gamePassId: '9PFJDSL1CC7G',
     howLongToBeatResult: { href: '71701', text: 'Disgaea 4 Complete+' },
     metaCriticGameResult: {
-      href: 'disgaea-4-complete+',
       text: 'Disgaea 4 Complete+',
+      href: '/game/pc/disgaea-4-complete+',
+    },
+  },
+  {
+    title: 'Desperados III',
+    gamePassTitle: 'Desperados III',
+    gamePassId: '9P1ZX74WPL68',
+    howLongToBeatResult: { href: '60291', text: 'Desperados III' },
+    metaCriticGameResult: {
+      text: 'Desperados III',
+      href: '/game/pc/desperados-iii',
     },
   },
   {
@@ -403,7 +449,10 @@ export const GAME_IDS = [
     gamePassTitle: 'Dishonored 2',
     gamePassId: '9MW4RJDRSF78',
     howLongToBeatResult: { href: '26731', text: 'Dishonored 2' },
-    metaCriticGameResult: { href: 'dishonored-2', text: 'Dishonored 2' },
+    metaCriticGameResult: {
+      text: 'Dishonored 2',
+      href: '/game/pc/dishonored-2',
+    },
   },
   {
     title: 'Disneyland Adventures',
@@ -411,16 +460,9 @@ export const GAME_IDS = [
     gamePassId: '9N6Z8DQXSQWH',
     howLongToBeatResult: { href: '4994', text: 'Disneyland Adventures' },
     metaCriticGameResult: {
-      href: 'disneyland-adventures',
       text: 'Disneyland Adventures',
+      href: '/game/xbox-one/disneyland-adventures',
     },
-  },
-  {
-    title: 'Donut County',
-    gamePassTitle: 'Donut County',
-    gamePassId: '9N6V2181GHLM',
-    howLongToBeatResult: { href: '51323', text: 'Donut County' },
-    metaCriticGameResult: { href: 'donut-county', text: 'Donut County' },
   },
   {
     title: "Don't Starve",
@@ -428,8 +470,18 @@ export const GAME_IDS = [
     gamePassId: 'C0XBNVR137DZ',
     howLongToBeatResult: { href: '2675', text: "Don't Starve" },
     metaCriticGameResult: {
-      href: 'dont-starve-together',
-      text: "Don't Starve Together",
+      text: "Don't Starve: Mega Pack",
+      href: '/game/xbox-one/dont-starve-mega-pack',
+    },
+  },
+  {
+    title: 'Donut County',
+    gamePassTitle: 'Donut County',
+    gamePassId: '9N6V2181GHLM',
+    howLongToBeatResult: { href: '51323', text: 'Donut County' },
+    metaCriticGameResult: {
+      text: 'Donut County',
+      href: '/game/xbox-one/donut-county',
     },
   },
   {
@@ -437,7 +489,10 @@ export const GAME_IDS = [
     gamePassTitle: 'DOOM Eternal Standard Edition (PC)',
     gamePassId: '9PK09BL31FK1',
     howLongToBeatResult: { href: '57506', text: 'Doom Eternal' },
-    metaCriticGameResult: { href: 'doom-eternal', text: 'DOOM Eternal' },
+    metaCriticGameResult: {
+      text: 'DOOM Eternal',
+      href: '/game/pc/doom-eternal',
+    },
   },
   {
     title: 'Double Kick Heroes',
@@ -445,8 +500,25 @@ export const GAME_IDS = [
     gamePassId: '9NJPT63K27W8',
     howLongToBeatResult: { href: '53061', text: 'Double Kick Heroes' },
     metaCriticGameResult: {
-      href: 'double-kick-heroes',
       text: 'Double Kick Heroes',
+      href: '/game/xbox-one/double-kick-heroes',
+    },
+  },
+  {
+    title: 'Downwell',
+    gamePassTitle: 'Downwell',
+    gamePassId: '9P641Z19NT2S',
+    howLongToBeatResult: { href: '31178', text: 'Downwell' },
+    metaCriticGameResult: { text: 'Downwell', href: '/game/pc/downwell' },
+  },
+  {
+    title: 'Drake Hollow',
+    gamePassTitle: 'Drake Hollow',
+    gamePassId: '9PGNGGWBX1NR',
+    howLongToBeatResult: { href: '82637', text: 'Drake Hollow' },
+    metaCriticGameResult: {
+      text: 'Drake Hollow',
+      href: '/game/xbox-one/drake-hollow',
     },
   },
   {
@@ -459,23 +531,10 @@ export const GAME_IDS = [
       text: 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition',
     },
     metaCriticGameResult: {
-      href: 'dragon-quest-xi-s-echoes-of-an-elusive-age---definitive-edition',
       text: 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition',
+      href:
+        '/game/xbox-one/dragon-quest-xi-s-echoes-of-an-elusive-age---definitive-edition',
     },
-  },
-  {
-    title: 'Downwell',
-    gamePassTitle: 'Downwell',
-    gamePassId: '9P641Z19NT2S',
-    howLongToBeatResult: { href: '31178', text: 'Downwell' },
-    metaCriticGameResult: { href: 'downwell', text: 'Downwell' },
-  },
-  {
-    title: 'Drake Hollow',
-    gamePassTitle: 'Drake Hollow',
-    gamePassId: '9PGNGGWBX1NR',
-    howLongToBeatResult: { href: '82637', text: 'Drake Hollow' },
-    metaCriticGameResult: { href: 'drake-hollow', text: 'Drake Hollow' },
   },
   {
     title: 'Dungeon of the Endless',
@@ -483,8 +542,18 @@ export const GAME_IDS = [
     gamePassId: '9N46K0X6TBZK',
     howLongToBeatResult: { href: '17454', text: 'Dungeon of the Endless' },
     metaCriticGameResult: {
-      href: 'dungeon-of-the-endless',
       text: 'Dungeon of the Endless',
+      href: '/game/pc/dungeon-of-the-endless',
+    },
+  },
+  {
+    title: 'Eastshade',
+    gamePassTitle: 'Eastshade',
+    gamePassId: '9PLCR0FR564K',
+    howLongToBeatResult: { href: '65001', text: 'Eastshade' },
+    metaCriticGameResult: {
+      text: 'Eastshade',
+      href: '/game/xbox-one/eastshade',
     },
   },
   {
@@ -492,16 +561,9 @@ export const GAME_IDS = [
     gamePassTitle: 'Endless Legend',
     gamePassId: '9NP09BFQNHCJ',
     howLongToBeatResult: { href: '18226', text: 'Endless Legend' },
-    metaCriticGameResult: { href: 'endless-legend', text: 'Endless Legend' },
-  },
-  {
-    title: 'Enter The Gungeon',
-    gamePassTitle: 'Enter The Gungeon',
-    gamePassId: '9NB65S6LFZRT',
-    howLongToBeatResult: { href: '35549', text: 'Enter the Gungeon' },
     metaCriticGameResult: {
-      href: 'enter-the-gungeon',
-      text: 'Enter the Gungeon',
+      text: 'Endless Legend',
+      href: '/game/pc/endless-legend',
     },
   },
   {
@@ -509,23 +571,19 @@ export const GAME_IDS = [
     gamePassTitle: 'Endless Space 2: Deluxe Edition',
     gamePassId: '9NV3Q7WVN2RB',
     howLongToBeatResult: { href: '41360', text: 'Endless Space 2' },
-    metaCriticGameResult: { href: 'endless-space-2', text: 'Endless Space 2' },
-  },
-  {
-    title: 'F1 2019',
-    gamePassTitle: 'F1® 2019 PC',
-    gamePassId: '9NL9VGSH00LL',
-    howLongToBeatResult: { href: '68644', text: 'F1 2019' },
-    metaCriticGameResult: { href: 'f1-2019', text: 'F1 2019' },
-  },
-  {
-    title: 'Fallout 76 ',
-    gamePassTitle: 'Fallout 76 - PC',
-    gamePassId: '9NKGNMNK3K3Z',
-    howLongToBeatResult: { href: '57416', text: 'Fallout 76' },
     metaCriticGameResult: {
-      href: 'fallout-76-wastelanders',
-      text: 'Fallout 76: Wastelanders',
+      text: 'Endless Space 2',
+      href: '/game/pc/endless-space-2',
+    },
+  },
+  {
+    title: 'Enter The Gungeon',
+    gamePassTitle: 'Enter The Gungeon',
+    gamePassId: '9NB65S6LFZRT',
+    howLongToBeatResult: { href: '35549', text: 'Enter the Gungeon' },
+    metaCriticGameResult: {
+      text: 'Enter The Gungeon',
+      href: '/game/xbox-one/enter-the-gungeon',
     },
   },
   {
@@ -534,9 +592,23 @@ export const GAME_IDS = [
     gamePassId: '9PHQJWGLTZM8',
     howLongToBeatResult: { href: '13304', text: 'Europa Universalis IV' },
     metaCriticGameResult: {
-      href: 'europa-universalis-iv',
       text: 'Europa Universalis IV',
+      href: '/game/pc/europa-universalis-iv',
     },
+  },
+  {
+    title: 'F1 2019',
+    gamePassTitle: 'F1® 2019 PC',
+    gamePassId: '9NL9VGSH00LL',
+    howLongToBeatResult: { href: '68644', text: 'F1 2019' },
+    metaCriticGameResult: { text: 'F1 2019', href: '/game/pc/f1-2019' },
+  },
+  {
+    title: 'Fallout 76 ',
+    gamePassTitle: 'Fallout 76 - PC',
+    gamePassId: '9NKGNMNK3K3Z',
+    howLongToBeatResult: { href: '57416', text: 'Fallout 76' },
+    metaCriticGameResult: { text: 'Fallout 76', href: '/game/pc/fallout-76' },
   },
   {
     title: 'FINAL FANTASY IX',
@@ -544,8 +616,8 @@ export const GAME_IDS = [
     gamePassId: '9NPGTNQFC8B5',
     howLongToBeatResult: { href: '3505', text: 'Final Fantasy IX' },
     metaCriticGameResult: {
-      href: 'final-fantasy-ix',
       text: 'Final Fantasy IX',
+      href: '/game/pc/final-fantasy-ix',
     },
   },
   {
@@ -554,8 +626,8 @@ export const GAME_IDS = [
     gamePassId: '9PN0W216SKZB',
     howLongToBeatResult: { href: '3521', text: 'Final Fantasy VII' },
     metaCriticGameResult: {
-      href: 'final-fantasy-viii-remastered',
-      text: 'Final Fantasy VIII Remastered',
+      text: 'Final Fantasy VII',
+      href: '/game/pc/final-fantasy-vii',
     },
   },
   {
@@ -564,8 +636,8 @@ export const GAME_IDS = [
     gamePassId: '9P35DPLN1JCN',
     howLongToBeatResult: { href: '3524', text: 'Final Fantasy VIII' },
     metaCriticGameResult: {
-      href: 'final-fantasy-viii-remastered',
       text: 'Final Fantasy VIII Remastered',
+      href: '/game/pc/final-fantasy-viii-remastered',
     },
   },
   {
@@ -577,8 +649,8 @@ export const GAME_IDS = [
       text: 'Final Fantasy XII: The Zodiac Age',
     },
     metaCriticGameResult: {
-      href: 'final-fantasy-xii-the-zodiac-age',
       text: 'Final Fantasy XII: The Zodiac Age',
+      href: '/game/pc/final-fantasy-xii-the-zodiac-age',
     },
   },
   {
@@ -587,8 +659,8 @@ export const GAME_IDS = [
     gamePassId: '9N5253J559LR',
     howLongToBeatResult: { href: '20811', text: "Five Nights at Freddy's" },
     metaCriticGameResult: {
-      href: 'five-nights-at-freddys',
-      text: "Five Nights at Freddy's",
+      text: "Five Nights at Freddy's: Core Collection",
+      href: '/game/xbox-one/five-nights-at-freddys-core-collection',
     },
   },
   {
@@ -597,18 +669,18 @@ export const GAME_IDS = [
     gamePassId: '9NBR2ZSD99FX',
     howLongToBeatResult: { href: '22612', text: "Five Nights at Freddy's 2" },
     metaCriticGameResult: {
-      href: 'five-nights-at-freddys-2',
-      text: "Five Nights at Freddy's 2",
+      text: "Five Nights at Freddy's 2 HD",
+      href: '/game/xbox-one/five-nights-at-freddys-2-hd',
     },
   },
   {
-    title: "Five Nights at Freddy's 4",
-    gamePassTitle: "Five Nights at Freddy's 4",
-    gamePassId: '9PLDLMPLR7JV',
-    howLongToBeatResult: { href: '28975', text: "Five Nights at Freddy's 4" },
+    title: "Five Nights at Freddy's 3",
+    gamePassTitle: "Five Nights at Freddy's 3",
+    gamePassId: '9P6N7LQ4HZFD',
+    howLongToBeatResult: { href: '24456', text: "Five Nights at Freddy's 3" },
     metaCriticGameResult: {
-      href: 'five-nights-at-freddys-4',
-      text: "Five Nights at Freddy's 4",
+      text: "Five Nights at Freddy's 3 HD",
+      href: '/game/xbox-one/five-nights-at-freddys-3-hd',
     },
   },
   {
@@ -617,29 +689,9 @@ export const GAME_IDS = [
     gamePassId: '9PJ2DSSXZR0P',
     howLongToBeatResult: { href: '20811', text: "Five Nights at Freddy's" },
     metaCriticGameResult: {
-      href: 'five-nights-at-freddys',
-      text: "Five Nights at Freddy's",
+      text: "Five Nights at Freddy's: Core Collection",
+      href: '/game/xbox-one/five-nights-at-freddys-core-collection',
     },
-  },
-  {
-    title: "Five Nights at Freddy's 3",
-    gamePassTitle: "Five Nights at Freddy's 3",
-    gamePassId: '9P6N7LQ4HZFD',
-    howLongToBeatResult: { href: '24456', text: "Five Nights at Freddy's 3" },
-  },
-  {
-    title: 'Forager',
-    gamePassTitle: 'Forager',
-    gamePassId: '9P5SFDNW6V13',
-    howLongToBeatResult: { href: '62412', text: 'Forager' },
-    metaCriticGameResult: { href: 'forager', text: 'Forager' },
-  },
-  {
-    title: 'Forza Horizon 4 ',
-    gamePassTitle: 'Forza Horizon 4 Standard Edition',
-    gamePassId: '9PNJXVCVWD4K',
-    howLongToBeatResult: { href: '55661', text: 'Forza Horizon 4' },
-    metaCriticGameResult: { href: 'forza-horizon-4', text: 'Forza Horizon 4' },
   },
   {
     title: 'For The King',
@@ -647,8 +699,35 @@ export const GAME_IDS = [
     gamePassId: '9NS1CD1V4BKW',
     howLongToBeatResult: { href: '45024', text: 'For The King' },
     metaCriticGameResult: {
-      href: 'age-of-empires-ii-the-age-of-kings',
-      text: 'Age of Empires II: The Age of Kings',
+      text: 'Crusader Kings III',
+      href: '/game/pc/crusader-kings-iii',
+    },
+  },
+  {
+    title: "Five Nights at Freddy's 4",
+    gamePassTitle: "Five Nights at Freddy's 4",
+    gamePassId: '9PLDLMPLR7JV',
+    howLongToBeatResult: { href: '28975', text: "Five Nights at Freddy's 4" },
+    metaCriticGameResult: {
+      text: "Five Nights at Freddy's 4 HD",
+      href: '/game/xbox-one/five-nights-at-freddys-4-hd',
+    },
+  },
+  {
+    title: 'Forager',
+    gamePassTitle: 'Forager',
+    gamePassId: '9P5SFDNW6V13',
+    howLongToBeatResult: { href: '62412', text: 'Forager' },
+    metaCriticGameResult: { text: 'Forager', href: '/game/pc/forager' },
+  },
+  {
+    title: 'Forza Horizon 4 ',
+    gamePassTitle: 'Forza Horizon 4 Standard Edition',
+    gamePassId: '9PNJXVCVWD4K',
+    howLongToBeatResult: { href: '55661', text: 'Forza Horizon 4' },
+    metaCriticGameResult: {
+      text: 'Forza Horizon 4',
+      href: '/game/xbox-one/forza-horizon-4',
     },
   },
   {
@@ -657,8 +736,8 @@ export const GAME_IDS = [
     gamePassId: '9N3NK5WW05HT',
     howLongToBeatResult: { href: '46400', text: 'Forza Motorsport 7' },
     metaCriticGameResult: {
-      href: 'forza-motorsport-7',
       text: 'Forza Motorsport 7',
+      href: '/game/xbox-one/forza-motorsport-7',
     },
   },
   {
@@ -666,7 +745,14 @@ export const GAME_IDS = [
     gamePassTitle: 'Frostpunk',
     gamePassId: '9NS0KH25D76X',
     howLongToBeatResult: { href: '41585', text: 'Frostpunk' },
-    metaCriticGameResult: { href: 'frostpunk', text: 'Frostpunk' },
+    metaCriticGameResult: { text: 'Frostpunk', href: '/game/pc/frostpunk' },
+  },
+  {
+    title: 'Gato Roboto',
+    gamePassTitle: 'Gato Roboto',
+    gamePassId: '9PBJQ90CT236',
+    howLongToBeatResult: { href: '67569', text: 'Gato Roboto' },
+    metaCriticGameResult: { text: 'Gato Roboto', href: '/game/pc/gato-roboto' },
   },
   {
     title: 'Full Throttle Remastered',
@@ -674,58 +760,76 @@ export const GAME_IDS = [
     gamePassId: '9P3ZRGNQVC7D',
     howLongToBeatResult: { href: '44400', text: 'Full Throttle Remastered' },
     metaCriticGameResult: {
-      href: 'full-throttle-remastered',
       text: 'Full Throttle Remastered',
+      href: '/game/xbox-one/full-throttle-remastered',
     },
-  },
-  {
-    title: 'Gato Roboto',
-    gamePassTitle: 'Gato Roboto',
-    gamePassId: '9PBJQ90CT236',
-    howLongToBeatResult: { href: '67569', text: 'Gato Roboto' },
-    metaCriticGameResult: { href: 'gato-roboto', text: 'Gato Roboto' },
-  },
-  {
-    title: 'Gears 5',
-    gamePassTitle: 'Gears 5',
-    gamePassId: 'C2KDNLT2H7DM',
-    howLongToBeatResult: { href: '57422', text: 'Gears 5' },
-    metaCriticGameResult: { href: 'gears-5', text: 'Gears 5' },
-  },
-  {
-    title: 'Gears of War 4',
-    gamePassTitle: 'Gears of War 4',
-    gamePassId: '9NBLGGH4PBBM',
-    howLongToBeatResult: { href: '26788', text: 'Gears of War 4' },
-    metaCriticGameResult: { href: 'gears-of-war-4', text: 'Gears of War 4' },
   },
   {
     title: 'Gears 5 ',
     gamePassTitle: 'Gears 5 Game of the Year Edition',
     gamePassId: '9P4KMR76PLLQ',
     howLongToBeatResult: { href: '57422', text: 'Gears 5' },
-    metaCriticGameResult: { href: 'gears-5', text: 'Gears 5' },
+    metaCriticGameResult: { text: 'Gears 5', href: '/game/xbox-one/gears-5' },
   },
   {
-    title: 'Gears of War',
+    title: 'Gears 5',
+    gamePassTitle: 'Gears 5',
+    gamePassId: 'C2KDNLT2H7DM',
+    howLongToBeatResult: { href: '57422', text: 'Gears 5' },
+    metaCriticGameResult: { text: 'Gears 5', href: '/game/xbox-one/gears-5' },
+  },
+  {
+    title: 'Gears of War: Ultimate Edition ',
     gamePassTitle: 'Gears of War: Ultimate Edition for Windows 10',
     gamePassId: '9NBLGGH3SHM5',
-    howLongToBeatResult: { href: '3862', text: 'Gears of War' },
-    metaCriticGameResult: { href: 'gears-of-war', text: 'Gears of War' },
+    howLongToBeatResult: {
+      href: '26794',
+      text: 'Gears of War: Ultimate Edition',
+    },
+    metaCriticGameResult: {
+      text: 'Gears of War: Ultimate Edition for Windows 10',
+      href: '/game/pc/gears-of-war-ultimate-edition-for-windows-10',
+    },
+  },
+  {
+    title: 'Gears of War 4',
+    gamePassTitle: 'Gears of War 4',
+    gamePassId: '9NBLGGH4PBBM',
+    howLongToBeatResult: { href: '26788', text: 'Gears of War 4' },
+    metaCriticGameResult: {
+      text: 'Gears of War 4',
+      href: '/game/xbox-one/gears-of-war-4',
+    },
   },
   {
     title: 'Gears Tactics',
     gamePassTitle: 'Gears Tactics',
     gamePassId: '9NN3HCKW5TPC',
     howLongToBeatResult: { href: '57740', text: 'Gears Tactics' },
-    metaCriticGameResult: { href: 'gears-tactics', text: 'Gears Tactics' },
+    metaCriticGameResult: {
+      text: 'Gears Tactics',
+      href: '/game/xbox-one/gears-tactics',
+    },
   },
   {
     title: 'Ghost of a Tale',
     gamePassTitle: 'Ghost of a Tale',
     gamePassId: '9PJR5XZG5CNS',
     howLongToBeatResult: { href: '21687', text: 'Ghost of a Tale' },
-    metaCriticGameResult: { href: 'ghost-of-a-tale', text: 'Ghost of a Tale' },
+    metaCriticGameResult: {
+      text: 'Ghost of a Tale',
+      href: '/game/pc/ghost-of-a-tale',
+    },
+  },
+  {
+    title: 'Goat Simulator ',
+    gamePassTitle: 'Goat Simulator Windows 10',
+    gamePassId: '9MXWKHJ3VZZH',
+    howLongToBeatResult: { href: '17536', text: 'Goat Simulator' },
+    metaCriticGameResult: {
+      text: 'Goat Simulator',
+      href: '/game/pc/goat-simulator',
+    },
   },
   {
     title: 'Golf With Your Friends',
@@ -733,29 +837,16 @@ export const GAME_IDS = [
     gamePassId: '9MVK5W0HMRP7',
     howLongToBeatResult: { href: '34956', text: 'Golf With Your Friends' },
     metaCriticGameResult: {
-      href: 'golf-with-your-friends',
       text: 'Golf With Your Friends',
+      href: '/game/pc/golf-with-your-friends',
     },
-  },
-  {
-    title: 'GONNER2 ',
-    gamePassTitle: 'GONNER2 WIN10',
-    gamePassId: '9P44W70MC99Z',
-    howLongToBeatResult: { href: '84332', text: 'GoNNER2' },
-  },
-  {
-    title: 'Goat Simulator ',
-    gamePassTitle: 'Goat Simulator Windows 10',
-    gamePassId: '9MXWKHJ3VZZH',
-    howLongToBeatResult: { href: '17536', text: 'Goat Simulator' },
-    metaCriticGameResult: { href: 'goat-simulator', text: 'Goat Simulator' },
   },
   {
     title: 'GreedFall',
     gamePassTitle: 'GreedFall - Windows 10',
     gamePassId: '9PB79JST8PDH',
     howLongToBeatResult: { href: '62519', text: 'Greedfall' },
-    metaCriticGameResult: { href: 'greedfall', text: 'GreedFall' },
+    metaCriticGameResult: { text: 'GreedFall', href: '/game/pc/greedfall' },
   },
   {
     title: 'Grim Fandango Remastered',
@@ -763,8 +854,18 @@ export const GAME_IDS = [
     gamePassId: '9PC288TN7R8K',
     howLongToBeatResult: { href: '23473', text: 'Grim Fandango Remastered' },
     metaCriticGameResult: {
-      href: 'grim-fandango-remastered',
       text: 'Grim Fandango Remastered',
+      href: '/game/xbox-one/grim-fandango-remastered',
+    },
+  },
+  {
+    title: 'GONNER2 ',
+    gamePassTitle: 'GONNER2 WIN10',
+    gamePassId: '9P44W70MC99Z',
+    howLongToBeatResult: { href: '84332', text: 'GoNNER2' },
+    metaCriticGameResult: {
+      text: 'GONNER2',
+      href: '/game/xbox-series-x/gonner2',
     },
   },
   {
@@ -772,30 +873,16 @@ export const GAME_IDS = [
     gamePassTitle: 'Grounded - Game Preview',
     gamePassId: '9PJTHRNVH62H',
     howLongToBeatResult: { href: '77857', text: 'Grounded' },
-    metaCriticGameResult: { href: 'grounded', text: 'Grounded' },
+    metaCriticGameResult: { text: 'Grounded', href: '/game/xbox-one/grounded' },
   },
   {
-    title: 'Guacamelee! 2',
-    gamePassTitle: 'Guacamelee! 2',
-    gamePassId: '9NVK1W7L093S',
-    howLongToBeatResult: { href: '59509', text: 'Guacamelee! 2' },
-    metaCriticGameResult: { href: 'guacamelee!-2', text: 'Guacamelee! 2' },
-  },
-  {
-    title: 'Halo 2',
+    title: 'Halo 2: Anniversary',
     gamePassTitle: 'Halo 2: Anniversary',
     gamePassId: '9P5739G419LD',
-    howLongToBeatResult: { href: '4262', text: 'Halo 2' },
-    metaCriticGameResult: { href: 'halo-2', text: 'Halo 2' },
-  },
-  {
-    title: 'Halo 3',
-    gamePassTitle: 'Halo 3: ODST',
-    gamePassId: '9P6VZCRGXFMX',
-    howLongToBeatResult: { href: '4263', text: 'Halo 3' },
+    howLongToBeatResult: { href: '22622', text: 'Halo 2: Anniversary' },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      text: 'Halo 2: Anniversary',
+      href: '/game/pc/halo-2-anniversary',
     },
   },
   {
@@ -804,8 +891,18 @@ export const GAME_IDS = [
     gamePassId: '9PGL2Z1H9M4R',
     howLongToBeatResult: { href: '4263', text: 'Halo 3' },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      text: 'Halo: The Master Chief Collection - Halo 3',
+      href: '/game/pc/halo-the-master-chief-collection---halo-3',
+    },
+  },
+  {
+    title: 'Guacamelee! 2',
+    gamePassTitle: 'Guacamelee! 2',
+    gamePassId: '9NVK1W7L093S',
+    howLongToBeatResult: { href: '59509', text: 'Guacamelee! 2' },
+    metaCriticGameResult: {
+      text: 'Guacamelee! 2: The Proving Ground',
+      href: '/game/xbox-one/guacamelee!-2-the-proving-ground',
     },
   },
   {
@@ -814,8 +911,8 @@ export const GAME_IDS = [
     gamePassId: '9P8CFXZH93CK',
     howLongToBeatResult: { href: '4265', text: 'Halo 4' },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-4',
       text: 'Halo: The Master Chief Collection - Halo 4',
+      href: '/game/pc/halo-the-master-chief-collection---halo-4',
     },
   },
   {
@@ -823,76 +920,76 @@ export const GAME_IDS = [
     gamePassTitle: 'Halo Wars 2',
     gamePassId: '9NBLGGH5WMKM',
     howLongToBeatResult: { href: '37985', text: 'Halo Wars 2' },
-    metaCriticGameResult: { href: 'halo-wars-2', text: 'Halo Wars 2' },
+    metaCriticGameResult: { text: 'Halo Wars 2', href: '/game/pc/halo-wars-2' },
   },
   {
-    title: 'Halo Wars 2',
+    title: 'Halo Wars 2: ',
     gamePassTitle: 'Halo Wars 2: Standard Edition',
     gamePassId: '9NBLGGH515BD',
-    howLongToBeatResult: { href: '37985', text: 'Halo Wars 2' },
-    metaCriticGameResult: { href: 'halo-wars-2', text: 'Halo Wars 2' },
+    howLongToBeatResult: {
+      href: '59330',
+      text: 'Halo Wars 2: Awakening the Nightmare',
+    },
+    metaCriticGameResult: { text: 'Halo Wars 2', href: '/game/pc/halo-wars-2' },
   },
   {
-    title: 'Halo Wars',
-    gamePassTitle: 'Halo Wars: Definitive Edition (PC)',
-    gamePassId: '9NBLGGH5WLR0',
-    howLongToBeatResult: { href: '4267', text: 'Halo Wars' },
-    metaCriticGameResult: { href: 'halo-wars-2', text: 'Halo Wars 2' },
-  },
-  {
-    title: 'Halo',
+    title: 'Halo: Combat Evolved Anniversary',
     gamePassTitle: 'Halo: Combat Evolved Anniversary',
     gamePassId: '9NWQMVSB63N4',
     howLongToBeatResult: {
-      href: '22621',
-      text: 'Halo: The Master Chief Collection',
+      href: '4270',
+      text: 'Halo: Combat Evolved - Anniversary',
     },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      text: 'Halo: Combat Evolved Anniversary',
+      href: '/game/pc/halo-combat-evolved-anniversary',
     },
   },
   {
-    title: 'Halo',
+    title: 'Halo 3: ODST',
+    gamePassTitle: 'Halo 3: ODST',
+    gamePassId: '9P6VZCRGXFMX',
+    howLongToBeatResult: { href: '4264', text: 'Halo 3: ODST' },
+    metaCriticGameResult: {
+      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      href: '/game/pc/halo-the-master-chief-collection---halo-3-odst',
+    },
+  },
+  {
+    title: 'Halo Wars: Definitive Edition',
+    gamePassTitle: 'Halo Wars: Definitive Edition (PC)',
+    gamePassId: '9NBLGGH5WLR0',
+    howLongToBeatResult: {
+      href: '4267',
+      text: 'Halo Wars: Definitive Edition',
+    },
+    metaCriticGameResult: {
+      text: 'Halo Wars: Definitive Edition',
+      href: '/game/pc/halo-wars-definitive-edition',
+    },
+  },
+  {
+    title: 'Halo: Reach',
     gamePassTitle: 'Halo: Reach',
     gamePassId: '9N9WZT3PJ27W',
-    howLongToBeatResult: {
-      href: '22621',
-      text: 'Halo: The Master Chief Collection',
-    },
+    howLongToBeatResult: { href: '4271', text: 'Halo: Reach' },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      text: 'Halo: Reach Remastered',
+      href: '/game/pc/halo-reach-remastered',
     },
   },
   {
-    title: 'Halo',
+    title: 'Halo: Spartan Assault',
     gamePassTitle: 'Halo: Spartan Assault',
     gamePassId: '9WZDNCRFHWFH',
-    howLongToBeatResult: {
-      href: '22621',
-      text: 'Halo: The Master Chief Collection',
-    },
+    howLongToBeatResult: { href: '4272', text: 'Halo: Spartan Assault' },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      text: 'Halo: Spartan Assault',
+      href: '/game/pc/halo-spartan-assault',
     },
   },
   {
-    title: 'Halo',
-    gamePassTitle: 'Halo: Spartan Strike',
-    gamePassId: '9WZDNCRFJBFJ',
-    howLongToBeatResult: {
-      href: '22621',
-      text: 'Halo: The Master Chief Collection',
-    },
-    metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
-    },
-  },
-  {
-    title: 'Halo',
+    title: 'Halo: The Master Chief Collection',
     gamePassTitle: 'Halo: The Master Chief Collection',
     gamePassId: '9NTM9HXNLSZX',
     howLongToBeatResult: {
@@ -900,8 +997,18 @@ export const GAME_IDS = [
       text: 'Halo: The Master Chief Collection',
     },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      text: 'Halo: The Master Chief Collection - Halo 3',
+      href: '/game/pc/halo-the-master-chief-collection---halo-3',
+    },
+  },
+  {
+    title: 'Halo: Spartan Strike',
+    gamePassTitle: 'Halo: Spartan Strike',
+    gamePassId: '9WZDNCRFJBFJ',
+    howLongToBeatResult: { href: '22540', text: 'Halo: Spartan Strike' },
+    metaCriticGameResult: {
+      text: 'Halo: Spartan Strike',
+      href: '/game/pc/halo-spartan-strike',
     },
   },
   {
@@ -909,7 +1016,10 @@ export const GAME_IDS = [
     gamePassTitle: 'Haven',
     gamePassId: '9NZL91Q08XRV',
     howLongToBeatResult: { href: '80569', text: 'Haven (2020)' },
-    metaCriticGameResult: { href: 'haven', text: 'Haven' },
+    metaCriticGameResult: {
+      text: 'Alien: Isolation - Safe Haven',
+      href: '/game/xbox-one/alien-isolation---safe-haven',
+    },
   },
   {
     title: 'Hearts of Iron IV',
@@ -917,16 +1027,9 @@ export const GAME_IDS = [
     gamePassId: '9NF6WPNS1S73',
     howLongToBeatResult: { href: '37795', text: 'Hearts of Iron IV' },
     metaCriticGameResult: {
-      href: 'hearts-of-iron-iv',
       text: 'Hearts of Iron IV',
+      href: '/game/pc/hearts-of-iron-iv',
     },
-  },
-  {
-    title: 'Heave Ho',
-    gamePassTitle: 'Heave Ho',
-    gamePassId: '9P8JHRDVBLHB',
-    howLongToBeatResult: { href: '70193', text: 'Heave Ho' },
-    metaCriticGameResult: { href: 'heave-ho', text: 'Heave Ho' },
   },
   {
     title: 'Hellblade',
@@ -937,8 +1040,8 @@ export const GAME_IDS = [
       text: "Hellblade: Senua's Sacrifice",
     },
     metaCriticGameResult: {
-      href: 'hellblade-senuas-sacrifice-vr-edition',
-      text: "Hellblade: Senua's Sacrifice VR Edition",
+      text: "Hellblade: Senua's Sacrifice",
+      href: '/game/pc/hellblade-senuas-sacrifice',
     },
   },
   {
@@ -946,35 +1049,57 @@ export const GAME_IDS = [
     gamePassTitle: 'Hello Neighbor',
     gamePassId: '9NDDH3R9DF40',
     howLongToBeatResult: { href: '40794', text: 'Hello Neighbor' },
-    metaCriticGameResult: { href: 'hello-neighbor', text: 'Hello Neighbor' },
+    metaCriticGameResult: {
+      text: 'Hello Neighbor',
+      href: '/game/pc/hello-neighbor',
+    },
+  },
+  {
+    title: 'Heave Ho',
+    gamePassTitle: 'Heave Ho',
+    gamePassId: '9P8JHRDVBLHB',
+    howLongToBeatResult: { href: '70193', text: 'Heave Ho' },
+    metaCriticGameResult: {
+      text: 'Farm Frenzy: Heave Ho',
+      href: '/game/pc/farm-frenzy-heave-ho',
+    },
   },
   {
     title: 'Hollow Knight',
     gamePassTitle: 'Hollow Knight',
     gamePassId: '9PKM22F7C9K5',
     howLongToBeatResult: { href: '26286', text: 'Hollow Knight' },
-    metaCriticGameResult: { href: 'hollow-knight', text: 'Hollow Knight' },
+    metaCriticGameResult: {
+      text: 'Hollow Knight',
+      href: '/game/pc/hollow-knight',
+    },
   },
   {
     title: 'Hotline Miami',
     gamePassTitle: 'Hotline Miami',
     gamePassId: '9PPCS86WS28Z',
     howLongToBeatResult: { href: '4530', text: 'Hotline Miami' },
-    metaCriticGameResult: { href: 'hotline-miami', text: 'Hotline Miami' },
+    metaCriticGameResult: {
+      text: 'Hotline Miami',
+      href: '/game/pc/hotline-miami',
+    },
   },
   {
     title: 'Human Fall Flat',
     gamePassTitle: 'Human Fall Flat',
     gamePassId: '9MT4HS1CP72W',
     howLongToBeatResult: { href: '38887', text: 'Human: Fall Flat' },
-    metaCriticGameResult: { href: 'human-fall-flat', text: 'Human: Fall Flat' },
+    metaCriticGameResult: {
+      text: 'Human: Fall Flat',
+      href: '/game/pc/human-fall-flat',
+    },
   },
   {
     title: 'HyperDot',
     gamePassTitle: 'HyperDot',
     gamePassId: '9NVVJ8TBD7KP',
     howLongToBeatResult: { href: '77188', text: 'HyperDot' },
-    metaCriticGameResult: { href: 'hyperdot', text: 'HyperDot' },
+    metaCriticGameResult: { text: 'HyperDot', href: '/game/xbox-one/hyperdot' },
   },
   {
     title: 'Hypnospace Outlaw',
@@ -982,8 +1107,8 @@ export const GAME_IDS = [
     gamePassId: '9PM3NVB3PXG0',
     howLongToBeatResult: { href: '65593', text: 'Hypnospace Outlaw' },
     metaCriticGameResult: {
-      href: 'hypnospace-outlaw',
       text: 'Hypnospace Outlaw',
+      href: '/game/xbox-one/hypnospace-outlaw',
     },
   },
   {
@@ -991,35 +1116,48 @@ export const GAME_IDS = [
     gamePassTitle: 'Ikenfell',
     gamePassId: '9N2X1J99S4M9',
     howLongToBeatResult: { href: '80165', text: 'Ikenfell' },
-    metaCriticGameResult: { href: 'ikenfell', text: 'Ikenfell' },
+    metaCriticGameResult: { text: 'Ikenfell', href: '/game/pc/ikenfell' },
   },
   {
     title: 'Injustice 2',
     gamePassTitle: 'Injustice™ 2 - Standard Edition',
     gamePassId: '9PHT4W7WBBDQ',
     howLongToBeatResult: { href: '37862', text: 'Injustice 2' },
-    metaCriticGameResult: { href: 'injustice-2', text: 'Injustice 2' },
+    metaCriticGameResult: { text: 'Injustice 2', href: '/game/pc/injustice-2' },
   },
   {
-    title: 'It Lurks Below',
-    gamePassTitle: 'It Lurks Below',
-    gamePassId: '9PFW68JLS81F',
-    howLongToBeatResult: { href: '56403', text: 'It Lurks Below' },
-    metaCriticGameResult: { href: 'it-lurks-below', text: 'It Lurks Below' },
+    title: 'Katana Zero',
+    gamePassTitle: 'Katana Zero',
+    gamePassId: '9P6CVNVMK56R',
+    howLongToBeatResult: { href: '33020', text: 'Katana ZERO' },
+    metaCriticGameResult: { text: 'Katana ZERO', href: '/game/pc/katana-zero' },
   },
   {
     title: 'Kathy Rain',
     gamePassTitle: 'Kathy Rain',
     gamePassId: '9P8HN2T2SZGB',
     howLongToBeatResult: { href: '36847', text: 'Kathy Rain' },
-    metaCriticGameResult: { href: 'kathy-rain', text: 'Kathy Rain' },
+    metaCriticGameResult: { text: 'Kathy Rain', href: '/game/pc/kathy-rain' },
+  },
+  {
+    title: 'It Lurks Below',
+    gamePassTitle: 'It Lurks Below',
+    gamePassId: '9PFW68JLS81F',
+    howLongToBeatResult: { href: '56403', text: 'It Lurks Below' },
+    metaCriticGameResult: {
+      text: 'It Lurks Below',
+      href: '/game/pc/it-lurks-below',
+    },
   },
   {
     title: 'Killer Instinct',
     gamePassTitle: 'Killer Instinct: Definitive Edition',
     gamePassId: '9NBLGGH51BMC',
     howLongToBeatResult: { href: '14350', text: 'Killer Instinct (2013)' },
-    metaCriticGameResult: { href: 'killer-instinct', text: 'Killer Instinct' },
+    metaCriticGameResult: {
+      text: 'Killer Instinct',
+      href: '/game/pc/killer-instinct',
+    },
   },
   {
     title: 'Knights and Bikes',
@@ -1027,23 +1165,9 @@ export const GAME_IDS = [
     gamePassId: '9P64KV1HQK07',
     howLongToBeatResult: { href: '67984', text: 'Knights And Bikes' },
     metaCriticGameResult: {
-      href: 'knights-and-bikes',
-      text: 'Knights And Bikes',
+      text: 'Knights and Bikes',
+      href: '/game/xbox-one/knights-and-bikes',
     },
-  },
-  {
-    title: 'Katana Zero',
-    gamePassTitle: 'Katana Zero',
-    gamePassId: '9P6CVNVMK56R',
-    howLongToBeatResult: { href: '33020', text: 'Katana ZERO' },
-    metaCriticGameResult: { href: 'katana-zero', text: 'Katana ZERO' },
-  },
-  {
-    title: 'Levelhead',
-    gamePassTitle: 'Levelhead',
-    gamePassId: '9PJZBB8FWK8H',
-    howLongToBeatResult: { href: '76093', text: 'Levelhead' },
-    metaCriticGameResult: { href: 'levelhead', text: 'Levelhead' },
   },
   {
     title: 'Lonely Mountains',
@@ -1051,16 +1175,19 @@ export const GAME_IDS = [
     gamePassId: '9MV6MCVLT8GR',
     howLongToBeatResult: { href: '71406', text: 'Lonely Mountains: Downhill' },
     metaCriticGameResult: {
-      href: 'lonely-mountains-downhill',
-      text: 'Lonely Mountains: Downhill',
+      text: 'Lonely Mountains: Downhill - Eldfjall Island',
+      href: '/game/xbox-one/lonely-mountains-downhill---eldfjall-island',
     },
   },
   {
-    title: 'Machinarium',
-    gamePassTitle: 'Machinarium',
-    gamePassId: '9N83GKZLC8BK',
-    howLongToBeatResult: { href: '5478', text: 'Machinarium' },
-    metaCriticGameResult: { href: 'machinarium', text: 'Machinarium' },
+    title: 'Levelhead',
+    gamePassTitle: 'Levelhead',
+    gamePassId: '9PJZBB8FWK8H',
+    howLongToBeatResult: { href: '76093', text: 'Levelhead' },
+    metaCriticGameResult: {
+      text: 'Levelhead',
+      href: '/game/xbox-one/levelhead',
+    },
   },
   {
     title: 'MARVEL VS. CAPCOM',
@@ -1071,9 +1198,16 @@ export const GAME_IDS = [
       text: 'Ultimate Marvel Vs. Capcom 3',
     },
     metaCriticGameResult: {
-      href: 'marvel-vs-capcom-infinite',
       text: 'Marvel vs. Capcom: Infinite',
+      href: '/game/xbox-one/marvel-vs-capcom-infinite',
     },
+  },
+  {
+    title: 'Machinarium',
+    gamePassTitle: 'Machinarium',
+    gamePassId: '9N83GKZLC8BK',
+    howLongToBeatResult: { href: '5478', text: 'Machinarium' },
+    metaCriticGameResult: { text: 'Machinarium', href: '/game/pc/machinarium' },
   },
   {
     title: 'MechWarrior 5',
@@ -1081,28 +1215,8 @@ export const GAME_IDS = [
     gamePassId: '9PB86W3JK8Z5',
     howLongToBeatResult: { href: '67949', text: 'MechWarrior 5: Mercenaries' },
     metaCriticGameResult: {
-      href: 'mechwarrior-5-mercenaries',
       text: 'MechWarrior 5: Mercenaries',
-    },
-  },
-  {
-    title: 'Middle-earth',
-    gamePassTitle: 'Middle-earth™: Shadow of War™',
-    gamePassId: '9PDV8FKWP3B4',
-    howLongToBeatResult: { href: '44022', text: 'Middle-Earth: Shadow of War' },
-    metaCriticGameResult: {
-      href: 'the-lord-of-the-rings-the-battle-for-middle-earth-ii',
-      text: 'The Lord of the Rings: The Battle for Middle-Earth II',
-    },
-  },
-  {
-    title: 'Minecraft Dungeons',
-    gamePassTitle: 'Minecraft Dungeons - Windows 10',
-    gamePassId: '9P8MK4NC0LJB',
-    howLongToBeatResult: { href: '68149', text: 'Minecraft Dungeons' },
-    metaCriticGameResult: {
-      href: 'minecraft-dungeons',
-      text: 'Minecraft Dungeons',
+      href: '/game/pc/mechwarrior-5-mercenaries',
     },
   },
   {
@@ -1114,8 +1228,28 @@ export const GAME_IDS = [
       text: 'Microsoft Flight Simulator (2020)',
     },
     metaCriticGameResult: {
-      href: 'microsoft-flight-simulator',
       text: 'Microsoft Flight Simulator',
+      href: '/game/pc/microsoft-flight-simulator',
+    },
+  },
+  {
+    title: 'Middle-earth',
+    gamePassTitle: 'Middle-earth™: Shadow of War™',
+    gamePassId: '9PDV8FKWP3B4',
+    howLongToBeatResult: { href: '44022', text: 'Middle-Earth: Shadow of War' },
+    metaCriticGameResult: {
+      text: 'Middle-earth: Shadow of War',
+      href: '/game/xbox-one/middle-earth-shadow-of-war',
+    },
+  },
+  {
+    title: 'Minecraft Dungeons',
+    gamePassTitle: 'Minecraft Dungeons - Windows 10',
+    gamePassId: '9P8MK4NC0LJB',
+    howLongToBeatResult: { href: '68149', text: 'Minecraft Dungeons' },
+    metaCriticGameResult: {
+      text: 'Minecraft Dungeons: Howling Peaks',
+      href: '/game/pc/minecraft-dungeons-howling-peaks',
     },
   },
   {
@@ -1127,8 +1261,8 @@ export const GAME_IDS = [
       text: 'Momodora: Reverie Under the Moonlight',
     },
     metaCriticGameResult: {
-      href: 'momodora-reverie-under-the-moonlight',
       text: 'Momodora: Reverie Under the Moonlight',
+      href: '/game/pc/momodora-reverie-under-the-moonlight',
     },
   },
   {
@@ -1136,7 +1270,10 @@ export const GAME_IDS = [
     gamePassTitle: 'MISTOVER',
     gamePassId: '9P8K66J3CQ9S',
     howLongToBeatResult: { href: '71153', text: 'MISTOVER' },
-    metaCriticGameResult: { href: 'mistover', text: 'MISTOVER' },
+    metaCriticGameResult: {
+      text: "MISTOVER: Dr. Faust's Otherworldly Adventure",
+      href: '/game/pc/mistover-dr-fausts-otherworldly-adventure',
+    },
   },
   {
     title: 'Monster Sanctuary',
@@ -1144,8 +1281,8 @@ export const GAME_IDS = [
     gamePassId: '9PBWWQGXVMKC',
     howLongToBeatResult: { href: '70012', text: 'Monster Sanctuary' },
     metaCriticGameResult: {
-      href: 'monster-sanctuary',
       text: 'Monster Sanctuary',
+      href: '/game/pc/monster-sanctuary',
     },
   },
   {
@@ -1153,21 +1290,17 @@ export const GAME_IDS = [
     gamePassTitle: 'Monster Train',
     gamePassId: '9NP4BGBLLLXM',
     howLongToBeatResult: { href: '78633', text: 'Monster Train' },
-    metaCriticGameResult: { href: 'monster-train', text: 'Monster Train' },
-  },
-  {
-    title: 'Moonlighter',
-    gamePassTitle: 'Moonlighter',
-    gamePassId: '9P8XJRLCLH2P',
-    howLongToBeatResult: { href: '56787', text: 'Moonlighter' },
-    metaCriticGameResult: { href: 'moonlighter', text: 'Moonlighter' },
+    metaCriticGameResult: {
+      text: 'Monster Train',
+      href: '/game/xbox-one/monster-train',
+    },
   },
   {
     title: 'Morkredd',
     gamePassTitle: 'Morkredd',
     gamePassId: '9PKD7RG0TQP4',
     howLongToBeatResult: { href: '85965', text: 'Morkredd' },
-    metaCriticGameResult: { href: 'morkredd', text: 'Morkredd' },
+    metaCriticGameResult: { text: 'Morkredd', href: '/game/xbox-one/morkredd' },
   },
   {
     title: 'Mother Russia Bleeds',
@@ -1175,8 +1308,18 @@ export const GAME_IDS = [
     gamePassId: '9NVFHBKDLPM4',
     howLongToBeatResult: { href: '22543', text: 'Mother Russia Bleeds' },
     metaCriticGameResult: {
-      href: 'mother-russia-bleeds',
       text: 'Mother Russia Bleeds',
+      href: '/game/pc/mother-russia-bleeds',
+    },
+  },
+  {
+    title: 'Moonlighter',
+    gamePassTitle: 'Moonlighter',
+    gamePassId: '9P8XJRLCLH2P',
+    howLongToBeatResult: { href: '56787', text: 'Moonlighter' },
+    metaCriticGameResult: {
+      text: 'Moonlighter',
+      href: '/game/xbox-one/moonlighter',
     },
   },
   {
@@ -1184,7 +1327,17 @@ export const GAME_IDS = [
     gamePassTitle: 'MotoGP™20 - Windows Edition',
     gamePassId: '9N88HSBP6RJ8',
     howLongToBeatResult: { href: '77737', text: 'MotoGP 20' },
-    metaCriticGameResult: { href: 'motogp-20', text: 'MotoGP 20' },
+    metaCriticGameResult: { text: 'MotoGP 20', href: '/game/pc/motogp-20' },
+  },
+  {
+    title: 'Moving Out',
+    gamePassTitle: 'Moving Out',
+    gamePassId: '9N9H593X8SVP',
+    howLongToBeatResult: { href: '75031', text: 'Moving Out' },
+    metaCriticGameResult: {
+      text: 'Moving Out: Movers in Paradise',
+      href: '/game/pc/moving-out-movers-in-paradise',
+    },
   },
   {
     title: 'Mount & Blade',
@@ -1192,8 +1345,8 @@ export const GAME_IDS = [
     gamePassId: '9PFZC53PVTDB',
     howLongToBeatResult: { href: '6243', text: 'Mount & Blade' },
     metaCriticGameResult: {
-      href: 'mount-blade-warband---napoleonic-wars',
-      text: 'Mount & Blade: Warband - Napoleonic Wars',
+      text: 'Mount & Blade: Warband',
+      href: '/game/pc/mount-blade-warband',
     },
   },
   {
@@ -1202,8 +1355,8 @@ export const GAME_IDS = [
     gamePassId: '9NBLSN1JP7TH',
     howLongToBeatResult: { href: '52787', text: 'My Time At Portia' },
     metaCriticGameResult: {
-      href: 'my-time-at-portia',
       text: 'My Time At Portia',
+      href: '/game/pc/my-time-at-portia',
     },
   },
   {
@@ -1211,21 +1364,14 @@ export const GAME_IDS = [
     gamePassTitle: 'Neon Abyss',
     gamePassId: '9PLWSGHFQ4PS',
     howLongToBeatResult: { href: '77366', text: 'Neon Abyss' },
-    metaCriticGameResult: { href: 'neon-abyss', text: 'Neon Abyss' },
-  },
-  {
-    title: 'Moving Out',
-    gamePassTitle: 'Moving Out',
-    gamePassId: '9N9H593X8SVP',
-    howLongToBeatResult: { href: '75031', text: 'Moving Out' },
-    metaCriticGameResult: { href: 'moving-out', text: 'Moving Out' },
+    metaCriticGameResult: { text: 'Neon Abyss', href: '/game/pc/neon-abyss' },
   },
   {
     title: 'Neoverse',
     gamePassTitle: 'Neoverse',
     gamePassId: '9NNSTP6KJTZ9',
     howLongToBeatResult: { href: '68733', text: 'NEOVERSE' },
-    metaCriticGameResult: { href: 'neoverse', text: 'NEOVERSE' },
+    metaCriticGameResult: { text: 'NEOVERSE', href: '/game/xbox-one/neoverse' },
   },
   {
     title: "New Super Lucky's Tale",
@@ -1233,16 +1379,9 @@ export const GAME_IDS = [
     gamePassId: '9MZN3SMXN824',
     howLongToBeatResult: { href: '71552', text: "New Super Lucky's Tale" },
     metaCriticGameResult: {
-      href: 'new-super-luckys-tale',
       text: "New Super Lucky's Tale",
+      href: '/game/xbox-one/new-super-luckys-tale',
     },
-  },
-  {
-    title: 'Night Call',
-    gamePassTitle: 'Night Call',
-    gamePassId: '9N5KSQG0R9TB',
-    howLongToBeatResult: { href: '69216', text: 'Night Call' },
-    metaCriticGameResult: { href: 'night-call', text: 'Night Call' },
   },
   {
     title: 'Night in the Woods ',
@@ -1250,30 +1389,46 @@ export const GAME_IDS = [
     gamePassId: '9MV13BTTCKLL',
     howLongToBeatResult: { href: '20078', text: 'Night in the Woods' },
     metaCriticGameResult: {
-      href: 'night-in-the-woods',
       text: 'Night in the Woods',
+      href: '/game/pc/night-in-the-woods',
     },
+  },
+  {
+    title: 'Night Call',
+    gamePassTitle: 'Night Call',
+    gamePassId: '9N5KSQG0R9TB',
+    howLongToBeatResult: { href: '69216', text: 'Night Call' },
+    metaCriticGameResult: { text: 'Night Call', href: '/game/pc/night-call' },
   },
   {
     title: "No Man's Sky",
     gamePassTitle: "No Man's Sky",
     gamePassId: 'BQVQTL3PCH05',
     howLongToBeatResult: { href: '20074', text: "No Man's Sky" },
-    metaCriticGameResult: { href: 'no-mans-sky', text: "No Man's Sky" },
+    metaCriticGameResult: {
+      text: "No Man's Sky",
+      href: '/game/xbox-one/no-mans-sky',
+    },
   },
   {
     title: 'Nowhere Prophet',
     gamePassTitle: 'Nowhere Prophet',
     gamePassId: '9P01NRSZCVR6',
     howLongToBeatResult: { href: '69248', text: 'Nowhere Prophet' },
-    metaCriticGameResult: { href: 'nowhere-prophet', text: 'Nowhere Prophet' },
+    metaCriticGameResult: {
+      text: 'Nowhere Prophet',
+      href: '/game/xbox-one/nowhere-prophet',
+    },
   },
   {
     title: 'Observation',
     gamePassTitle: 'Observation',
     gamePassId: '9PBLH1322GX0',
     howLongToBeatResult: { href: '67287', text: 'Observation' },
-    metaCriticGameResult: { href: 'observation', text: 'Observation' },
+    metaCriticGameResult: {
+      text: 'Observation',
+      href: '/game/xbox-one/observation',
+    },
   },
   {
     title: 'Ori and the Blind Forest',
@@ -1281,8 +1436,8 @@ export const GAME_IDS = [
     gamePassId: '9NBLGGH1Z6FB',
     howLongToBeatResult: { href: '19265', text: 'Ori and the Blind Forest' },
     metaCriticGameResult: {
-      href: 'ori-and-the-blind-forest',
       text: 'Ori and the Blind Forest',
+      href: '/game/pc/ori-and-the-blind-forest',
     },
   },
   {
@@ -1294,8 +1449,8 @@ export const GAME_IDS = [
       text: 'Ori and the Will of the Wisps',
     },
     metaCriticGameResult: {
-      href: 'ori-and-the-will-of-the-wisps',
       text: 'Ori and the Will of the Wisps',
+      href: '/game/xbox-one/ori-and-the-will-of-the-wisps',
     },
   },
   {
@@ -1304,8 +1459,8 @@ export const GAME_IDS = [
     gamePassId: '9NNW9V8DVPG6',
     howLongToBeatResult: { href: '80631', text: 'Out of the Park Baseball 21' },
     metaCriticGameResult: {
-      href: 'out-of-the-park-baseball-21',
       text: 'Out of the Park Baseball 21',
+      href: '/game/pc/out-of-the-park-baseball-21',
     },
   },
   {
@@ -1313,14 +1468,17 @@ export const GAME_IDS = [
     gamePassTitle: 'Oxenfree',
     gamePassId: '9NBLGGH6CTZ5',
     howLongToBeatResult: { href: '33620', text: 'Oxenfree' },
-    metaCriticGameResult: { href: 'oxenfree', text: 'Oxenfree' },
+    metaCriticGameResult: { text: 'Oxenfree', href: '/game/pc/oxenfree' },
   },
   {
     title: 'Overcooked! 2',
     gamePassTitle: 'Overcooked! 2',
     gamePassId: '9PGB72NFG5JN',
     howLongToBeatResult: { href: '57518', text: 'Overcooked! 2' },
-    metaCriticGameResult: { href: 'overcooked!-2', text: 'Overcooked! 2' },
+    metaCriticGameResult: {
+      text: 'Overcooked! 2',
+      href: '/game/pc/overcooked!-2',
+    },
   },
   {
     title: 'Pandemic',
@@ -1328,8 +1486,8 @@ export const GAME_IDS = [
     gamePassId: '9P8Q4W21QQZ2',
     howLongToBeatResult: { href: '47069', text: 'Pandemic: The Board Game' },
     metaCriticGameResult: {
-      href: 'grave-mania-pandemic-pandemonium',
-      text: 'Grave Mania: Pandemic Pandemonium',
+      text: 'Pandemic: The Board Game',
+      href: '/game/pc/pandemic-the-board-game',
     },
   },
   {
@@ -1337,24 +1495,17 @@ export const GAME_IDS = [
     gamePassTitle: 'Phoenix Point',
     gamePassId: '9P1P5Q3BNM7J',
     howLongToBeatResult: { href: '53702', text: 'Phoenix Point' },
-    metaCriticGameResult: { href: 'phoenix-point', text: 'Phoenix Point' },
+    metaCriticGameResult: {
+      text: 'Phoenix Point',
+      href: '/game/pc/phoenix-point',
+    },
   },
   {
     title: 'Pikuniku ',
     gamePassTitle: 'Pikuniku Win10',
     gamePassId: '9N8QNKN5ZKTH',
     howLongToBeatResult: { href: '64060', text: 'Pikuniku' },
-    metaCriticGameResult: { href: 'pikuniku', text: 'Pikuniku' },
-  },
-  {
-    title: 'Plebby Quest',
-    gamePassTitle: 'Plebby Quest: The Crusades',
-    gamePassId: '9MWBPSQ5PKQR',
-    howLongToBeatResult: { href: '78632', text: 'Plebby Quest: The Crusades' },
-    metaCriticGameResult: {
-      href: 'plebby-quest-the-crusades',
-      text: 'Plebby Quest: The Crusades',
-    },
+    metaCriticGameResult: { text: 'Pikuniku', href: '/game/pc/pikuniku' },
   },
   {
     title: 'Pillars of Eternity',
@@ -1362,8 +1513,41 @@ export const GAME_IDS = [
     gamePassId: '9P5LZC1KB48V',
     howLongToBeatResult: { href: '13434', text: 'Pillars of Eternity' },
     metaCriticGameResult: {
-      href: 'pillars-of-eternity',
-      text: 'Pillars of Eternity',
+      text: 'Pillars of Eternity II: Deadfire',
+      href: '/game/pc/pillars-of-eternity-ii-deadfire',
+    },
+  },
+  {
+    title: 'Plebby Quest',
+    gamePassTitle: 'Plebby Quest: The Crusades',
+    gamePassId: '9MWBPSQ5PKQR',
+    howLongToBeatResult: { href: '78632', text: 'Plebby Quest: The Crusades' },
+    metaCriticGameResult: {
+      text: 'Plebby Quest: The Crusades',
+      href: '/game/pc/plebby-quest-the-crusades',
+    },
+  },
+  {
+    title: 'Power Rangers',
+    gamePassTitle: 'Power Rangers: Battle for the Grid',
+    gamePassId: '9P5VMG8D4P4B',
+    howLongToBeatResult: {
+      href: '15217',
+      text: 'Mighty Morphin Power Rangers',
+    },
+    metaCriticGameResult: {
+      text: 'Mighty Morphin Power Rangers: Mega Battle',
+      href: '/game/xbox-one/mighty-morphin-power-rangers-mega-battle',
+    },
+  },
+  {
+    title: 'Project Winter',
+    gamePassTitle: 'Project Winter',
+    gamePassId: '9P3SX4G50LZ1',
+    howLongToBeatResult: { href: '68128', text: 'Project Winter' },
+    metaCriticGameResult: {
+      text: 'Project Winter',
+      href: '/game/xbox-one/project-winter',
     },
   },
   {
@@ -1372,29 +1556,9 @@ export const GAME_IDS = [
     gamePassId: '9P5S2J2VLLPR',
     howLongToBeatResult: { href: '7308', text: 'Prison Architect' },
     metaCriticGameResult: {
-      href: 'prison-architect',
       text: 'Prison Architect',
+      href: '/game/pc/prison-architect',
     },
-  },
-  {
-    title: 'Power Rangers',
-    gamePassTitle: 'Power Rangers: Battle for the Grid',
-    gamePassId: '9P5VMG8D4P4B',
-    howLongToBeatResult: {
-      href: '65929',
-      text: 'Power Rangers: Battle for the Grid',
-    },
-    metaCriticGameResult: {
-      href: 'power-rangers-ninja-storm',
-      text: 'Power Rangers: Ninja Storm',
-    },
-  },
-  {
-    title: 'Project Winter',
-    gamePassTitle: 'Project Winter',
-    gamePassId: '9P3SX4G50LZ1',
-    howLongToBeatResult: { href: '68128', text: 'Project Winter' },
-    metaCriticGameResult: { href: 'project-winter', text: 'Project Winter' },
   },
   {
     title: 'RAGE 2',
@@ -1402,8 +1566,8 @@ export const GAME_IDS = [
     gamePassId: '9P2J7WHV0K4N',
     howLongToBeatResult: { href: '58031', text: 'Rage 2' },
     metaCriticGameResult: {
-      href: 'god-eater-2-rage-burst',
       text: 'God Eater 2: Rage Burst',
+      href: '/game/pc/god-eater-2-rage-burst',
     },
   },
   {
@@ -1411,17 +1575,7 @@ export const GAME_IDS = [
     gamePassTitle: 'ReCore',
     gamePassId: '9NBLGGH1Z6FQ',
     howLongToBeatResult: { href: '26789', text: 'ReCore' },
-    metaCriticGameResult: { href: 'recore', text: 'ReCore' },
-  },
-  {
-    title: 'River City Girls',
-    gamePassTitle: 'River City Girls',
-    gamePassId: '9PGNT102001S',
-    howLongToBeatResult: { href: '69993', text: 'River City Girls' },
-    metaCriticGameResult: {
-      href: 'river-city-girls',
-      text: 'River City Girls',
-    },
+    metaCriticGameResult: { text: 'ReCore', href: '/game/xbox-one/recore' },
   },
   {
     title: 'RESIDENT EVIL 7 biohazard',
@@ -1429,8 +1583,8 @@ export const GAME_IDS = [
     gamePassId: '9NBLGGH4SPK6',
     howLongToBeatResult: { href: '38051', text: 'Resident Evil 7: Biohazard' },
     metaCriticGameResult: {
-      href: 'resident-evil-7-biohazard',
       text: 'Resident Evil 7: biohazard',
+      href: '/game/pc/resident-evil-7-biohazard',
     },
   },
   {
@@ -1438,23 +1592,19 @@ export const GAME_IDS = [
     gamePassTitle: 'Rise of Nations: Extended Edition',
     gamePassId: '9NS84HCWZD8B',
     howLongToBeatResult: { href: '7832', text: 'Rise of Nations' },
-    metaCriticGameResult: { href: 'rise-of-nations', text: 'Rise of Nations' },
-  },
-  {
-    title: 'ScourgeBringer',
-    gamePassTitle: 'ScourgeBringer',
-    gamePassId: '9NXPV1T3WS34',
-    howLongToBeatResult: { href: '68579', text: 'ScourgeBringer' },
-    metaCriticGameResult: { href: 'scourgebringer', text: 'ScourgeBringer' },
-  },
-  {
-    title: 'Shadow Warrior 2',
-    gamePassTitle: 'Shadow Warrior 2',
-    gamePassId: '9P6SFBR1TCWQ',
-    howLongToBeatResult: { href: '39740', text: 'Shadow Warrior 2' },
     metaCriticGameResult: {
-      href: 'shadow-warrior-2',
-      text: 'Shadow Warrior 2',
+      text: 'Rise of Nations',
+      href: '/game/pc/rise-of-nations',
+    },
+  },
+  {
+    title: 'River City Girls',
+    gamePassTitle: 'River City Girls',
+    gamePassId: '9PGNT102001S',
+    howLongToBeatResult: { href: '69993', text: 'River City Girls' },
+    metaCriticGameResult: {
+      text: 'River City Girls',
+      href: '/game/pc/river-city-girls',
     },
   },
   {
@@ -1463,8 +1613,8 @@ export const GAME_IDS = [
     gamePassId: '9P3PL76N0KWZ',
     howLongToBeatResult: { href: '8029', text: 'RUSH' },
     metaCriticGameResult: {
-      href: 'simcity-4-rush-hour',
-      text: 'SimCity 4: Rush Hour',
+      text: 'Rush: A Disney / Pixar Adventure',
+      href: '/game/xbox-one/rush-a-disney-pixar-adventure',
     },
   },
   {
@@ -1472,45 +1622,67 @@ export const GAME_IDS = [
     gamePassTitle: 'Sea of Thieves',
     gamePassId: '9P2N57MC619K',
     howLongToBeatResult: { href: '38053', text: 'Sea of Thieves' },
-    metaCriticGameResult: { href: 'sea-of-thieves', text: 'Sea of Thieves' },
+    metaCriticGameResult: {
+      text: 'Sea of Thieves',
+      href: '/game/xbox-one/sea-of-thieves',
+    },
+  },
+  {
+    title: 'ScourgeBringer',
+    gamePassTitle: 'ScourgeBringer',
+    gamePassId: '9NXPV1T3WS34',
+    howLongToBeatResult: { href: '68579', text: 'ScourgeBringer' },
+    metaCriticGameResult: {
+      text: 'ScourgeBringer',
+      href: '/game/xbox-one/scourgebringer',
+    },
+  },
+  {
+    title: 'Shadow Warrior 2',
+    gamePassTitle: 'Shadow Warrior 2',
+    gamePassId: '9P6SFBR1TCWQ',
+    howLongToBeatResult: { href: '39740', text: 'Shadow Warrior 2' },
+    metaCriticGameResult: {
+      text: 'Shadow Warrior 2',
+      href: '/game/pc/shadow-warrior-2',
+    },
   },
   {
     title: 'Slay The Spire',
     gamePassTitle: 'Slay The Spire',
     gamePassId: '9MZQR8317S3B',
     howLongToBeatResult: { href: '51390', text: 'Slay the Spire' },
-    metaCriticGameResult: { href: 'slay-the-spire', text: 'Slay the Spire' },
+    metaCriticGameResult: {
+      text: 'Slay the Spire',
+      href: '/game/pc/slay-the-spire',
+    },
   },
   {
     title: 'Spiritfarer',
     gamePassTitle: 'Spiritfarer®',
     gamePassId: '9NG5L58FD3X5',
     howLongToBeatResult: { href: '68189', text: 'Spiritfarer' },
-    metaCriticGameResult: { href: 'spiritfarer', text: 'Spiritfarer' },
+    metaCriticGameResult: {
+      text: 'Spiritfarer',
+      href: '/game/xbox-one/spiritfarer',
+    },
   },
   {
     title: 'Star Renegades',
     gamePassTitle: 'Star Renegades',
     gamePassId: '9PK5S1QKV10D',
     howLongToBeatResult: { href: '71955', text: 'Star Renegades' },
-    metaCriticGameResult: { href: 'star-renegades', text: 'Star Renegades' },
+    metaCriticGameResult: {
+      text: 'Star Renegades',
+      href: '/game/pc/star-renegades',
+    },
   },
   {
     title: 'Starbound',
     gamePassTitle: 'Starbound',
     gamePassId: '9MTSBWPWPQVQ',
     howLongToBeatResult: { href: '9149', text: 'Starbound' },
-    metaCriticGameResult: { href: 'starbound', text: 'Starbound' },
-  },
-  {
-    title: 'State of Decay 2',
-    gamePassTitle: 'State of Decay 2: Juggernaut Edition',
-    gamePassId: '9NT4X7P8B9NB',
-    howLongToBeatResult: { href: '46403', text: 'State of Decay 2' },
-    metaCriticGameResult: {
-      href: 'state-of-decay-2',
-      text: 'State of Decay 2',
-    },
+    metaCriticGameResult: { text: 'Starbound', href: '/game/pc/starbound' },
   },
   {
     title: 'Stranger Things 3',
@@ -1518,8 +1690,25 @@ export const GAME_IDS = [
     gamePassId: '9PMDDQ228FQD',
     howLongToBeatResult: { href: '68766', text: 'Stranger Things 3: The Game' },
     metaCriticGameResult: {
-      href: 'stranger-things-3-the-game',
-      text: 'Stranger Things 3: The Game',
+      text: 'Face Your Fears: Stranger Things',
+      href: '/game/pc/face-your-fears-stranger-things',
+    },
+  },
+  {
+    title: 'Stellaris',
+    gamePassTitle: 'Stellaris',
+    gamePassId: '9NXQPGMR917R',
+    howLongToBeatResult: { href: '37186', text: 'Stellaris' },
+    metaCriticGameResult: { text: 'Stellaris', href: '/game/pc/stellaris' },
+  },
+  {
+    title: 'State of Decay 2',
+    gamePassTitle: 'State of Decay 2: Juggernaut Edition',
+    gamePassId: '9NT4X7P8B9NB',
+    howLongToBeatResult: { href: '46403', text: 'State of Decay 2' },
+    metaCriticGameResult: {
+      text: 'State of Decay 2',
+      href: '/game/xbox-one/state-of-decay-2',
     },
   },
   {
@@ -1528,18 +1717,8 @@ export const GAME_IDS = [
     gamePassId: '9N7H54KNCB9N',
     howLongToBeatResult: { href: '76482', text: 'Streets of Rage 4' },
     metaCriticGameResult: {
-      href: 'streets-of-rage-4',
       text: 'Streets of Rage 4',
-    },
-  },
-  {
-    title: 'Stellaris',
-    gamePassTitle: 'Stellaris',
-    gamePassId: '9NXQPGMR917R',
-    howLongToBeatResult: { href: '37186', text: 'Stellaris' },
-    metaCriticGameResult: {
-      href: 'stellaris-synthetic-dawn',
-      text: 'Stellaris: Synthetic Dawn',
+      href: '/game/xbox-one/streets-of-rage-4',
     },
   },
   {
@@ -1548,8 +1727,8 @@ export const GAME_IDS = [
     gamePassId: '9NKRBSZXQ2HM',
     howLongToBeatResult: { href: '44813', text: 'Streets of Rogue' },
     metaCriticGameResult: {
-      href: 'streets-of-rogue',
       text: 'Streets of Rogue',
+      href: '/game/pc/streets-of-rogue',
     },
   },
   {
@@ -1557,16 +1736,9 @@ export const GAME_IDS = [
     gamePassTitle: 'Subnautica',
     gamePassId: 'BX3S1Q5DVHRD',
     howLongToBeatResult: { href: '23740', text: 'Subnautica' },
-    metaCriticGameResult: { href: 'subnautica', text: 'Subnautica' },
-  },
-  {
-    title: "Super Lucky's Tale",
-    gamePassTitle: "Super Lucky's Tale",
-    gamePassId: '9PLMGFWCFZ9G',
-    howLongToBeatResult: { href: '46426', text: "Super Lucky's Tale" },
     metaCriticGameResult: {
-      href: 'super-luckys-tale',
-      text: "Super Lucky's Tale",
+      text: 'Subnautica',
+      href: '/game/xbox-one/subnautica',
     },
   },
   {
@@ -1575,8 +1747,18 @@ export const GAME_IDS = [
     gamePassId: '9NNLBL0T2Z43',
     howLongToBeatResult: { href: '21278', text: 'Sunset Overdrive' },
     metaCriticGameResult: {
-      href: 'sunset-overdrive',
       text: 'Sunset Overdrive',
+      href: '/game/pc/sunset-overdrive',
+    },
+  },
+  {
+    title: "Super Lucky's Tale",
+    gamePassTitle: "Super Lucky's Tale",
+    gamePassId: '9PLMGFWCFZ9G',
+    howLongToBeatResult: { href: '46426', text: "Super Lucky's Tale" },
+    metaCriticGameResult: {
+      text: "Super Lucky's Tale",
+      href: '/game/xbox-one/super-luckys-tale',
     },
   },
   {
@@ -1585,8 +1767,18 @@ export const GAME_IDS = [
     gamePassId: '9MXB71Q4VWGJ',
     howLongToBeatResult: { href: '45951', text: 'Surviving Mars' },
     metaCriticGameResult: {
-      href: 'surviving-mars-green-planet',
-      text: 'Surviving Mars: Green Planet',
+      text: 'Surviving Mars',
+      href: '/game/pc/surviving-mars',
+    },
+  },
+  {
+    title: 'Tell Me Why',
+    gamePassTitle: 'Tell Me Why: Chapters 1-3',
+    gamePassId: '9NF83PRZK6K3',
+    howLongToBeatResult: { href: '71968', text: 'Tell Me Why' },
+    metaCriticGameResult: {
+      text: 'Tell Me Why: Chapter 3',
+      href: '/game/xbox-one/tell-me-why-chapter-3',
     },
   },
   {
@@ -1595,25 +1787,8 @@ export const GAME_IDS = [
     gamePassId: '9N5QWL08HRTR',
     howLongToBeatResult: { href: '9608', text: 'Tales of Vesperia' },
     metaCriticGameResult: {
-      href: 'tales-of-vesperia-definitive-edition',
       text: 'Tales of Vesperia: Definitive Edition',
-    },
-  },
-  {
-    title: 'Tell Me Why',
-    gamePassTitle: 'Tell Me Why: Chapters 1-3',
-    gamePassId: '9NF83PRZK6K3',
-    howLongToBeatResult: { href: '71968', text: 'Tell Me Why' },
-    metaCriticGameResult: { href: 'tell-me-why', text: 'Tell Me Why' },
-  },
-  {
-    title: "The Bard's Tale",
-    gamePassTitle: "The Bard's Tale ARPG : Remastered and Resnarkled",
-    gamePassId: '9PN3VDFTB5HZ',
-    howLongToBeatResult: { href: '9772', text: "The Bard's Tale (2004)" },
-    metaCriticGameResult: {
-      href: 'the-bards-tale-iv-directors-cut',
-      text: "The Bard's Tale IV: Director's Cut",
+      href: '/game/pc/tales-of-vesperia-definitive-edition',
     },
   },
   {
@@ -1621,26 +1796,19 @@ export const GAME_IDS = [
     gamePassTitle: 'Tetris® Effect: Connected',
     gamePassId: '9PPBVK3TK83M',
     howLongToBeatResult: { href: '57523', text: 'Tetris Effect' },
-    metaCriticGameResult: { href: 'tetris-effect', text: 'Tetris Effect' },
-  },
-  {
-    title: "The Bard's Tale Trilogy",
-    gamePassTitle: "The Bard's Tale Trilogy",
-    gamePassId: '9MVN4ND41DD3',
-    howLongToBeatResult: { href: '59950', text: "The Bard's Tale Trilogy" },
     metaCriticGameResult: {
-      href: 'the-bards-tale-trilogy-remaster',
-      text: "The Bard's Tale Trilogy Remaster",
+      text: 'Tetris Effect: Connected',
+      href: '/game/xbox-one/tetris-effect-connected',
     },
   },
   {
-    title: 'The Dark Crystal',
-    gamePassTitle: 'The Dark Crystal: Age of Resistance Tactics',
-    gamePassId: '9NPWSCWJGHL1',
-    howLongToBeatResult: { href: '57460', text: 'The Dark Crystal' },
+    title: "The Bard's Tale",
+    gamePassTitle: "The Bard's Tale ARPG : Remastered and Resnarkled",
+    gamePassId: '9PN3VDFTB5HZ',
+    howLongToBeatResult: { href: '9772', text: "The Bard's Tale (2004)" },
     metaCriticGameResult: {
-      href: 'the-dark-crystal-age-of-resistance-tactics',
-      text: 'The Dark Crystal: Age of Resistance Tactics',
+      text: "The Bard's Tale: Remastered and Resnarkled",
+      href: '/game/xbox-one/the-bards-tale-remastered-and-resnarkled',
     },
   },
   {
@@ -1652,8 +1820,28 @@ export const GAME_IDS = [
       text: "The Bard's Tale IV: Director's Cut",
     },
     metaCriticGameResult: {
-      href: 'the-bards-tale-iv-directors-cut',
       text: "The Bard's Tale IV: Director's Cut",
+      href: '/game/xbox-one/the-bards-tale-iv-directors-cut',
+    },
+  },
+  {
+    title: "The Bard's Tale Trilogy",
+    gamePassTitle: "The Bard's Tale Trilogy",
+    gamePassId: '9MVN4ND41DD3',
+    howLongToBeatResult: { href: '59950', text: "The Bard's Tale Trilogy" },
+    metaCriticGameResult: {
+      text: "The Bard's Tale Trilogy Remaster",
+      href: '/game/xbox-one/the-bards-tale-trilogy-remaster',
+    },
+  },
+  {
+    title: 'The Dark Crystal',
+    gamePassTitle: 'The Dark Crystal: Age of Resistance Tactics',
+    gamePassId: '9NPWSCWJGHL1',
+    howLongToBeatResult: { href: '57460', text: 'The Dark Crystal' },
+    metaCriticGameResult: {
+      text: 'Brunhilda and the Dark Crystal',
+      href: '/game/pc/brunhilda-and-the-dark-crystal',
     },
   },
   {
@@ -1665,8 +1853,8 @@ export const GAME_IDS = [
       text: 'The Dark Pictures: Man of Medan',
     },
     metaCriticGameResult: {
-      href: 'the-dark-pictures-anthology-man-of-medan',
-      text: 'The Dark Pictures Anthology: Man of Medan',
+      text: 'The Dark Pictures Anthology: Little Hope',
+      href: '/game/pc/the-dark-pictures-anthology-little-hope',
     },
   },
   {
@@ -1674,14 +1862,10 @@ export const GAME_IDS = [
     gamePassTitle: 'The Falconeer',
     gamePassId: '9N8J0T5HCDB9',
     howLongToBeatResult: { href: '83463', text: 'The Falconeer' },
-    metaCriticGameResult: { href: 'the-falconeer', text: 'The Falconeer' },
-  },
-  {
-    title: 'The Long Dark',
-    gamePassTitle: 'The Long Dark',
-    gamePassId: '9NFKN56ZBMR0',
-    howLongToBeatResult: { href: '21471', text: 'The Long Dark' },
-    metaCriticGameResult: { href: 'the-long-dark', text: 'The Long Dark' },
+    metaCriticGameResult: {
+      text: 'The Falconeer',
+      href: '/game/xbox-one/the-falconeer',
+    },
   },
   {
     title: 'The Gardens Between',
@@ -1689,8 +1873,18 @@ export const GAME_IDS = [
     gamePassId: '9P4Z4TW66LPV',
     howLongToBeatResult: { href: '56088', text: 'The Gardens Between' },
     metaCriticGameResult: {
-      href: 'the-gardens-between',
       text: 'The Gardens Between',
+      href: '/game/xbox-one/the-gardens-between',
+    },
+  },
+  {
+    title: 'The Long Dark',
+    gamePassTitle: 'The Long Dark',
+    gamePassId: '9NFKN56ZBMR0',
+    howLongToBeatResult: { href: '21471', text: 'The Long Dark' },
+    metaCriticGameResult: {
+      text: 'The Long Dark',
+      href: '/game/pc/the-long-dark',
     },
   },
   {
@@ -1698,14 +1892,20 @@ export const GAME_IDS = [
     gamePassTitle: 'The Medium',
     gamePassId: '9NFSR96G6K4N',
     howLongToBeatResult: { href: '78037', text: 'The Medium' },
-    metaCriticGameResult: { href: 'the-medium', text: 'The Medium' },
+    metaCriticGameResult: {
+      text: 'The Medium',
+      href: '/game/xbox-series-x/the-medium',
+    },
   },
   {
     title: 'The Messenger',
     gamePassTitle: 'The Messenger',
     gamePassId: '9NNFBW3NGV9K',
     howLongToBeatResult: { href: '60176', text: 'The Messenger (2018)' },
-    metaCriticGameResult: { href: 'the-messenger', text: 'The Messenger' },
+    metaCriticGameResult: {
+      text: 'The Messenger',
+      href: '/game/pc/the-messenger',
+    },
   },
   {
     title: 'The Outer Worlds',
@@ -1713,8 +1913,8 @@ export const GAME_IDS = [
     gamePassId: '9MWD2Z8L1FBQ',
     howLongToBeatResult: { href: '62935', text: 'The Outer Worlds' },
     metaCriticGameResult: {
-      href: 'the-outer-worlds',
-      text: 'The Outer Worlds',
+      text: 'The Outer Worlds: Peril on Gorgon',
+      href: '/game/pc/the-outer-worlds-peril-on-gorgon',
     },
   },
   {
@@ -1722,7 +1922,7 @@ export const GAME_IDS = [
     gamePassTitle: 'The Surge 2 - Windows 10',
     gamePassId: '9NLDM4DGX41G',
     howLongToBeatResult: { href: '67880', text: 'The Surge 2' },
-    metaCriticGameResult: { href: 'the-surge-2', text: 'The Surge 2' },
+    metaCriticGameResult: { text: 'The Surge 2', href: '/game/pc/the-surge-2' },
   },
   {
     title: 'The Swords of Ditto',
@@ -1730,8 +1930,18 @@ export const GAME_IDS = [
     gamePassId: '9NF2DDV5RTH8',
     howLongToBeatResult: { href: '48469', text: 'The Swords Of Ditto' },
     metaCriticGameResult: {
-      href: 'the-swords-of-ditto',
       text: 'The Swords of Ditto',
+      href: '/game/pc/the-swords-of-ditto',
+    },
+  },
+  {
+    title: 'The Touryst',
+    gamePassTitle: 'The Touryst',
+    gamePassId: '9N9W1JK1X5QJ',
+    howLongToBeatResult: { href: '70671', text: 'The Touryst' },
+    metaCriticGameResult: {
+      text: 'The Touryst',
+      href: '/game/xbox-one/the-touryst',
     },
   },
   {
@@ -1743,23 +1953,16 @@ export const GAME_IDS = [
       text: 'The Yakuza Remastered Collection',
     },
     metaCriticGameResult: {
-      href: 'the-yakuza-remastered-collection',
       text: 'The Yakuza Remastered Collection',
+      href: '/game/pc/the-yakuza-remastered-collection',
     },
-  },
-  {
-    title: 'The Touryst',
-    gamePassTitle: 'The Touryst',
-    gamePassId: '9N9W1JK1X5QJ',
-    howLongToBeatResult: { href: '70671', text: 'The Touryst' },
-    metaCriticGameResult: { href: 'the-touryst', text: 'The Touryst' },
   },
   {
     title: 'Thumper',
     gamePassTitle: 'Thumper',
     gamePassId: '9PHV10KXLJZT',
     howLongToBeatResult: { href: '40500', text: 'Thumper' },
-    metaCriticGameResult: { href: 'thumper', text: 'Thumper' },
+    metaCriticGameResult: { text: 'Thumper', href: '/game/pc/thumper' },
   },
   {
     title: 'Torment',
@@ -1767,8 +1970,8 @@ export const GAME_IDS = [
     gamePassId: '9NC0071DJ6XC',
     howLongToBeatResult: { href: '7093', text: 'Planescape: Torment' },
     metaCriticGameResult: {
-      href: 'planescape-torment',
-      text: 'Planescape: Torment',
+      text: 'Torment: Tides of Numenera',
+      href: '/game/pc/torment-tides-of-numenera',
     },
   },
   {
@@ -1780,8 +1983,8 @@ export const GAME_IDS = [
       text: 'Totally Accurate Battle Simulator',
     },
     metaCriticGameResult: {
-      href: 'totally-accurate-battle-simulator',
       text: 'Totally Accurate Battle Simulator',
+      href: '/game/xbox-one/totally-accurate-battle-simulator',
     },
   },
   {
@@ -1790,8 +1993,8 @@ export const GAME_IDS = [
     gamePassId: '9NBLGJQQBHH4',
     howLongToBeatResult: { href: '60261', text: 'Touhou Luna Nights' },
     metaCriticGameResult: {
-      href: 'touhou-luna-nights',
       text: 'Touhou Luna Nights',
+      href: '/game/xbox-one/touhou-luna-nights',
     },
   },
   {
@@ -1799,7 +2002,10 @@ export const GAME_IDS = [
     gamePassTitle: 'Trailmakers',
     gamePassId: '9NSFGM8J6MBJ',
     howLongToBeatResult: { href: '56055', text: 'Trailmakers' },
-    metaCriticGameResult: { href: 'trailmakers', text: 'Trailmakers' },
+    metaCriticGameResult: {
+      text: 'Trailmakers',
+      href: '/game/xbox-one/trailmakers',
+    },
   },
   {
     title: 'Train Sim World 2020',
@@ -1807,25 +2013,8 @@ export const GAME_IDS = [
     gamePassId: '9PMT49X8ZGM2',
     howLongToBeatResult: { href: '74885', text: 'Train Sim World 2020' },
     metaCriticGameResult: {
-      href: 'train-sim-world-2020',
       text: 'Train Sim World 2020',
-    },
-  },
-  {
-    title: 'Unruly Heroes ',
-    gamePassTitle: 'Unruly Heroes Windows 10',
-    gamePassId: '9P3SS6K8ZQ57',
-    howLongToBeatResult: { href: '64458', text: 'Unruly Heroes' },
-    metaCriticGameResult: { href: 'unruly-heroes', text: 'Unruly Heroes' },
-  },
-  {
-    title: 'UnderMine',
-    gamePassTitle: 'UnderMine',
-    gamePassId: '9N52CQMFH3BB',
-    howLongToBeatResult: { href: '69349', text: 'Undermine' },
-    metaCriticGameResult: {
-      href: 'the-incredibles-rise-of-the-underminer',
-      text: 'The Incredibles: Rise of the Underminer',
+      href: '/game/pc/train-sim-world-2020',
     },
   },
   {
@@ -1834,8 +2023,8 @@ export const GAME_IDS = [
     gamePassId: '9N08S5VPC4SX',
     howLongToBeatResult: { href: '60043', text: 'Two Point Hospital' },
     metaCriticGameResult: {
-      href: 'two-point-hospital',
       text: 'Two Point Hospital',
+      href: '/game/pc/two-point-hospital',
     },
   },
   {
@@ -1843,7 +2032,30 @@ export const GAME_IDS = [
     gamePassTitle: 'Unto The End',
     gamePassId: '9MVJ0W5N2L2Q',
     howLongToBeatResult: { href: '49816', text: 'Unto The End' },
-    metaCriticGameResult: { href: 'unto-the-end', text: 'Unto The End' },
+    metaCriticGameResult: {
+      text: 'Unto The End',
+      href: '/game/xbox-one/unto-the-end',
+    },
+  },
+  {
+    title: 'Unruly Heroes ',
+    gamePassTitle: 'Unruly Heroes Windows 10',
+    gamePassId: '9P3SS6K8ZQ57',
+    howLongToBeatResult: { href: '64458', text: 'Unruly Heroes' },
+    metaCriticGameResult: {
+      text: 'Unruly Heroes',
+      href: '/game/pc/unruly-heroes',
+    },
+  },
+  {
+    title: 'UnderMine',
+    gamePassTitle: 'UnderMine',
+    gamePassId: '9N52CQMFH3BB',
+    howLongToBeatResult: { href: '69349', text: 'Undermine' },
+    metaCriticGameResult: {
+      text: 'UnderMine',
+      href: '/game/xbox-one/undermine',
+    },
   },
   {
     title: 'VA-11 Hall-A',
@@ -1851,8 +2063,8 @@ export const GAME_IDS = [
     gamePassId: '9P9C1HB78K05',
     howLongToBeatResult: { href: '25099', text: 'VA-11 HALL-A' },
     metaCriticGameResult: {
-      href: 'va-11-hall-a-cyberpunk-bartender-action',
       text: 'VA-11 Hall-A: Cyberpunk Bartender Action',
+      href: '/game/pc/va-11-hall-a-cyberpunk-bartender-action',
     },
   },
   {
@@ -1861,8 +2073,8 @@ export const GAME_IDS = [
     gamePassId: '9N171CGFVT1L',
     howLongToBeatResult: { href: '67877', text: 'Vambrace: Cold Soul' },
     metaCriticGameResult: {
-      href: 'vambrace-cold-soul',
       text: 'Vambrace: Cold Soul',
+      href: '/game/xbox-one/vambrace-cold-soul',
     },
   },
   {
@@ -1870,14 +2082,17 @@ export const GAME_IDS = [
     gamePassTitle: 'Wargroove',
     gamePassId: '9NRPTTJ94PCK',
     howLongToBeatResult: { href: '61653', text: 'Wargroove' },
-    metaCriticGameResult: { href: 'wargroove', text: 'Wargroove' },
+    metaCriticGameResult: { text: 'Wargroove', href: '/game/pc/wargroove' },
   },
   {
     title: 'Void Bastards',
     gamePassTitle: 'Void Bastards',
     gamePassId: '9PJ1CGLKQSWS',
     howLongToBeatResult: { href: '67475', text: 'Void Bastards' },
-    metaCriticGameResult: { href: 'void-bastards', text: 'Void Bastards' },
+    metaCriticGameResult: {
+      text: 'Void Bastards: Bang Tydy',
+      href: '/game/pc/void-bastards-bang-tydy',
+    },
   },
   {
     title: 'Wasteland 2',
@@ -1885,8 +2100,25 @@ export const GAME_IDS = [
     gamePassId: 'C521HDXRTS7F',
     howLongToBeatResult: { href: '11099', text: 'Wasteland 2' },
     metaCriticGameResult: {
-      href: 'wasteland-2-directors-cut',
       text: "Wasteland 2: Director's Cut",
+      href: '/game/xbox-one/wasteland-2-directors-cut',
+    },
+  },
+  {
+    title: 'Wasteland 3',
+    gamePassTitle: 'Wasteland 3 (PC)',
+    gamePassId: '9NLT5XR52ZS7',
+    howLongToBeatResult: { href: '42532', text: 'Wasteland 3' },
+    metaCriticGameResult: { text: 'Wasteland 3', href: '/game/pc/wasteland-3' },
+  },
+  {
+    title: 'We Happy Few',
+    gamePassTitle: 'We Happy Few',
+    gamePassId: '9NBLGGH5342P',
+    howLongToBeatResult: { href: '27102', text: 'We Happy Few' },
+    metaCriticGameResult: {
+      text: 'We Happy Few',
+      href: '/game/pc/we-happy-few',
     },
   },
   {
@@ -1895,42 +2127,18 @@ export const GAME_IDS = [
     gamePassId: '9NGH1FK0RJGL',
     howLongToBeatResult: { href: '74755', text: 'Wasteland Remastered' },
     metaCriticGameResult: {
-      href: 'wasteland-remastered',
       text: 'Wasteland Remastered',
+      href: '/game/xbox-one/wasteland-remastered',
     },
-  },
-  {
-    title: 'Wasteland 3',
-    gamePassTitle: 'Wasteland 3 (PC)',
-    gamePassId: '9NLT5XR52ZS7',
-    howLongToBeatResult: { href: '42532', text: 'Wasteland 3' },
-    metaCriticGameResult: {
-      href: 'wasteland-2-directors-cut',
-      text: "Wasteland 2: Director's Cut",
-    },
-  },
-  {
-    title: 'We Happy Few',
-    gamePassTitle: 'We Happy Few',
-    gamePassId: '9NBLGGH5342P',
-    howLongToBeatResult: { href: '27102', text: 'We Happy Few' },
-    metaCriticGameResult: { href: 'we-happy-few', text: 'We Happy Few' },
   },
   {
     title: 'West of Dead',
     gamePassTitle: 'West of Dead',
     gamePassId: '9NV0540N4JRN',
     howLongToBeatResult: { href: '77696', text: 'West of Dead' },
-    metaCriticGameResult: { href: 'west-of-dead', text: 'West of Dead' },
-  },
-  {
-    title: "Wilmot's Warehouse ",
-    gamePassTitle: "Wilmot's Warehouse Win10",
-    gamePassId: '9NCHVR5KH0RN',
-    howLongToBeatResult: { href: '50395', text: "Wilmot's Warehouse" },
     metaCriticGameResult: {
-      href: 'wilmots-warehouse',
-      text: "Wilmot's Warehouse",
+      text: 'West of Dead',
+      href: '/game/pc/west-of-dead',
     },
   },
   {
@@ -1939,8 +2147,18 @@ export const GAME_IDS = [
     gamePassId: 'BSLGLG8P9T01',
     howLongToBeatResult: { href: '45392', text: 'What Remains of Edith Finch' },
     metaCriticGameResult: {
-      href: 'what-remains-of-edith-finch',
       text: 'What Remains of Edith Finch',
+      href: '/game/xbox-one/what-remains-of-edith-finch',
+    },
+  },
+  {
+    title: "Wilmot's Warehouse ",
+    gamePassTitle: "Wilmot's Warehouse Win10",
+    gamePassId: '9NCHVR5KH0RN',
+    howLongToBeatResult: { href: '50395', text: "Wilmot's Warehouse" },
+    metaCriticGameResult: {
+      text: "Wilmot's Warehouse",
+      href: '/game/pc/wilmots-warehouse',
     },
   },
   {
@@ -1949,37 +2167,57 @@ export const GAME_IDS = [
     gamePassId: '9MZH0GG41HL9',
     howLongToBeatResult: { href: '26294', text: 'Wizard of Legend' },
     metaCriticGameResult: {
-      href: 'wizard-of-legend',
       text: 'Wizard of Legend',
+      href: '/game/pc/wizard-of-legend',
     },
   },
   {
-    title: 'WORLD OF HORROR',
-    gamePassTitle: 'WORLD OF HORROR (Game Preview)',
-    gamePassId: '9N1FDTTSS49Z',
-    howLongToBeatResult: { href: '67201', text: 'World of Horror' },
-    metaCriticGameResult: { href: 'world-of-horror', text: 'World of Horror' },
+    title: 'Wolfenstein',
+    gamePassTitle: 'Wolfenstein: Youngblood (PC)',
+    gamePassId: '9PHFTS44F99K',
+    howLongToBeatResult: { href: '11249', text: 'Wolfenstein (2009)' },
+    metaCriticGameResult: {
+      text: 'Wolfenstein II: The New Colossus',
+      href: '/game/pc/wolfenstein-ii-the-new-colossus',
+    },
   },
   {
     title: 'World War Z',
     gamePassTitle: 'World War Z',
     gamePassId: '9N015DFDMVK6',
     howLongToBeatResult: { href: '64828', text: 'World War Z (2019)' },
-    metaCriticGameResult: { href: 'world-war-z', text: 'World War Z' },
+    metaCriticGameResult: { text: 'World War Z', href: '/game/pc/world-war-z' },
   },
   {
     title: 'Worms W.M.D',
     gamePassTitle: 'Worms W.M.D',
     gamePassId: '9NVRZZJ4NG99',
     howLongToBeatResult: { href: '39481', text: 'Worms W.M.D' },
-    metaCriticGameResult: { href: 'worms-wmd', text: 'Worms W.M.D' },
+    metaCriticGameResult: { text: 'Worms W.M.D', href: '/game/pc/worms-wmd' },
+  },
+  {
+    title: 'Yakuza 0 ',
+    gamePassTitle: 'Yakuza 0 for Windows 10',
+    gamePassId: '9PD0BJRBLRJM',
+    howLongToBeatResult: { href: '43056', text: 'Yakuza 0' },
+    metaCriticGameResult: { text: 'Yakuza 0', href: '/game/pc/yakuza-0' },
+  },
+  {
+    title: 'Wreckfest',
+    gamePassTitle: 'Wreckfest',
+    gamePassId: '9NG06CSMM97P',
+    howLongToBeatResult: { href: '16136', text: 'Wreckfest' },
+    metaCriticGameResult: { text: 'Wreckfest', href: '/game/pc/wreckfest' },
   },
   {
     title: 'Xeno Crisis',
     gamePassTitle: 'Xeno Crisis',
     gamePassId: '9PNBGZTL0Z1S',
     howLongToBeatResult: { href: '71596', text: 'Xeno Crisis' },
-    metaCriticGameResult: { href: 'xeno-crisis', text: 'Xeno Crisis' },
+    metaCriticGameResult: {
+      text: 'Xeno Crisis',
+      href: '/game/xbox-one/xeno-crisis',
+    },
   },
   {
     title: 'Yakuza 3 Remastered ',
@@ -1987,28 +2225,8 @@ export const GAME_IDS = [
     gamePassId: '9NC4QMRHCNZK',
     howLongToBeatResult: { href: '11423', text: 'Yakuza 3' },
     metaCriticGameResult: {
-      href: 'the-yakuza-remastered-collection',
-      text: 'The Yakuza Remastered Collection',
-    },
-  },
-  {
-    title: 'Yakuza 0 ',
-    gamePassTitle: 'Yakuza 0 for Windows 10',
-    gamePassId: '9PD0BJRBLRJM',
-    howLongToBeatResult: { href: '43056', text: 'Yakuza 0' },
-    metaCriticGameResult: {
-      href: 'the-yakuza-remastered-collection',
-      text: 'The Yakuza Remastered Collection',
-    },
-  },
-  {
-    title: 'Yakuza 4 Remastered ',
-    gamePassTitle: 'Yakuza 4 Remastered for Windows 10',
-    gamePassId: '9NWZTB9JQG9S',
-    howLongToBeatResult: { href: '11424', text: 'Yakuza 4 Remastered' },
-    metaCriticGameResult: {
-      href: 'yakuza-4-remastered',
-      text: 'Yakuza 4 Remastered',
+      text: 'Yakuza 3 Remastered',
+      href: '/game/pc/yakuza-3-remastered',
     },
   },
   {
@@ -2017,8 +2235,8 @@ export const GAME_IDS = [
     gamePassId: '9MVX1V7W5SW8',
     howLongToBeatResult: { href: '22940', text: 'Yakuza 5 Remastered' },
     metaCriticGameResult: {
-      href: 'yakuza-5-remastered',
       text: 'Yakuza 5 Remastered',
+      href: '/game/pc/yakuza-5-remastered',
     },
   },
   {
@@ -2026,21 +2244,40 @@ export const GAME_IDS = [
     gamePassTitle: 'Yakuza Kiwami 2 for Windows 10',
     gamePassId: '9MZNFNN3XJ3F',
     howLongToBeatResult: { href: '49620', text: 'Yakuza Kiwami 2' },
-    metaCriticGameResult: { href: 'yakuza-kiwami-2', text: 'Yakuza Kiwami 2' },
+    metaCriticGameResult: {
+      text: 'Yakuza Kiwami 2',
+      href: '/game/pc/yakuza-kiwami-2',
+    },
+  },
+  {
+    title: 'Yakuza 4 Remastered ',
+    gamePassTitle: 'Yakuza 4 Remastered for Windows 10',
+    gamePassId: '9NWZTB9JQG9S',
+    howLongToBeatResult: { href: '11424', text: 'Yakuza 4 Remastered' },
+    metaCriticGameResult: {
+      text: 'Yakuza 4 Remastered',
+      href: '/game/pc/yakuza-4-remastered',
+    },
   },
   {
     title: 'Yakuza Kiwami ',
     gamePassTitle: 'Yakuza Kiwami for Windows 10',
     gamePassId: '9P40SC5DQ9K0',
     howLongToBeatResult: { href: '39484', text: 'Yakuza Kiwami' },
-    metaCriticGameResult: { href: 'yakuza-kiwami-2', text: 'Yakuza Kiwami 2' },
+    metaCriticGameResult: {
+      text: 'Yakuza Kiwami',
+      href: '/game/pc/yakuza-kiwami',
+    },
   },
   {
     title: 'Yes, Your Grace',
     gamePassTitle: 'Yes, Your Grace',
     gamePassId: '9NX14Q0QZD1T',
     howLongToBeatResult: { href: '71500', text: 'Yes, Your Grace' },
-    metaCriticGameResult: { href: 'yes-your-grace', text: 'Yes, Your Grace' },
+    metaCriticGameResult: {
+      text: 'Yes, Your Grace',
+      href: '/game/xbox-one/yes-your-grace',
+    },
   },
   {
     title: 'YIIK',
@@ -2048,8 +2285,8 @@ export const GAME_IDS = [
     gamePassId: '9P3XR9QN0P4C',
     howLongToBeatResult: { href: '63089', text: 'YIIK: A Post-Modern RPG' },
     metaCriticGameResult: {
-      href: 'yiik-a-postmodern-rpg',
       text: 'YIIK: A Postmodern RPG',
+      href: '/game/pc/yiik-a-postmodern-rpg',
     },
   },
   {
@@ -2061,8 +2298,8 @@ export const GAME_IDS = [
       text: 'Yooka-Laylee and the Impossible Lair',
     },
     metaCriticGameResult: {
-      href: 'yooka-laylee-and-the-impossible-lair',
       text: 'Yooka-Laylee and the Impossible Lair',
+      href: '/game/pc/yooka-laylee-and-the-impossible-lair',
     },
   },
   {
@@ -2071,8 +2308,18 @@ export const GAME_IDS = [
     gamePassId: '9PJ06TZX4NMH',
     howLongToBeatResult: { href: '14293', text: 'Zoo Tycoon' },
     metaCriticGameResult: {
-      href: 'zoo-tycoon-2-marine-mania',
-      text: 'Zoo Tycoon 2: Marine Mania',
+      text: 'Zoo Tycoon: Ultimate Animal Collection',
+      href: '/game/xbox-one/zoo-tycoon-ultimate-animal-collection',
+    },
+  },
+  {
+    title: 'A Way Out',
+    gamePassTitle: 'A Way Out',
+    gamePassId: 'BWVBNCMF22ZK',
+    howLongToBeatResult: { href: '46386', text: 'A Way Out' },
+    metaCriticGameResult: {
+      text: 'A Way Out',
+      href: '/game/xbox-one/a-way-out',
     },
   },
   {
@@ -2081,16 +2328,9 @@ export const GAME_IDS = [
     gamePassId: 'BQ2NNLQPS8RS',
     howLongToBeatResult: { href: '65080', text: 'A Plague Tale: Innocence' },
     metaCriticGameResult: {
-      href: 'a-plague-tale-innocence',
       text: 'A Plague Tale: Innocence',
+      href: '/game/xbox-one/a-plague-tale-innocence',
     },
-  },
-  {
-    title: 'A Way Out',
-    gamePassTitle: 'A Way Out',
-    gamePassId: 'BWVBNCMF22ZK',
-    howLongToBeatResult: { href: '46386', text: 'A Way Out' },
-    metaCriticGameResult: { href: 'a-way-out', text: 'A Way Out' },
   },
   {
     title: 'ACE COMBAT 7',
@@ -2098,33 +2338,9 @@ export const GAME_IDS = [
     gamePassId: 'BRVM8RNWLXH1',
     howLongToBeatResult: { href: '53763', text: 'Ace Combat 7: Skies Unknown' },
     metaCriticGameResult: {
-      href: 'ace-combat-7-skies-unknown',
       text: 'Ace Combat 7: Skies Unknown',
+      href: '/game/xbox-one/ace-combat-7-skies-unknown',
     },
-  },
-  {
-    title: 'Alan Wake',
-    gamePassTitle: 'Alan Wake',
-    gamePassId: 'C493V31WXV80',
-    howLongToBeatResult: { href: '319', text: 'Alan Wake' },
-    metaCriticGameResult: { href: 'alan-wake', text: 'Alan Wake' },
-  },
-  {
-    title: 'Alien',
-    gamePassTitle: 'Alien: Isolation',
-    gamePassId: 'C1H9V6SLK2K5',
-    howLongToBeatResult: { href: '22425', text: 'Alien (1982)' },
-    metaCriticGameResult: {
-      href: 'aliens-versus-predator-2',
-      text: 'Aliens Versus Predator 2',
-    },
-  },
-  {
-    title: 'Anthem',
-    gamePassTitle: 'Anthem™',
-    gamePassId: 'BP9JQBJM0FNW',
-    howLongToBeatResult: { href: '46387', text: 'Anthem' },
-    metaCriticGameResult: { href: 'anthem', text: 'Anthem' },
   },
   {
     title: 'Alice',
@@ -2132,22 +2348,36 @@ export const GAME_IDS = [
     gamePassId: 'BSNZHRCKC13J',
     howLongToBeatResult: { href: '340', text: 'Alice: Madness Returns' },
     metaCriticGameResult: {
-      href: 'american-mcgees-alice',
-      text: "American McGee's Alice",
+      text: 'Alice: Madness Returns',
+      href: '/game/xbox-360/alice-madness-returns',
     },
   },
   {
-    title: 'Assetto Corsa',
-    gamePassTitle: 'Assetto Corsa',
-    gamePassId: 'C27H5T4HD4WW',
-    howLongToBeatResult: { href: '16887', text: 'Assetto Corsa' },
-    metaCriticGameResult: { href: 'assetto-corsa', text: 'Assetto Corsa' },
+    title: 'Alien',
+    gamePassTitle: 'Alien: Isolation',
+    gamePassId: 'C1H9V6SLK2K5',
+    howLongToBeatResult: { href: '22425', text: 'Alien (1982)' },
+    metaCriticGameResult: {
+      text: 'Alien: Isolation',
+      href: '/game/xbox-one/alien-isolation',
+    },
   },
   {
-    title: 'Army of Two',
-    gamePassTitle: 'Army of Two™',
-    gamePassId: 'C1LM235H6FZ1',
-    howLongToBeatResult: { href: '622', text: 'Army of Two' },
+    title: 'Alan Wake',
+    gamePassTitle: 'Alan Wake',
+    gamePassId: 'C493V31WXV80',
+    howLongToBeatResult: { href: '319', text: 'Alan Wake' },
+    metaCriticGameResult: {
+      text: 'Alan Wake',
+      href: '/game/xbox-360/alan-wake',
+    },
+  },
+  {
+    title: 'Anthem',
+    gamePassTitle: 'Anthem™',
+    gamePassId: 'BP9JQBJM0FNW',
+    howLongToBeatResult: { href: '46387', text: 'Anthem' },
+    metaCriticGameResult: { text: 'Anthem', href: '/game/xbox-one/anthem' },
   },
   {
     title: 'ARK',
@@ -2155,8 +2385,38 @@ export const GAME_IDS = [
     gamePassId: 'BPP79RSDN892',
     howLongToBeatResult: { href: '26803', text: 'Dark Souls III' },
     metaCriticGameResult: {
-      href: 'batman-arkham-asylum',
-      text: 'Batman: Arkham Asylum',
+      text: 'ARK: Survival Evolved',
+      href: '/game/xbox-one/ark-survival-evolved',
+    },
+  },
+  {
+    title: 'Army of Two',
+    gamePassTitle: 'Army of Two™',
+    gamePassId: 'C1LM235H6FZ1',
+    howLongToBeatResult: { href: '622', text: 'Army of Two' },
+    metaCriticGameResult: {
+      text: 'Army of Two',
+      href: '/game/xbox-360/army-of-two',
+    },
+  },
+  {
+    title: 'Banjo Kazooie',
+    gamePassTitle: 'Banjo Kazooie: N n B',
+    gamePassId: 'BVR64CDJ01FJ',
+    howLongToBeatResult: { href: '834', text: 'Banjo-Kazooie' },
+    metaCriticGameResult: {
+      text: 'Banjo-Kazooie: Nuts & Bolts',
+      href: '/game/xbox-360/banjo-kazooie-nuts-bolts',
+    },
+  },
+  {
+    title: 'Assetto Corsa',
+    gamePassTitle: 'Assetto Corsa',
+    gamePassId: 'C27H5T4HD4WW',
+    howLongToBeatResult: { href: '16887', text: 'Assetto Corsa' },
+    metaCriticGameResult: {
+      text: 'Assetto Corsa',
+      href: '/game/xbox-one/assetto-corsa',
     },
   },
   {
@@ -2164,18 +2424,20 @@ export const GAME_IDS = [
     gamePassTitle: 'Banjo-Kazooie',
     gamePassId: 'BSJG7TTSWVJ2',
     howLongToBeatResult: { href: '834', text: 'Banjo-Kazooie' },
-  },
-  {
-    title: 'Banjo Kazooie',
-    gamePassTitle: 'Banjo Kazooie: N n B',
-    gamePassId: 'BVR64CDJ01FJ',
-    howLongToBeatResult: { href: '834', text: 'Banjo-Kazooie' },
+    metaCriticGameResult: {
+      text: 'Banjo-Kazooie: Nuts & Bolts',
+      href: '/game/xbox-360/banjo-kazooie-nuts-bolts',
+    },
   },
   {
     title: 'Banjo-Tooie',
     gamePassTitle: 'Banjo-Tooie',
     gamePassId: 'BX27S00SKW1V',
     howLongToBeatResult: { href: '837', text: 'Banjo-Tooie' },
+    metaCriticGameResult: {
+      text: 'Banjo-Tooie',
+      href: '/game/xbox-360/banjo-tooie',
+    },
   },
   {
     title: 'Batman',
@@ -2183,8 +2445,8 @@ export const GAME_IDS = [
     gamePassId: 'BSLX1RNXR6H7',
     howLongToBeatResult: { href: '875', text: 'Batman' },
     metaCriticGameResult: {
-      href: 'batman-arkham-asylum',
-      text: 'Batman: Arkham Asylum',
+      text: 'Batman: Arkham Knight',
+      href: '/game/xbox-one/batman-arkham-knight',
     },
   },
   {
@@ -2193,8 +2455,8 @@ export const GAME_IDS = [
     gamePassId: 'BNVPW9NHWNM5',
     howLongToBeatResult: { href: '30017', text: 'Battle Chasers: Nightwar' },
     metaCriticGameResult: {
-      href: 'battle-chasers-nightwar',
       text: 'Battle Chasers: Nightwar',
+      href: '/game/xbox-one/battle-chasers-nightwar',
     },
   },
   {
@@ -2203,8 +2465,28 @@ export const GAME_IDS = [
     gamePassId: 'C1QQ7GM9HLKG',
     howLongToBeatResult: { href: '934', text: 'Battlefield 1943' },
     metaCriticGameResult: {
-      href: 'battlefield-1943',
       text: 'Battlefield 1943',
+      href: '/game/xbox-360/battlefield-1943',
+    },
+  },
+  {
+    title: 'Battlefield 3',
+    gamePassTitle: 'Battlefield 3™',
+    gamePassId: 'BRN6BHDHB58J',
+    howLongToBeatResult: { href: '941', text: 'Battlefield 3' },
+    metaCriticGameResult: {
+      text: 'Battlefield 3',
+      href: '/game/xbox-360/battlefield-3',
+    },
+  },
+  {
+    title: 'Battlefield 4',
+    gamePassTitle: 'Battlefield 4',
+    gamePassId: 'BP15SF17LH13',
+    howLongToBeatResult: { href: '942', text: 'Battlefield 4' },
+    metaCriticGameResult: {
+      text: 'Battlefield 4',
+      href: '/game/xbox-one/battlefield-4',
     },
   },
   {
@@ -2213,39 +2495,18 @@ export const GAME_IDS = [
     gamePassId: 'C0JN2J76L7C9',
     howLongToBeatResult: { href: '946', text: 'Battlefield: Bad Company 2' },
     metaCriticGameResult: {
-      href: 'battlefield-bad-company-2',
       text: 'Battlefield: Bad Company 2',
+      href: '/game/xbox-360/battlefield-bad-company-2',
     },
-  },
-  {
-    title: 'Battlefield 3',
-    gamePassTitle: 'Battlefield 3™',
-    gamePassId: 'BRN6BHDHB58J',
-    howLongToBeatResult: { href: '941', text: 'Battlefield 3' },
-    metaCriticGameResult: { href: 'battlefield-2', text: 'Battlefield 2' },
-  },
-  {
-    title: 'Battlefield 4',
-    gamePassTitle: 'Battlefield 4',
-    gamePassId: 'BP15SF17LH13',
-    howLongToBeatResult: { href: '942', text: 'Battlefield 4' },
-    metaCriticGameResult: { href: 'battlefield-4', text: 'Battlefield 4' },
   },
   {
     title: 'Battlefield',
     gamePassTitle: 'Battlefield: Bad Company',
     gamePassId: 'BQ81KKJMM7ZD',
     howLongToBeatResult: { href: '38001', text: 'Battlefield 1' },
-    metaCriticGameResult: { href: 'battlefield-2', text: 'Battlefield 2' },
-  },
-  {
-    title: 'Battlefield 1',
-    gamePassTitle: 'Battlefield™ 1',
-    gamePassId: 'BWTTW53M5B98',
-    howLongToBeatResult: { href: '38001', text: 'Battlefield 1' },
     metaCriticGameResult: {
-      href: 'battlefield-1942',
-      text: 'Battlefield 1942',
+      text: 'Sudden Strike 4: European Battlefields Edition',
+      href: '/game/xbox-one/sudden-strike-4-european-battlefields-edition',
     },
   },
   {
@@ -2254,8 +2515,18 @@ export const GAME_IDS = [
     gamePassId: 'BZKZFMQG2K2K',
     howLongToBeatResult: { href: '21620', text: 'Battlefield Hardline' },
     metaCriticGameResult: {
-      href: 'battlefield-hardline',
       text: 'Battlefield Hardline',
+      href: '/game/xbox-one/battlefield-hardline',
+    },
+  },
+  {
+    title: 'Battlefield 1',
+    gamePassTitle: 'Battlefield™ 1',
+    gamePassId: 'BWTTW53M5B98',
+    howLongToBeatResult: { href: '38001', text: 'Battlefield 1' },
+    metaCriticGameResult: {
+      text: 'Battlefield 1',
+      href: '/game/xbox-one/battlefield-1',
     },
   },
   {
@@ -2264,8 +2535,8 @@ export const GAME_IDS = [
     gamePassId: 'BZ2N7TQ0XCF2',
     howLongToBeatResult: { href: '57352', text: 'Battlefield V' },
     metaCriticGameResult: {
-      href: 'battlefield-bad-company-2-vietnam',
-      text: 'Battlefield: Bad Company 2 Vietnam',
+      text: 'Battlefield V',
+      href: '/game/xbox-one/battlefield-v',
     },
   },
   {
@@ -2274,8 +2545,8 @@ export const GAME_IDS = [
     gamePassId: 'BTXM0C9C3B1S',
     howLongToBeatResult: { href: '1000', text: 'Bejeweled 2' },
     metaCriticGameResult: {
-      href: 'bejeweled-2-deluxe',
       text: 'Bejeweled 2 Deluxe',
+      href: '/game/xbox-360/bejeweled-2-deluxe',
     },
   },
   {
@@ -2283,7 +2554,20 @@ export const GAME_IDS = [
     gamePassTitle: 'Bejeweled 3',
     gamePassId: 'BR7QJW8V9L2S',
     howLongToBeatResult: { href: '1001', text: 'Bejeweled 3' },
-    metaCriticGameResult: { href: 'bejeweled-3', text: 'Bejeweled 3' },
+    metaCriticGameResult: {
+      text: 'Bejeweled 3',
+      href: '/game/xbox-360/bejeweled-3',
+    },
+  },
+  {
+    title: 'BLACK',
+    gamePassTitle: 'BLACK™',
+    gamePassId: 'BTCS0LP052HL',
+    howLongToBeatResult: { href: '1088', text: 'Black (2006)' },
+    metaCriticGameResult: {
+      text: 'Call of Duty: Black Ops 4',
+      href: '/game/xbox-one/call-of-duty-black-ops-4',
+    },
   },
   {
     title: 'Black Desert',
@@ -2291,8 +2575,8 @@ export const GAME_IDS = [
     gamePassId: 'BTPDCJXNFSZL',
     howLongToBeatResult: { href: '30340', text: 'Black Desert' },
     metaCriticGameResult: {
-      href: 'black-desert-online',
-      text: 'Black Desert Online',
+      text: 'Black Desert',
+      href: '/game/xbox-one/black-desert',
     },
   },
   {
@@ -2304,25 +2588,8 @@ export const GAME_IDS = [
       text: 'Bloodstained: Ritual of the Night',
     },
     metaCriticGameResult: {
-      href: 'bloodstained-ritual-of-the-night',
-      text: 'Bloodstained: Ritual of the Night',
-    },
-  },
-  {
-    title: 'BLACK',
-    gamePassTitle: 'BLACK™',
-    gamePassId: 'BTCS0LP052HL',
-    howLongToBeatResult: { href: '1088', text: 'Black (2006)' },
-    metaCriticGameResult: { href: 'black-white', text: 'Black & White' },
-  },
-  {
-    title: 'Bridge Constructor Portal',
-    gamePassTitle: 'Bridge Constructor Portal',
-    gamePassId: 'BNRX1DN6GXM6',
-    howLongToBeatResult: { href: '51365', text: 'Bridge Constructor Portal' },
-    metaCriticGameResult: {
-      href: 'bridge-constructor-portal',
-      text: 'Bridge Constructor Portal',
+      text: 'Bloodstained: Curse of the Moon',
+      href: '/game/xbox-one/bloodstained-curse-of-the-moon',
     },
   },
   {
@@ -2330,7 +2597,20 @@ export const GAME_IDS = [
     gamePassTitle: 'Brütal Legend',
     gamePassId: 'C5DZFZ6NC5SQ',
     howLongToBeatResult: { href: '1345', text: 'Brütal Legend' },
-    metaCriticGameResult: { href: 'brutal-legend', text: 'Brutal Legend' },
+    metaCriticGameResult: {
+      text: 'Brutal Legend',
+      href: '/game/xbox-360/brutal-legend',
+    },
+  },
+  {
+    title: 'Bridge Constructor Portal',
+    gamePassTitle: 'Bridge Constructor Portal',
+    gamePassId: 'BNRX1DN6GXM6',
+    howLongToBeatResult: { href: '51365', text: 'Bridge Constructor Portal' },
+    metaCriticGameResult: {
+      text: 'Bridge Constructor Portal',
+      href: '/game/xbox-one/bridge-constructor-portal',
+    },
   },
   {
     title: 'Burnout Paradise Remastered',
@@ -2338,23 +2618,26 @@ export const GAME_IDS = [
     gamePassId: 'BQMQ3K1BLV1T',
     howLongToBeatResult: { href: '1410', text: 'Burnout Paradise Remastered' },
     metaCriticGameResult: {
-      href: 'burnout-paradise-remastered',
       text: 'Burnout Paradise Remastered',
+      href: '/game/xbox-one/burnout-paradise-remastered',
     },
-  },
-  {
-    title: 'Call of the Sea',
-    gamePassTitle: 'Call of the Sea',
-    gamePassId: '9P27ZMZ7FDPZ',
-    howLongToBeatResult: { href: '77918', text: 'Call of the Sea' },
-    metaCriticGameResult: { href: 'call-of-the-sea', text: 'Call of the Sea' },
   },
   {
     title: 'Carrion',
     gamePassTitle: 'Carrion',
     gamePassId: '9NPKKNBJ258V',
     howLongToBeatResult: { href: '68169', text: 'Carrion' },
-    metaCriticGameResult: { href: 'carrion', text: 'Carrion' },
+    metaCriticGameResult: { text: 'Carrion', href: '/game/xbox-one/carrion' },
+  },
+  {
+    title: 'Call of the Sea',
+    gamePassTitle: 'Call of the Sea',
+    gamePassId: '9P27ZMZ7FDPZ',
+    howLongToBeatResult: { href: '77918', text: 'Call of the Sea' },
+    metaCriticGameResult: {
+      text: 'Call of the Sea',
+      href: '/game/xbox-one/call-of-the-sea',
+    },
   },
   {
     title: 'Carto',
@@ -2362,8 +2645,18 @@ export const GAME_IDS = [
     gamePassId: '9NJ2XXPJVDRD',
     howLongToBeatResult: { href: '80570', text: 'Carto' },
     metaCriticGameResult: {
-      href: 'cartoon-network-universe-fusionfall',
-      text: 'Cartoon Network Universe: FusionFall',
+      text: 'Cartoon Network: Battle Crashers',
+      href: '/game/xbox-one/cartoon-network-battle-crashers',
+    },
+  },
+  {
+    title: 'Cities',
+    gamePassTitle: 'Cities: Skylines - Xbox One Edition',
+    gamePassId: 'C4GH8N6ZXG5L',
+    howLongToBeatResult: { href: '24640', text: 'Cities: Skylines' },
+    metaCriticGameResult: {
+      text: 'Cities: Skylines - Xbox One Edition',
+      href: '/game/xbox-one/cities-skylines---xbox-one-edition',
     },
   },
   {
@@ -2371,37 +2664,19 @@ export const GAME_IDS = [
     gamePassTitle: 'ClusterTruck',
     gamePassId: 'BX4J85JZNGXQ',
     howLongToBeatResult: { href: '40215', text: 'Clustertruck' },
-    metaCriticGameResult: { href: 'clustertruck', text: 'Clustertruck' },
-  },
-  {
-    title: 'Cities',
-    gamePassTitle: 'Cities: Skylines - Xbox One Edition',
-    gamePassId: 'C4GH8N6ZXG5L',
-    howLongToBeatResult: { href: '24640', text: 'Cities: Skylines' },
-    metaCriticGameResult: { href: 'cities-skylines', text: 'Cities: Skylines' },
-  },
-  {
-    title: 'Control',
-    gamePassTitle: 'Control',
-    gamePassId: 'BZ6W9LRPC26W',
-    howLongToBeatResult: { href: '57507', text: 'Control' },
-    metaCriticGameResult: { href: 'star-control-3', text: 'Star Control 3' },
+    metaCriticGameResult: {
+      text: 'ClusterTruck',
+      href: '/game/xbox-one/clustertruck',
+    },
   },
   {
     title: 'CODE VEIN',
     gamePassTitle: 'CODE VEIN',
     gamePassId: 'C4Q7K19Q0VBZ',
     howLongToBeatResult: { href: '46470', text: 'Code Vein' },
-    metaCriticGameResult: { href: 'code-vein', text: 'Code Vein' },
-  },
-  {
-    title: 'Cricket 19',
-    gamePassTitle: 'Cricket 19',
-    gamePassId: '9NTT51922L20',
-    howLongToBeatResult: { href: '69179', text: 'Cricket 19' },
     metaCriticGameResult: {
-      href: 'cricket-19-official-game-of-the-ashes',
-      text: 'Cricket 19: Official Game of the Ashes',
+      text: 'Code Vein',
+      href: '/game/xbox-one/code-vein',
     },
   },
   {
@@ -2409,46 +2684,74 @@ export const GAME_IDS = [
     gamePassTitle: 'Costume Quest 2',
     gamePassId: 'BZ92FB6PWXFJ',
     howLongToBeatResult: { href: '21537', text: 'Costume Quest 2' },
-    metaCriticGameResult: { href: 'costume-quest-2', text: 'Costume Quest 2' },
+    metaCriticGameResult: {
+      text: 'Costume Quest 2',
+      href: '/game/pc/costume-quest-2',
+    },
   },
   {
-    title: 'CrossCode',
-    gamePassTitle: 'CrossCode',
-    gamePassId: '9N04RQQ64524',
-    howLongToBeatResult: { href: '24970', text: 'CrossCode' },
-    metaCriticGameResult: { href: 'crosscode', text: 'CrossCode' },
+    title: 'Cricket 19',
+    gamePassTitle: 'Cricket 19',
+    gamePassId: '9NTT51922L20',
+    howLongToBeatResult: { href: '69179', text: 'Cricket 19' },
+    metaCriticGameResult: {
+      text: 'Cricket 19',
+      href: '/game/xbox-one/cricket-19',
+    },
+  },
+  {
+    title: 'Control',
+    gamePassTitle: 'Control',
+    gamePassId: 'BZ6W9LRPC26W',
+    howLongToBeatResult: { href: '57507', text: 'Control' },
+    metaCriticGameResult: {
+      text: 'Baja: Edge of Control HD',
+      href: '/game/xbox-one/baja-edge-of-control-hd',
+    },
   },
   {
     title: 'Crysis',
     gamePassTitle: 'Crysis',
     gamePassId: 'BNN7BPDZ6GQB',
     howLongToBeatResult: { href: '2068', text: 'Crysis' },
-    metaCriticGameResult: { href: 'crysis', text: 'Crysis' },
+    metaCriticGameResult: {
+      text: 'Crysis Remastered',
+      href: '/game/xbox-one/crysis-remastered',
+    },
   },
   {
-    title: 'Beholder Complete Edition',
-    gamePassTitle: 'Beholder Complete Edition',
-    gamePassId: 'BPV4628PQ0D0',
+    title: 'CrossCode',
+    gamePassTitle: 'CrossCode',
+    gamePassId: '9N04RQQ64524',
+    howLongToBeatResult: { href: '24970', text: 'CrossCode' },
+    metaCriticGameResult: {
+      text: 'CrossCode',
+      href: '/game/xbox-one/crosscode',
+    },
   },
   {
     title: 'Crysis 2',
     gamePassTitle: 'Crysis 2',
     gamePassId: 'BQBTGDT4P54J',
     howLongToBeatResult: { href: '2069', text: 'Crysis 2' },
-    metaCriticGameResult: { href: 'crysis-2', text: 'Crysis 2' },
-  },
-  {
-    title: 'Crysis 3',
-    gamePassTitle: 'Crysis® 3',
-    gamePassId: 'BNKKJL1VRR5P',
-    howLongToBeatResult: { href: '2070', text: 'Crysis 3' },
-    metaCriticGameResult: { href: 'crysis', text: 'Crysis' },
+    metaCriticGameResult: { text: 'Crysis 3', href: '/game/xbox-360/crysis-3' },
   },
   {
     title: "Dante's Inferno",
     gamePassTitle: "Dante's Inferno™",
     gamePassId: 'C0X6N5963CTW',
     howLongToBeatResult: { href: '2195', text: "Dante's Inferno" },
+    metaCriticGameResult: {
+      text: "Dante's Inferno",
+      href: '/game/xbox-360/dantes-inferno',
+    },
+  },
+  {
+    title: 'Crysis 3',
+    gamePassTitle: 'Crysis® 3',
+    gamePassId: 'BNKKJL1VRR5P',
+    howLongToBeatResult: { href: '2070', text: 'Crysis 3' },
+    metaCriticGameResult: { text: 'Crysis 3', href: '/game/xbox-360/crysis-3' },
   },
   {
     title: 'Darksiders Genesis',
@@ -2456,8 +2759,8 @@ export const GAME_IDS = [
     gamePassId: 'BRZ9553VPPBD',
     howLongToBeatResult: { href: '68043', text: 'Darksiders: Genesis' },
     metaCriticGameResult: {
-      href: 'darksiders-genesis',
       text: 'Darksiders Genesis',
+      href: '/game/xbox-one/darksiders-genesis',
     },
   },
   {
@@ -2465,14 +2768,7 @@ export const GAME_IDS = [
     gamePassTitle: 'DayZ',
     gamePassId: 'BSR9NLHVF1KL',
     howLongToBeatResult: { href: '2290', text: 'DayZ' },
-    metaCriticGameResult: { href: 'dayz', text: 'DayZ' },
-  },
-  {
-    title: 'de Blob',
-    gamePassTitle: 'de Blob',
-    gamePassId: 'C092FLK91X41',
-    howLongToBeatResult: { href: '2295', text: 'de Blob' },
-    metaCriticGameResult: { href: 'de-blob', text: 'de Blob' },
+    metaCriticGameResult: { text: 'DayZ', href: '/game/xbox-one/dayz' },
   },
   {
     title: 'Dead by Daylight',
@@ -2480,8 +2776,8 @@ export const GAME_IDS = [
     gamePassId: 'C0N22P73QZ60',
     howLongToBeatResult: { href: '37986', text: 'Dead by Daylight' },
     metaCriticGameResult: {
-      href: 'dead-by-daylight',
       text: 'Dead by Daylight',
+      href: '/game/xbox-one/dead-by-daylight',
     },
   },
   {
@@ -2489,50 +2785,59 @@ export const GAME_IDS = [
     gamePassTitle: 'Dead Cells',
     gamePassId: 'BQSCNS1T8PHQ',
     howLongToBeatResult: { href: '45727', text: 'Dead Cells' },
-    metaCriticGameResult: { href: 'dead-cells', text: 'Dead Cells' },
+    metaCriticGameResult: {
+      text: 'Dead Cells',
+      href: '/game/xbox-one/dead-cells',
+    },
   },
   {
     title: 'Dead Space',
     gamePassTitle: 'Dead Space™',
     gamePassId: 'BRJLJ6RPLQTJ',
     howLongToBeatResult: { href: '2333', text: 'Dead Space' },
-    metaCriticGameResult: { href: 'dead-space-2', text: 'Dead Space 2' },
+    metaCriticGameResult: {
+      text: 'Dead Space 2',
+      href: '/game/xbox-360/dead-space-2',
+    },
   },
   {
     title: 'Dead Space 2',
     gamePassTitle: 'Dead Space™ 2',
     gamePassId: 'C2PB7STLJGS0',
     howLongToBeatResult: { href: '2335', text: 'Dead Space 2' },
-    metaCriticGameResult: { href: 'dead-space-2', text: 'Dead Space 2' },
+    metaCriticGameResult: {
+      text: 'Dead Space 2',
+      href: '/game/xbox-360/dead-space-2',
+    },
   },
   {
     title: 'Dead Space 3',
     gamePassTitle: 'Dead Space™ 3',
     gamePassId: 'BP73LMGB1DFD',
     howLongToBeatResult: { href: '2337', text: 'Dead Space 3' },
+    metaCriticGameResult: {
+      text: 'Dead Space 3',
+      href: '/game/xbox-360/dead-space-3',
+    },
+  },
+  {
+    title: 'Beholder Complete Edition',
+    gamePassTitle: 'Beholder Complete Edition',
+    gamePassId: 'BPV4628PQ0D0',
+    metaCriticGameResult: {
+      text: 'Beholder: Complete Edition',
+      href: '/game/xbox-one/beholder-complete-edition',
+    },
   },
   {
     title: 'Dead Space Ignition',
     gamePassTitle: 'Dead Space™ Ignition',
     gamePassId: 'C4GQQJJSZSZJ',
     howLongToBeatResult: { href: '2340', text: 'Dead Space: Ignition' },
-  },
-  {
-    title: 'Deliver Us The Moon',
-    gamePassTitle: 'Deliver Us The Moon',
-    gamePassId: '9NVVSHQ771WG',
-    howLongToBeatResult: { href: '71372', text: 'Deliver Us The Moon' },
     metaCriticGameResult: {
-      href: 'deliver-us-the-moon',
-      text: 'Deliver Us The Moon',
+      text: 'Dead Space Ignition',
+      href: '/game/xbox-360/dead-space-ignition',
     },
-  },
-  {
-    title: 'Desperados III',
-    gamePassTitle: 'Desperados III',
-    gamePassId: 'BRRC2X2GQGC7',
-    howLongToBeatResult: { href: '60291', text: 'Desperados III' },
-    metaCriticGameResult: { href: 'desperados-iii', text: 'Desperados III' },
   },
   {
     title: 'Destiny 2',
@@ -2540,8 +2845,30 @@ export const GAME_IDS = [
     gamePassId: 'BPQ955FQFPH6',
     howLongToBeatResult: { href: '43894', text: 'Destiny 2' },
     metaCriticGameResult: {
-      href: 'destiny-2-forsaken',
-      text: 'Destiny 2: Forsaken',
+      text: 'Destiny 2',
+      href: '/game/xbox-one/destiny-2',
+    },
+  },
+  {
+    title: 'Desperados III',
+    gamePassTitle: 'Desperados III',
+    gamePassId: 'BRRC2X2GQGC7',
+    howLongToBeatResult: { href: '60291', text: 'Desperados III' },
+    metaCriticGameResult: {
+      text:
+        'Desperados III: Money for the Vultures - Part 1: Late to the Party',
+      href:
+        '/game/xbox-one/desperados-iii-money-for-the-vultures---part-1-late-to-the-party',
+    },
+  },
+  {
+    title: 'Deliver Us The Moon',
+    gamePassTitle: 'Deliver Us The Moon',
+    gamePassId: '9NVVSHQ771WG',
+    howLongToBeatResult: { href: '71372', text: 'Deliver Us The Moon' },
+    metaCriticGameResult: {
+      text: 'Deliver Us The Moon',
+      href: '/game/xbox-one/deliver-us-the-moon',
     },
   },
   {
@@ -2550,8 +2877,8 @@ export const GAME_IDS = [
     gamePassId: '9N0N5K1RC2QJ',
     howLongToBeatResult: { href: '43894', text: 'Destiny 2' },
     metaCriticGameResult: {
-      href: 'destiny-2-forsaken',
-      text: 'Destiny 2: Forsaken',
+      text: 'Destiny 2',
+      href: '/game/xbox-one/destiny-2',
     },
   },
   {
@@ -2560,18 +2887,18 @@ export const GAME_IDS = [
     gamePassId: 'BQ56JMH9S69F',
     howLongToBeatResult: { href: '43894', text: 'Destiny 2' },
     metaCriticGameResult: {
-      href: 'destiny-2-forsaken',
-      text: 'Destiny 2: Forsaken',
+      text: 'Destiny 2',
+      href: '/game/xbox-one/destiny-2',
     },
   },
   {
-    title: 'Destiny 2',
-    gamePassTitle: 'Destiny 2: Shadowkeep',
-    gamePassId: '9N87K5NCSTQZ',
-    howLongToBeatResult: { href: '43894', text: 'Destiny 2' },
+    title: 'Dishonored 2',
+    gamePassTitle: 'Dishonored 2',
+    gamePassId: 'BSZM480TSWGP',
+    howLongToBeatResult: { href: '26731', text: 'Dishonored 2' },
     metaCriticGameResult: {
-      href: 'destiny-2-forsaken',
-      text: 'Destiny 2: Forsaken',
+      text: 'Dishonored 2',
+      href: '/game/xbox-one/dishonored-2',
     },
   },
   {
@@ -2579,21 +2906,27 @@ export const GAME_IDS = [
     gamePassTitle: 'DiRT 4',
     gamePassId: 'C2MBDNDS3H5W',
     howLongToBeatResult: { href: '43274', text: 'Dirt 4' },
-    metaCriticGameResult: { href: 'dirt-4', text: 'DiRT 4' },
+    metaCriticGameResult: { text: 'DiRT 4', href: '/game/xbox-one/dirt-4' },
+  },
+  {
+    title: 'Destiny 2',
+    gamePassTitle: 'Destiny 2: Shadowkeep',
+    gamePassId: '9N87K5NCSTQZ',
+    howLongToBeatResult: { href: '43894', text: 'Destiny 2' },
+    metaCriticGameResult: {
+      text: 'Destiny 2',
+      href: '/game/xbox-one/destiny-2',
+    },
   },
   {
     title: 'DOOM Eternal ',
     gamePassTitle: 'DOOM Eternal Standard Edition',
     gamePassId: '9P5S26314HWQ',
     howLongToBeatResult: { href: '57506', text: 'Doom Eternal' },
-    metaCriticGameResult: { href: 'doom-eternal', text: 'DOOM Eternal' },
-  },
-  {
-    title: 'Dishonored 2',
-    gamePassTitle: 'Dishonored 2',
-    gamePassId: 'BSZM480TSWGP',
-    howLongToBeatResult: { href: '26731', text: 'Dishonored 2' },
-    metaCriticGameResult: { href: 'dishonored-2', text: 'Dishonored 2' },
+    metaCriticGameResult: {
+      text: 'DOOM Eternal',
+      href: '/game/xbox-one/doom-eternal',
+    },
   },
   {
     title: 'Double Dragon Neon',
@@ -2601,21 +2934,8 @@ export const GAME_IDS = [
     gamePassId: 'C2592KJZ0Q1X',
     howLongToBeatResult: { href: '2727', text: 'Double Dragon Neon' },
     metaCriticGameResult: {
-      href: 'double-dragon-neon',
       text: 'Double Dragon: Neon',
-    },
-  },
-  {
-    title: 'Dragon Age',
-    gamePassTitle: 'Dragon Age™: Inquisition',
-    gamePassId: 'C47GZZBMR5WG',
-    howLongToBeatResult: {
-      href: '69743',
-      text: 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition',
-    },
-    metaCriticGameResult: {
-      href: 'dragon-age-origins',
-      text: 'Dragon Age: Origins',
+      href: '/game/pc/double-dragon-neon',
     },
   },
   {
@@ -2627,9 +2947,41 @@ export const GAME_IDS = [
       text: 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition',
     },
     metaCriticGameResult: {
-      href: 'dragon-age-origins',
-      text: 'Dragon Age: Origins',
+      text: 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition',
+      href:
+        '/game/xbox-one/dragon-quest-xi-s-echoes-of-an-elusive-age---definitive-edition',
     },
+  },
+  {
+    title: 'Dragon Age 2',
+    gamePassTitle: 'Dragon Age™ 2',
+    gamePassId: 'C4G76555T4QN',
+    howLongToBeatResult: { href: '2756', text: 'Dragon Age 2' },
+    metaCriticGameResult: {
+      text: 'Dragon Age: Origins',
+      href: '/game/xbox-360/dragon-age-origins',
+    },
+  },
+  {
+    title: 'Dragon Age',
+    gamePassTitle: 'Dragon Age™: Inquisition',
+    gamePassId: 'C47GZZBMR5WG',
+    howLongToBeatResult: {
+      href: '69743',
+      text: 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition',
+    },
+    metaCriticGameResult: {
+      text: 'Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition',
+      href:
+        '/game/xbox-one/dragon-quest-xi-s-echoes-of-an-elusive-age---definitive-edition',
+    },
+  },
+  {
+    title: 'FIFA 16',
+    gamePassTitle: 'EA SPORTS™ FIFA 16',
+    gamePassId: 'C4LL0TDQRFLS',
+    howLongToBeatResult: { href: '30476', text: 'FIFA 16' },
+    metaCriticGameResult: { text: 'FIFA 16', href: '/game/xbox-one/fifa-16' },
   },
   {
     title: 'Dungeon of the Endless',
@@ -2637,64 +2989,97 @@ export const GAME_IDS = [
     gamePassId: 'BT56B4R21179',
     howLongToBeatResult: { href: '17454', text: 'Dungeon of the Endless' },
     metaCriticGameResult: {
-      href: 'dungeon-of-the-endless',
       text: 'Dungeon of the Endless',
+      href: '/game/xbox-one/dungeon-of-the-endless',
     },
   },
   {
-    title: 'EA SPORTS FIFA 16',
-    gamePassTitle: 'EA SPORTS™ FIFA 16',
-    gamePassId: 'C4LL0TDQRFLS',
-  },
-  {
-    title: 'EA SPORTS FIFA 17',
-    gamePassTitle: 'EA SPORTS™ FIFA 17',
-    gamePassId: 'BTVFFDDZ0TL4',
-  },
-  {
-    title: 'EA SPORTS FIFA 20',
+    title: 'FIFA 20',
     gamePassTitle: 'EA SPORTS™ FIFA 20',
     gamePassId: 'BV433V4B23LM',
+    howLongToBeatResult: { href: '68094', text: 'FIFA 20' },
+    metaCriticGameResult: {
+      text: 'Madden NFL 20 / FIFA 20',
+      href: '/game/xbox-one/madden-nfl-20-fifa-20',
+    },
   },
   {
-    title: 'EA SPORTS NHL 18',
+    title: 'FIFA 17',
+    gamePassTitle: 'EA SPORTS™ FIFA 17',
+    gamePassId: 'BTVFFDDZ0TL4',
+    howLongToBeatResult: { href: '38724', text: 'FIFA 17' },
+    metaCriticGameResult: { text: 'FIFA 17', href: '/game/xbox-one/fifa-17' },
+  },
+  {
+    title: 'NHL 18',
     gamePassTitle: 'EA SPORTS™ NHL® 18',
     gamePassId: 'C2BTFXNW3TTT',
+    howLongToBeatResult: { href: '51697', text: 'NHL 18' },
+    metaCriticGameResult: { text: 'NHL 18', href: '/game/xbox-one/nhl-18' },
   },
   {
-    title: 'EA SPORTS NHL 19',
+    title: 'NHL 19',
     gamePassTitle: 'EA SPORTS™ NHL® 19',
     gamePassId: 'C1C16ZZZ79VD',
+    howLongToBeatResult: { href: '61272', text: 'NHL 19' },
+    metaCriticGameResult: { text: 'NHL 19', href: '/game/xbox-one/nhl-19' },
   },
   {
-    title: 'EA SPORTS UFC',
-    gamePassTitle: 'EA SPORTS™ UFC®',
-    gamePassId: 'BXLW311NX101',
-    howLongToBeatResult: { href: '19375', text: 'EA Sports UFC' },
-  },
-  {
-    title: 'EA SPORTS Rory McIlroy PGA TOUR',
+    title: 'Rory McIlroy PGA TOUR',
     gamePassTitle: 'EA SPORTS™ Rory McIlroy PGA TOUR®',
     gamePassId: 'C4PFWZ29P1T1',
+    howLongToBeatResult: { href: '33391', text: 'Rory McIlroy PGA Tour' },
+    metaCriticGameResult: {
+      text: 'Rory McIlroy PGA Tour',
+      href: '/game/xbox-one/rory-mcilroy-pga-tour',
+    },
   },
   {
-    title: 'EA SPORTS UFC 3',
-    gamePassTitle: 'EA SPORTS™ UFC® 3',
-    gamePassId: 'C5DZH514BX37',
+    title: 'UFC',
+    gamePassTitle: 'EA SPORTS™ UFC®',
+    gamePassId: 'BXLW311NX101',
     howLongToBeatResult: { href: '52971', text: 'EA Sports UFC 3' },
+    metaCriticGameResult: {
+      text: 'EA Sports UFC 3',
+      href: '/game/xbox-one/ea-sports-ufc-3',
+    },
   },
   {
-    title: 'EA SPORTS UFC 2',
+    title: 'UFC 2',
     gamePassTitle: 'EA SPORTS™ UFC® 2',
     gamePassId: 'BPMMFJDVP9NF',
     howLongToBeatResult: { href: '35849', text: 'EA Sports UFC 2' },
+    metaCriticGameResult: {
+      text: 'EA Sports UFC 2',
+      href: '/game/xbox-one/ea-sports-ufc-2',
+    },
+  },
+  {
+    title: 'UFC 3',
+    gamePassTitle: 'EA SPORTS™ UFC® 3',
+    gamePassId: 'C5DZH514BX37',
+    howLongToBeatResult: { href: '52971', text: 'EA Sports UFC 3' },
+    metaCriticGameResult: {
+      text: 'EA Sports UFC 3',
+      href: '/game/xbox-one/ea-sports-ufc-3',
+    },
+  },
+  {
+    title: 'eFootball PES 2021 ',
+    gamePassTitle: 'eFootball PES 2021 SEASON UPDATE STANDARD EDITION',
+    gamePassId: '9NX03CC9LL1C',
+    howLongToBeatResult: { href: '82114', text: 'eFootball PES 2021' },
+    metaCriticGameResult: {
+      text: 'eFootball PES 2021',
+      href: '/game/xbox-one/efootball-pes-2021',
+    },
   },
   {
     title: 'F1 2019',
     gamePassTitle: 'F1® 2019',
     gamePassId: 'BP4H9HD3FSWB',
     howLongToBeatResult: { href: '68644', text: 'F1 2019' },
-    metaCriticGameResult: { href: 'f1-2019', text: 'F1 2019' },
+    metaCriticGameResult: { text: 'F1 2019', href: '/game/xbox-one/f1-2019' },
   },
   {
     title: 'Fable Anniversary',
@@ -2702,8 +3087,8 @@ export const GAME_IDS = [
     gamePassId: 'C2Q32JM0BPZL',
     howLongToBeatResult: { href: '16586', text: 'Fable Anniversary' },
     metaCriticGameResult: {
-      href: 'fable-anniversary',
       text: 'Fable Anniversary',
+      href: '/game/pc/fable-anniversary',
     },
   },
   {
@@ -2711,14 +3096,14 @@ export const GAME_IDS = [
     gamePassTitle: 'Fable II',
     gamePassId: 'C2WKJJ9F5936',
     howLongToBeatResult: { href: '3314', text: 'Fable II' },
-    metaCriticGameResult: { href: 'fable-iii', text: 'Fable III' },
+    metaCriticGameResult: { text: 'Fable II', href: '/game/xbox-360/fable-ii' },
   },
   {
     title: 'Fable III',
     gamePassTitle: 'Fable III',
     gamePassId: 'BR46KM4D5B9L',
     howLongToBeatResult: { href: '3316', text: 'Fable III' },
-    metaCriticGameResult: { href: 'fable-iii', text: 'Fable III' },
+    metaCriticGameResult: { text: 'Fable III', href: '/game/pc/fable-iii' },
   },
   {
     title: 'Fallout 76',
@@ -2726,8 +3111,28 @@ export const GAME_IDS = [
     gamePassId: 'BS6WJ2L56B10',
     howLongToBeatResult: { href: '57416', text: 'Fallout 76' },
     metaCriticGameResult: {
-      href: 'fallout-76-wastelanders',
-      text: 'Fallout 76: Wastelanders',
+      text: 'Fallout 76',
+      href: '/game/xbox-one/fallout-76',
+    },
+  },
+  {
+    title: 'Fe',
+    gamePassTitle: 'Fe',
+    gamePassId: 'BZW2R4STVDNK',
+    howLongToBeatResult: { href: '48468', text: 'Fe' },
+    metaCriticGameResult: {
+      text: 'We Happy Few',
+      href: '/game/xbox-one/we-happy-few',
+    },
+  },
+  {
+    title: 'Feeding Frenzy',
+    gamePassTitle: 'Feeding Frenzy',
+    gamePassId: 'BRBRQCVTJG2D',
+    howLongToBeatResult: { href: '3425', text: 'Feeding Frenzy' },
+    metaCriticGameResult: {
+      text: 'Feeding Frenzy',
+      href: '/game/xbox-360/feeding-frenzy',
     },
   },
   {
@@ -2735,21 +3140,10 @@ export const GAME_IDS = [
     gamePassTitle: 'Fallout: New Vegas',
     gamePassId: 'BX3JNK07Z6QK',
     howLongToBeatResult: { href: '3338', text: 'Fallout' },
-    metaCriticGameResult: { href: 'fallout-3', text: 'Fallout 3' },
-  },
-  {
-    title: 'Fe',
-    gamePassTitle: 'Fe',
-    gamePassId: 'BZW2R4STVDNK',
-    howLongToBeatResult: { href: '48468', text: 'Fe' },
-    metaCriticGameResult: { href: 'fez', text: 'Fez' },
-  },
-  {
-    title: 'Feeding Frenzy',
-    gamePassTitle: 'Feeding Frenzy',
-    gamePassId: 'BRBRQCVTJG2D',
-    howLongToBeatResult: { href: '3425', text: 'Feeding Frenzy' },
-    metaCriticGameResult: { href: 'feeding-frenzy', text: 'Feeding Frenzy' },
+    metaCriticGameResult: {
+      text: 'Fallout 4',
+      href: '/game/xbox-one/fallout-4',
+    },
   },
   {
     title: 'Feeding Frenzy 2',
@@ -2760,50 +3154,39 @@ export const GAME_IDS = [
       text: 'Feeding Frenzy 2: Shipwreck Showdown',
     },
     metaCriticGameResult: {
-      href: 'feeding-frenzy-2-shipwreck-showdown',
-      text: 'Feeding Frenzy 2: Shipwreck Showdown',
+      text: 'Feeding Frenzy',
+      href: '/game/xbox-360/feeding-frenzy',
     },
-  },
-  {
-    title: 'FIFA 15',
-    gamePassTitle: 'FIFA 15',
-    gamePassId: 'BXSVW5X9S0G3',
-    howLongToBeatResult: { href: '21232', text: 'FIFA 15' },
-    metaCriticGameResult: { href: 'fifa-15', text: 'FIFA 15' },
-  },
-  {
-    title: 'eFootball PES 2021 SEASON UPDATE ',
-    gamePassTitle: 'eFootball PES 2021 SEASON UPDATE STANDARD EDITION',
-    gamePassId: '9NX03CC9LL1C',
   },
   {
     title: 'FIFA 18',
     gamePassTitle: 'FIFA 18',
     gamePassId: 'BWPKGQV97N7N',
     howLongToBeatResult: { href: '49476', text: 'FIFA 18' },
-    metaCriticGameResult: { href: 'fifa-18', text: 'FIFA 18' },
+    metaCriticGameResult: { text: 'FIFA 18', href: '/game/xbox-one/fifa-18' },
   },
   {
-    title: 'FIGHT NIGHT CHAMPION',
-    gamePassTitle: 'FIGHT NIGHT CHAMPION',
-    gamePassId: 'BQG162F04T2L',
-    howLongToBeatResult: { href: '3463', text: 'Fight Night Champion' },
+    title: 'FIFA 15',
+    gamePassTitle: 'FIFA 15',
+    gamePassId: 'BXSVW5X9S0G3',
+    howLongToBeatResult: { href: '21232', text: 'FIFA 15' },
+    metaCriticGameResult: { text: 'FIFA 15', href: '/game/xbox-one/fifa-15' },
   },
   {
     title: 'FIFA 19',
     gamePassTitle: 'FIFA 19',
     gamePassId: 'C3C71TV51SQC',
     howLongToBeatResult: { href: '57351', text: 'FIFA 19' },
-    metaCriticGameResult: { href: 'fifa-19', text: 'FIFA 19' },
+    metaCriticGameResult: { text: 'FIFA 19', href: '/game/xbox-one/fifa-19' },
   },
   {
-    title: 'FINAL FANTASY VIII Remastered',
-    gamePassTitle: 'FINAL FANTASY VIII Remastered',
-    gamePassId: '9NNTSPSC35ZB',
-    howLongToBeatResult: { href: '3524', text: 'Final Fantasy VIII' },
+    title: 'FIGHT NIGHT CHAMPION',
+    gamePassTitle: 'FIGHT NIGHT CHAMPION',
+    gamePassId: 'BQG162F04T2L',
+    howLongToBeatResult: { href: '3463', text: 'Fight Night Champion' },
     metaCriticGameResult: {
-      href: 'final-fantasy-viii-remastered',
-      text: 'Final Fantasy VIII Remastered',
+      text: 'Fight Night Champion',
+      href: '/game/xbox-360/fight-night-champion',
     },
   },
   {
@@ -2812,8 +3195,18 @@ export const GAME_IDS = [
     gamePassId: 'BWKXQC5BL5R1',
     howLongToBeatResult: { href: '3521', text: 'Final Fantasy VII' },
     metaCriticGameResult: {
-      href: 'final-fantasy-viii-remastered',
       text: 'Final Fantasy VIII Remastered',
+      href: '/game/xbox-one/final-fantasy-viii-remastered',
+    },
+  },
+  {
+    title: 'FINAL FANTASY VIII Remastered',
+    gamePassTitle: 'FINAL FANTASY VIII Remastered',
+    gamePassId: '9NNTSPSC35ZB',
+    howLongToBeatResult: { href: '3524', text: 'Final Fantasy VIII' },
+    metaCriticGameResult: {
+      text: 'Final Fantasy VIII Remastered',
+      href: '/game/xbox-one/final-fantasy-viii-remastered',
     },
   },
   {
@@ -2825,8 +3218,8 @@ export const GAME_IDS = [
       text: 'Final Fantasy XII: The Zodiac Age',
     },
     metaCriticGameResult: {
-      href: 'final-fantasy-xii-the-zodiac-age',
       text: 'Final Fantasy XII: The Zodiac Age',
+      href: '/game/xbox-one/final-fantasy-xii-the-zodiac-age',
     },
   },
   {
@@ -2835,8 +3228,8 @@ export const GAME_IDS = [
     gamePassId: 'BP2BW45WZ45Z',
     howLongToBeatResult: { href: '45024', text: 'For The King' },
     metaCriticGameResult: {
-      href: 'age-of-empires-ii-the-age-of-kings',
-      text: 'Age of Empires II: The Age of Kings',
+      text: 'Kingdom Come: Deliverance',
+      href: '/game/xbox-one/kingdom-come-deliverance',
     },
   },
   {
@@ -2844,75 +3237,87 @@ export const GAME_IDS = [
     gamePassTitle: 'Forager',
     gamePassId: '9MV2S7Q5PHSW',
     howLongToBeatResult: { href: '62412', text: 'Forager' },
-    metaCriticGameResult: { href: 'forager', text: 'Forager' },
+    metaCriticGameResult: { text: 'Forager', href: '/game/xbox-one/forager' },
   },
   {
     title: 'Fractured Minds',
     gamePassTitle: 'Fractured Minds',
     gamePassId: 'BXX0NHDR1FNZ',
     howLongToBeatResult: { href: '72380', text: 'Fractured Minds' },
-    metaCriticGameResult: { href: 'fractured-minds', text: 'Fractured Minds' },
+    metaCriticGameResult: {
+      text: 'Fractured Minds',
+      href: '/game/pc/fractured-minds',
+    },
   },
   {
     title: 'Frostpunk',
     gamePassTitle: 'Frostpunk: Console Edition',
     gamePassId: '9NP539LHJD8S',
     howLongToBeatResult: { href: '41585', text: 'Frostpunk' },
-    metaCriticGameResult: { href: 'frostpunk', text: 'Frostpunk' },
+    metaCriticGameResult: {
+      text: 'Frostpunk: Console Edition',
+      href: '/game/xbox-one/frostpunk-console-edition',
+    },
   },
   {
     title: 'Fuzion Frenzy',
     gamePassTitle: 'Fuzion Frenzy®',
     gamePassId: 'C2P985H1H42H',
     howLongToBeatResult: { href: '3768', text: 'Fuzion Frenzy' },
+    metaCriticGameResult: {
+      text: 'Fuzion Frenzy 2',
+      href: '/game/xbox-360/fuzion-frenzy-2',
+    },
   },
   {
     title: 'Gato Roboto',
     gamePassTitle: 'Gato Roboto',
     gamePassId: '9PF6XX9BSHF0',
     howLongToBeatResult: { href: '67569', text: 'Gato Roboto' },
-    metaCriticGameResult: { href: 'gato-roboto', text: 'Gato Roboto' },
+    metaCriticGameResult: {
+      text: 'Gato Roboto',
+      href: '/game/xbox-one/gato-roboto',
+    },
   },
   {
     title: 'Gears of War',
     gamePassTitle: 'Gears of War',
     gamePassId: 'BPN08ZDRPSFK',
     howLongToBeatResult: { href: '3862', text: 'Gears of War' },
-    metaCriticGameResult: { href: 'gears-of-war', text: 'Gears of War' },
-  },
-  {
-    title: 'Gears of War 2',
-    gamePassTitle: 'Gears of War 2',
-    gamePassId: 'C1SDBNRFXT1D',
-    howLongToBeatResult: { href: '3863', text: 'Gears of War 2' },
+    metaCriticGameResult: {
+      text: 'Gears of War 4',
+      href: '/game/xbox-one/gears-of-war-4',
+    },
   },
   {
     title: 'Gears of War 3',
     gamePassTitle: 'Gears of War 3',
     gamePassId: 'BPKDQSSFQ9WV',
     howLongToBeatResult: { href: '3865', text: 'Gears of War 3' },
-    metaCriticGameResult: { href: 'gears-of-war', text: 'Gears of War' },
+    metaCriticGameResult: {
+      text: 'Gears of War 3',
+      href: '/game/xbox-360/gears-of-war-3',
+    },
   },
   {
-    title: 'Gears of War',
-    gamePassTitle: 'Gears of War: Judgment',
-    gamePassId: 'BSHMMGRP84N4',
-    howLongToBeatResult: { href: '3862', text: 'Gears of War' },
-    metaCriticGameResult: { href: 'gears-of-war', text: 'Gears of War' },
-  },
-  {
-    title: 'Gears of War',
-    gamePassTitle: 'Gears of War: Ultimate Edition',
-    gamePassId: 'BQT21VXFS52F',
-    howLongToBeatResult: { href: '3862', text: 'Gears of War' },
-    metaCriticGameResult: { href: 'gears-of-war', text: 'Gears of War' },
+    title: 'Gears of War 2',
+    gamePassTitle: 'Gears of War 2',
+    gamePassId: 'C1SDBNRFXT1D',
+    howLongToBeatResult: { href: '3863', text: 'Gears of War 2' },
+    metaCriticGameResult: {
+      text: 'Gears of War',
+      href: '/game/xbox-360/gears-of-war',
+    },
   },
   {
     title: 'Goat Simulator',
     gamePassTitle: 'Goat Simulator',
     gamePassId: 'BV0NM309K1TL',
     howLongToBeatResult: { href: '17536', text: 'Goat Simulator' },
-    metaCriticGameResult: { href: 'goat-simulator', text: 'Goat Simulator' },
+    metaCriticGameResult: {
+      text: 'Goat Simulator',
+      href: '/game/xbox-one/goat-simulator',
+    },
   },
   {
     title: 'Golf With Your Friends',
@@ -2920,8 +3325,41 @@ export const GAME_IDS = [
     gamePassId: '9N14G09PWG74',
     howLongToBeatResult: { href: '34956', text: 'Golf With Your Friends' },
     metaCriticGameResult: {
-      href: 'golf-with-your-friends',
       text: 'Golf With Your Friends',
+      href: '/game/xbox-one/golf-with-your-friends',
+    },
+  },
+  {
+    title: 'Gears of War: Ultimate Edition',
+    gamePassTitle: 'Gears of War: Ultimate Edition',
+    gamePassId: 'BQT21VXFS52F',
+    howLongToBeatResult: {
+      href: '26794',
+      text: 'Gears of War: Ultimate Edition',
+    },
+    metaCriticGameResult: {
+      text: 'Gears of War: Ultimate Edition',
+      href: '/game/xbox-one/gears-of-war-ultimate-edition',
+    },
+  },
+  {
+    title: 'Gears of War: Judgment',
+    gamePassTitle: 'Gears of War: Judgment',
+    gamePassId: 'BSHMMGRP84N4',
+    howLongToBeatResult: { href: '3867', text: 'Gears of War: Judgment' },
+    metaCriticGameResult: {
+      text: 'Gears of War: Judgment',
+      href: '/game/xbox-360/gears-of-war-judgment',
+    },
+  },
+  {
+    title: 'GONNER2',
+    gamePassTitle: 'GONNER2',
+    gamePassId: '9NRZHK9QN558',
+    howLongToBeatResult: { href: '84332', text: 'GoNNER2' },
+    metaCriticGameResult: {
+      text: 'GONNER2',
+      href: '/game/xbox-series-x/gonner2',
     },
   },
   {
@@ -2929,49 +3367,59 @@ export const GAME_IDS = [
     gamePassTitle: 'GreedFall',
     gamePassId: 'BWMH4RQ4Q06F',
     howLongToBeatResult: { href: '62519', text: 'Greedfall' },
-    metaCriticGameResult: { href: 'greedfall', text: 'GreedFall' },
+    metaCriticGameResult: {
+      text: 'GreedFall',
+      href: '/game/xbox-one/greedfall',
+    },
   },
   {
-    title: 'GONNER2',
-    gamePassTitle: 'GONNER2',
-    gamePassId: '9NRZHK9QN558',
-    howLongToBeatResult: { href: '84332', text: 'GoNNER2' },
-  },
-  {
-    title: 'Halo Wars 2',
+    title: 'Halo Wars 2: ',
     gamePassTitle: 'Halo Wars 2: Standard Edition',
     gamePassId: 'C42KCJCLX6MX',
-    howLongToBeatResult: { href: '37985', text: 'Halo Wars 2' },
-    metaCriticGameResult: { href: 'halo-wars-2', text: 'Halo Wars 2' },
+    howLongToBeatResult: {
+      href: '59330',
+      text: 'Halo Wars 2: Awakening the Nightmare',
+    },
+    metaCriticGameResult: {
+      text: 'Halo Wars 2',
+      href: '/game/xbox-one/halo-wars-2',
+    },
   },
   {
-    title: 'Halo 5',
+    title: 'Halo 5: Guardians',
     gamePassTitle: 'Halo 5: Guardians',
     gamePassId: 'BRRC2BP0G9P0',
     howLongToBeatResult: { href: '19267', text: 'Halo 5: Guardians' },
+    metaCriticGameResult: {
+      text: 'Halo 5: Guardians',
+      href: '/game/xbox-one/halo-5-guardians',
+    },
   },
   {
-    title: 'Halo Wars',
+    title: 'Halo Wars: Definitive Edition',
     gamePassTitle: 'Halo Wars: Definitive Edition',
     gamePassId: 'BPRPQSKXTD1L',
-    howLongToBeatResult: { href: '4267', text: 'Halo Wars' },
-    metaCriticGameResult: { href: 'halo-wars-2', text: 'Halo Wars 2' },
-  },
-  {
-    title: 'Halo',
-    gamePassTitle: 'Halo: Spartan Assault',
-    gamePassId: 'BV0K9LMLQ9W5',
     howLongToBeatResult: {
-      href: '22621',
-      text: 'Halo: The Master Chief Collection',
+      href: '4267',
+      text: 'Halo Wars: Definitive Edition',
     },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      text: 'Halo Wars: Definitive Edition',
+      href: '/game/xbox-one/halo-wars-definitive-edition',
     },
   },
   {
-    title: 'Halo',
+    title: 'Halo: Spartan Assault',
+    gamePassTitle: 'Halo: Spartan Assault',
+    gamePassId: 'BV0K9LMLQ9W5',
+    howLongToBeatResult: { href: '4272', text: 'Halo: Spartan Assault' },
+    metaCriticGameResult: {
+      text: 'Halo: Spartan Assault',
+      href: '/game/xbox-one/halo-spartan-assault',
+    },
+  },
+  {
+    title: 'Halo: The Master Chief Collection',
     gamePassTitle: 'Halo: The Master Chief Collection',
     gamePassId: '9MT8PTGVHX2P',
     howLongToBeatResult: {
@@ -2979,8 +3427,8 @@ export const GAME_IDS = [
       text: 'Halo: The Master Chief Collection',
     },
     metaCriticGameResult: {
-      href: 'halo-the-master-chief-collection---halo-3-odst',
-      text: 'Halo: The Master Chief Collection - Halo 3: ODST',
+      text: 'Halo: The Master Chief Collection',
+      href: '/game/xbox-one/halo-the-master-chief-collection',
     },
   },
   {
@@ -2989,8 +3437,8 @@ export const GAME_IDS = [
     gamePassId: 'BZ910SG8ML8X',
     howLongToBeatResult: { href: '4381', text: 'Heavy Weapon' },
     metaCriticGameResult: {
-      href: 'heavy-weapon-deluxe',
-      text: 'Heavy Weapon Deluxe',
+      text: 'Heavy Weapon: Atomic Tank',
+      href: '/game/xbox-360/heavy-weapon-atomic-tank',
     },
   },
   {
@@ -3002,8 +3450,28 @@ export const GAME_IDS = [
       text: "Hellblade: Senua's Sacrifice",
     },
     metaCriticGameResult: {
-      href: 'hellblade-senuas-sacrifice-vr-edition',
-      text: "Hellblade: Senua's Sacrifice VR Edition",
+      text: "Hellblade: Senua's Sacrifice",
+      href: '/game/xbox-one/hellblade-senuas-sacrifice',
+    },
+  },
+  {
+    title: 'Hollow Knight',
+    gamePassTitle: 'Hollow Knight: Voidheart Edition',
+    gamePassId: '9MW9469V91LM',
+    howLongToBeatResult: { href: '26286', text: 'Hollow Knight' },
+    metaCriticGameResult: {
+      text: 'Hollow Knight',
+      href: '/game/xbox-one/hollow-knight',
+    },
+  },
+  {
+    title: 'Hotshot Racing',
+    gamePassTitle: 'Hotshot Racing',
+    gamePassId: 'C11HCJPQFHH7',
+    howLongToBeatResult: { href: '75537', text: 'Hotshot Racing' },
+    metaCriticGameResult: {
+      text: 'Hotshot Racing',
+      href: '/game/xbox-one/hotshot-racing',
     },
   },
   {
@@ -3011,48 +3479,47 @@ export const GAME_IDS = [
     gamePassTitle: 'Hello Neighbor',
     gamePassId: 'C0G1L18DT97K',
     howLongToBeatResult: { href: '40794', text: 'Hello Neighbor' },
-    metaCriticGameResult: { href: 'hello-neighbor', text: 'Hello Neighbor' },
-  },
-  {
-    title: 'Hollow Knight',
-    gamePassTitle: 'Hollow Knight: Voidheart Edition',
-    gamePassId: '9MW9469V91LM',
-    howLongToBeatResult: { href: '26286', text: 'Hollow Knight' },
-    metaCriticGameResult: { href: 'hollow-knight', text: 'Hollow Knight' },
-  },
-  {
-    title: 'Hotshot Racing',
-    gamePassTitle: 'Hotshot Racing',
-    gamePassId: 'C11HCJPQFHH7',
-    howLongToBeatResult: { href: '75537', text: 'Hotshot Racing' },
-    metaCriticGameResult: { href: 'hotshot-racing', text: 'Hotshot Racing' },
-  },
-  {
-    title: 'Human Fall Flat',
-    gamePassTitle: 'Human Fall Flat',
-    gamePassId: 'BSMZH25V6V46',
-    howLongToBeatResult: { href: '38887', text: 'Human: Fall Flat' },
-    metaCriticGameResult: { href: 'human-fall-flat', text: 'Human: Fall Flat' },
+    metaCriticGameResult: {
+      text: 'Hello Neighbor',
+      href: '/game/xbox-one/hello-neighbor',
+    },
   },
   {
     title: 'Ikenfell',
     gamePassTitle: 'Ikenfell',
     gamePassId: '9P91S5ZL1P4D',
     howLongToBeatResult: { href: '80165', text: 'Ikenfell' },
-    metaCriticGameResult: { href: 'ikenfell', text: 'Ikenfell' },
+    metaCriticGameResult: { text: 'Ikenfell', href: '/game/xbox-one/ikenfell' },
   },
   {
     title: 'Injustice 2',
     gamePassTitle: 'Injustice™ 2',
     gamePassId: 'BPKVH4C4XV4N',
     howLongToBeatResult: { href: '37862', text: 'Injustice 2' },
-    metaCriticGameResult: { href: 'injustice-2', text: 'Injustice 2' },
+    metaCriticGameResult: {
+      text: 'Injustice 2',
+      href: '/game/xbox-one/injustice-2',
+    },
+  },
+  {
+    title: 'Human Fall Flat',
+    gamePassTitle: 'Human Fall Flat',
+    gamePassId: 'BSMZH25V6V46',
+    howLongToBeatResult: { href: '38887', text: 'Human: Fall Flat' },
+    metaCriticGameResult: {
+      text: 'Human: Fall Flat',
+      href: '/game/xbox-one/human-fall-flat',
+    },
   },
   {
     title: 'Jetpac Refuelled',
     gamePassTitle: 'Jetpac Refuelled',
     gamePassId: 'BRRVN5198461',
     howLongToBeatResult: { href: '21825', text: 'Jetpac Refuelled' },
+    metaCriticGameResult: {
+      text: 'Jetpac Refuelled',
+      href: '/game/xbox-360/jetpac-refuelled',
+    },
   },
   {
     title: 'Journey to the Savage Planet',
@@ -3063,8 +3530,18 @@ export const GAME_IDS = [
       text: 'Journey to the Savage Planet',
     },
     metaCriticGameResult: {
-      href: 'journey-to-the-savage-planet',
-      text: 'Journey to the Savage Planet',
+      text: 'Journey to the Savage Planet: Hot Garbage',
+      href: '/game/xbox-one/journey-to-the-savage-planet-hot-garbage',
+    },
+  },
+  {
+    title: 'Joy Ride Turbo',
+    gamePassTitle: 'Joy Ride Turbo',
+    gamePassId: 'C1ZWH2BZ9TSF',
+    howLongToBeatResult: { href: '4875', text: 'Joy Ride Turbo' },
+    metaCriticGameResult: {
+      text: 'Joy Ride Turbo',
+      href: '/game/xbox-360/joy-ride-turbo',
     },
   },
   {
@@ -3073,38 +3550,39 @@ export const GAME_IDS = [
     gamePassId: 'C1LD4244XCNJ',
     howLongToBeatResult: { href: '57068', text: 'Jurassic World Evolution' },
     metaCriticGameResult: {
-      href: 'jurassic-world-evolution-return-to-jurassic-park',
-      text: 'Jurassic World Evolution: Return to Jurassic Park',
+      text: 'Jurassic World Evolution',
+      href: '/game/xbox-one/jurassic-world-evolution',
     },
-  },
-  {
-    title: 'Joy Ride Turbo',
-    gamePassTitle: 'Joy Ride Turbo',
-    gamePassId: 'C1ZWH2BZ9TSF',
-    howLongToBeatResult: { href: '4875', text: 'Joy Ride Turbo' },
   },
   {
     title: 'Kameo',
     gamePassTitle: 'Kameo',
     gamePassId: 'BV83SM3191S5',
     howLongToBeatResult: { href: '4921', text: 'Kameo: Elements of Power' },
+    metaCriticGameResult: {
+      text: 'Kameo: Elements of Power',
+      href: '/game/xbox-360/kameo-elements-of-power',
+    },
+  },
+  {
+    title: 'Katana Zero',
+    gamePassTitle: 'Katana Zero XB1',
+    gamePassId: '9NXP19FZ7DZ4',
+    howLongToBeatResult: { href: '33020', text: 'Katana ZERO' },
+    metaCriticGameResult: {
+      text: 'Katana ZERO',
+      href: '/game/xbox-one/katana-zero',
+    },
   },
   {
     title: 'Killer Instinct',
     gamePassTitle: 'Killer Instinct: Definitive Edition',
     gamePassId: 'BVQ3FL3201P8',
     howLongToBeatResult: { href: '14350', text: 'Killer Instinct (2013)' },
-    metaCriticGameResult: { href: 'killer-instinct', text: 'Killer Instinct' },
-  },
-  {
-    title: 'Katana Zero XB1',
-    gamePassTitle: 'Katana Zero XB1',
-    gamePassId: '9NXP19FZ7DZ4',
-  },
-  {
-    title: 'KINGDOM HEARTS - HD 1.5+2.5 ReMIX -',
-    gamePassTitle: 'KINGDOM HEARTS - HD 1.5+2.5 ReMIX -',
-    gamePassId: '9NHDF1Q6HGMH',
+    metaCriticGameResult: {
+      text: 'Killer Instinct',
+      href: '/game/xbox-one/killer-instinct',
+    },
   },
   {
     title: 'KINGDOM HEARTS HD 2.8 Final Chapter Prologue',
@@ -3112,7 +3590,11 @@ export const GAME_IDS = [
     gamePassId: '9NB80T1XC43B',
     howLongToBeatResult: {
       href: '37863',
-      text: 'Kingdom Hearts HD 2.8 - Final Chapter Prologue',
+      text: 'Kingdom Hearts HD 2.8 Final Chapter Prologue',
+    },
+    metaCriticGameResult: {
+      text: 'Kingdom Hearts HD 2.8 Final Chapter Prologue',
+      href: '/game/xbox-one/kingdom-hearts-hd-28-final-chapter-prologue',
     },
   },
   {
@@ -3120,91 +3602,127 @@ export const GAME_IDS = [
     gamePassTitle: 'Kona',
     gamePassId: 'BXDSG249D6Q2',
     howLongToBeatResult: { href: '20888', text: 'Kona' },
-    metaCriticGameResult: { href: 'kona', text: 'Kona' },
+    metaCriticGameResult: { text: 'Kona', href: '/game/xbox-one/kona' },
   },
   {
     title: 'Madden NFL 15',
     gamePassTitle: 'Madden NFL 15',
     gamePassId: 'BNFCRCSB95FT',
     howLongToBeatResult: { href: '20752', text: 'Madden NFL 15' },
+    metaCriticGameResult: {
+      text: 'Madden NFL 15',
+      href: '/game/xbox-one/madden-nfl-15',
+    },
   },
   {
     title: 'Madden NFL 16',
     gamePassTitle: 'Madden NFL 16',
     gamePassId: 'BXRMHT4MV6G3',
     howLongToBeatResult: { href: '26403', text: 'Madden NFL 16' },
+    metaCriticGameResult: {
+      text: 'Madden NFL 16',
+      href: '/game/xbox-one/madden-nfl-16',
+    },
   },
   {
     title: 'Madden NFL 17',
     gamePassTitle: 'Madden NFL 17',
     gamePassId: 'C2KV821GS8X5',
     howLongToBeatResult: { href: '34667', text: 'Madden NFL 17' },
+    metaCriticGameResult: {
+      text: 'Madden NFL 17',
+      href: '/game/xbox-one/madden-nfl-17',
+    },
   },
   {
     title: 'Madden NFL 18',
     gamePassTitle: 'Madden NFL 18',
     gamePassId: 'BS36XT3Z5ZKL',
     howLongToBeatResult: { href: '46120', text: 'Madden NFL 18' },
+    metaCriticGameResult: {
+      text: 'Madden NFL 18',
+      href: '/game/xbox-one/madden-nfl-18',
+    },
   },
   {
     title: 'Madden NFL 19',
     gamePassTitle: 'Madden NFL 19',
     gamePassId: 'BVF5ZGD9NM52',
     howLongToBeatResult: { href: '59624', text: 'Madden NFL 19' },
-    metaCriticGameResult: { href: 'madden-nfl-19', text: 'Madden NFL 19' },
+    metaCriticGameResult: {
+      text: 'Madden NFL 19',
+      href: '/game/xbox-one/madden-nfl-19',
+    },
   },
   {
     title: 'Madden NFL 20',
     gamePassTitle: 'Madden NFL 20',
     gamePassId: 'BZ289TV4QVCK',
     howLongToBeatResult: { href: '68136', text: 'Madden NFL 20' },
-    metaCriticGameResult: { href: 'madden-nfl-2004', text: 'Madden NFL 2004' },
-  },
-  {
-    title: 'KINGDOM HEARTS Ⅲ',
-    gamePassTitle: 'KINGDOM HEARTS Ⅲ',
-    gamePassId: 'C08MW8XHQN9G',
+    metaCriticGameResult: {
+      text: 'Madden NFL 20 / FIFA 20',
+      href: '/game/xbox-one/madden-nfl-20-fifa-20',
+    },
   },
   {
     title: 'Madden NFL 25',
     gamePassTitle: 'Madden NFL 25',
     gamePassId: 'C3CF8LR1RFKH',
     howLongToBeatResult: { href: '12653', text: 'Madden NFL 25' },
+    metaCriticGameResult: {
+      text: 'Madden NFL 25',
+      href: '/game/xbox-one/madden-nfl-25',
+    },
   },
   {
     title: 'Mass Effect',
     gamePassTitle: 'Mass Effect',
     gamePassId: 'BV5N90RDT0SH',
     howLongToBeatResult: { href: '5698', text: 'Mass Effect' },
-    metaCriticGameResult: { href: 'mass-effect-2', text: 'Mass Effect 2' },
+    metaCriticGameResult: {
+      text: 'Mass Effect: Andromeda',
+      href: '/game/xbox-one/mass-effect-andromeda',
+    },
   },
   {
     title: 'Mass Effect 2',
     gamePassTitle: 'Mass Effect 2',
     gamePassId: 'C0Z1N477W100',
     howLongToBeatResult: { href: '5699', text: 'Mass Effect 2' },
-    metaCriticGameResult: { href: 'mass-effect-2', text: 'Mass Effect 2' },
+    metaCriticGameResult: {
+      text: 'Mass Effect 2',
+      href: '/game/xbox-360/mass-effect-2',
+    },
   },
   {
     title: 'Mass Effect 3',
     gamePassTitle: 'Mass Effect™ 3',
     gamePassId: 'C040H652PD98',
     howLongToBeatResult: { href: '5707', text: 'Mass Effect 3' },
-    metaCriticGameResult: { href: 'mass-effect-2', text: 'Mass Effect 2' },
+    metaCriticGameResult: {
+      text: 'Mass Effect 3',
+      href: '/game/xbox-360/mass-effect-3',
+    },
   },
   {
     title: 'Mass Effect',
     gamePassTitle: 'Mass Effect™: Andromeda',
     gamePassId: 'BZPR04V49BMH',
     howLongToBeatResult: { href: '5698', text: 'Mass Effect' },
-    metaCriticGameResult: { href: 'mass-effect-2', text: 'Mass Effect 2' },
+    metaCriticGameResult: {
+      text: 'Mass Effect: Andromeda',
+      href: '/game/xbox-one/mass-effect-andromeda',
+    },
   },
   {
     title: 'Max',
     gamePassTitle: 'Max: The Curse of Brotherhood',
     gamePassId: 'C0SFCF4PBRSZ',
     howLongToBeatResult: { href: '64746', text: 'Max (1992)' },
-    metaCriticGameResult: { href: 'max-payne', text: 'Max Payne' },
+    metaCriticGameResult: {
+      text: 'Sam & Max Save the World Remastered',
+      href: '/game/pc/sam-max-save-the-world-remastered',
+    },
   },
   {
     title: 'Medal of Honor Airborne',
@@ -3212,18 +3730,8 @@ export const GAME_IDS = [
     gamePassId: 'C43H00X6KZRJ',
     howLongToBeatResult: { href: '5777', text: 'Medal of Honor: Airborne' },
     metaCriticGameResult: {
-      href: 'medal-of-honor-airborne',
       text: 'Medal of Honor: Airborne',
-    },
-  },
-  {
-    title: 'Minecraft Dungeons',
-    gamePassTitle: 'Minecraft Dungeons',
-    gamePassId: '9N8NJ74FZTG9',
-    howLongToBeatResult: { href: '68149', text: 'Minecraft Dungeons' },
-    metaCriticGameResult: {
-      href: 'minecraft-dungeons',
-      text: 'Minecraft Dungeons',
+      href: '/game/xbox-360/medal-of-honor-airborne',
     },
   },
   {
@@ -3231,14 +3739,27 @@ export const GAME_IDS = [
     gamePassTitle: 'Minecraft',
     gamePassId: '9NBLGGH537BL',
     howLongToBeatResult: { href: '6064', text: 'Minecraft' },
-    metaCriticGameResult: { href: 'minecraft', text: 'Minecraft' },
+    metaCriticGameResult: { text: 'Minecraft', href: '/game/pc/minecraft' },
+  },
+  {
+    title: 'Minecraft Dungeons',
+    gamePassTitle: 'Minecraft Dungeons',
+    gamePassId: '9N8NJ74FZTG9',
+    howLongToBeatResult: { href: '68149', text: 'Minecraft Dungeons' },
+    metaCriticGameResult: {
+      text: 'Minecraft Dungeons: Howling Peaks',
+      href: '/game/xbox-one/minecraft-dungeons-howling-peaks',
+    },
   },
   {
     title: "Mirror's Edge",
     gamePassTitle: "Mirror's Edge™",
     gamePassId: 'BP96WRTVD7C1',
     howLongToBeatResult: { href: '6085', text: "Mirror's Edge" },
-    metaCriticGameResult: { href: 'mirrors-edge', text: "Mirror's Edge" },
+    metaCriticGameResult: {
+      text: "Mirror's Edge Catalyst",
+      href: '/game/xbox-one/mirrors-edge-catalyst',
+    },
   },
   {
     title: "Mirror's Edge Catalyst",
@@ -3246,8 +3767,8 @@ export const GAME_IDS = [
     gamePassId: 'C48LBRJJCP2L',
     howLongToBeatResult: { href: '19181', text: "Mirror's Edge: Catalyst" },
     metaCriticGameResult: {
-      href: 'mirrors-edge-catalyst',
       text: "Mirror's Edge Catalyst",
+      href: '/game/xbox-one/mirrors-edge-catalyst',
     },
   },
   {
@@ -3259,8 +3780,22 @@ export const GAME_IDS = [
       text: 'Momodora: Reverie Under the Moonlight',
     },
     metaCriticGameResult: {
-      href: 'momodora-reverie-under-the-moonlight',
       text: 'Momodora: Reverie Under the Moonlight',
+      href: '/game/xbox-one/momodora-reverie-under-the-moonlight',
+    },
+  },
+  {
+    title: 'KINGDOM HEARTS - HD 1.5+2.5 ReMIX -',
+    gamePassTitle: 'KINGDOM HEARTS - HD 1.5+2.5 ReMIX -',
+    gamePassId: '9NHDF1Q6HGMH',
+  },
+  {
+    title: 'KINGDOM HEARTS Ⅲ',
+    gamePassTitle: 'KINGDOM HEARTS Ⅲ',
+    gamePassId: 'C08MW8XHQN9G',
+    metaCriticGameResult: {
+      text: 'Kingdom Hearts III',
+      href: '/game/xbox-one/kingdom-hearts-iii',
     },
   },
   {
@@ -3269,8 +3804,8 @@ export const GAME_IDS = [
     gamePassId: 'BNG91PT95LQN',
     howLongToBeatResult: { href: '6146', text: 'Monster Hunter' },
     metaCriticGameResult: {
-      href: 'monster-hunter-world',
       text: 'Monster Hunter: World',
+      href: '/game/xbox-one/monster-hunter-world',
     },
   },
   {
@@ -3279,8 +3814,18 @@ export const GAME_IDS = [
     gamePassId: '9MZNS9NZ97PF',
     howLongToBeatResult: { href: '70012', text: 'Monster Sanctuary' },
     metaCriticGameResult: {
-      href: 'monster-sanctuary',
       text: 'Monster Sanctuary',
+      href: '/game/xbox-one/monster-sanctuary',
+    },
+  },
+  {
+    title: 'MotoGP 20',
+    gamePassTitle: 'MotoGP™20',
+    gamePassId: '9PJGNFWR6MHL',
+    howLongToBeatResult: { href: '77737', text: 'MotoGP 20' },
+    metaCriticGameResult: {
+      text: 'MotoGP 20',
+      href: '/game/xbox-one/motogp-20',
     },
   },
   {
@@ -3289,8 +3834,8 @@ export const GAME_IDS = [
     gamePassId: 'BQXN1S3V3FN9',
     howLongToBeatResult: { href: '6243', text: 'Mount & Blade' },
     metaCriticGameResult: {
-      href: 'mount-blade-warband---napoleonic-wars',
-      text: 'Mount & Blade: Warband - Napoleonic Wars',
+      text: 'Mount & Blade: Warband',
+      href: '/game/pc/mount-blade-warband',
     },
   },
   {
@@ -3298,7 +3843,10 @@ export const GAME_IDS = [
     gamePassTitle: 'Moving Out',
     gamePassId: '9NXPBSMHPLTV',
     howLongToBeatResult: { href: '75031', text: 'Moving Out' },
-    metaCriticGameResult: { href: 'moving-out', text: 'Moving Out' },
+    metaCriticGameResult: {
+      text: 'Moving Out: Movers in Paradise',
+      href: '/game/xbox-one/moving-out-movers-in-paradise',
+    },
   },
   {
     title: 'My Time At Portia',
@@ -3306,8 +3854,8 @@ export const GAME_IDS = [
     gamePassId: 'BX1FZX1X4132',
     howLongToBeatResult: { href: '52787', text: 'My Time At Portia' },
     metaCriticGameResult: {
-      href: 'my-time-at-portia',
       text: 'My Time At Portia',
+      href: '/game/xbox-one/my-time-at-portia',
     },
   },
   {
@@ -3315,12 +3863,20 @@ export const GAME_IDS = [
     gamePassTitle: 'NBA LIVE 18: The One Edition',
     gamePassId: 'C242DV9JQD3W',
     howLongToBeatResult: { href: '48823', text: 'NBA Live 18' },
+    metaCriticGameResult: {
+      text: 'NBA Live 18',
+      href: '/game/xbox-one/nba-live-18',
+    },
   },
   {
     title: 'NBA LIVE 19',
     gamePassTitle: 'NBA LIVE 19',
     gamePassId: 'BVX4Z50ZBH5Q',
     howLongToBeatResult: { href: '61335', text: 'NBA Live 19' },
+    metaCriticGameResult: {
+      text: 'NBA Live 19',
+      href: '/game/xbox-one/nba-live-19',
+    },
   },
   {
     title: 'Need for Speed Rivals',
@@ -3328,8 +3884,8 @@ export const GAME_IDS = [
     gamePassId: 'C3VM0TMWNZ5M',
     howLongToBeatResult: { href: '14334', text: 'Need for Speed: Rivals' },
     metaCriticGameResult: {
-      href: 'need-for-speed-rivals',
       text: 'Need for Speed: Rivals',
+      href: '/game/xbox-one/need-for-speed-rivals',
     },
   },
   {
@@ -3338,8 +3894,8 @@ export const GAME_IDS = [
     gamePassId: 'BXWJNW4170RM',
     howLongToBeatResult: { href: '26804', text: 'Need for Speed (2015)' },
     metaCriticGameResult: {
-      href: 'need-for-speed-hot-pursuit',
-      text: 'Need for Speed: Hot Pursuit',
+      text: 'Need for Speed: Hot Pursuit Remastered',
+      href: '/game/xbox-one/need-for-speed-hot-pursuit-remastered',
     },
   },
   {
@@ -3348,8 +3904,8 @@ export const GAME_IDS = [
     gamePassId: 'BRZZLBF5T245',
     howLongToBeatResult: { href: '69695', text: 'Need For Speed Heat' },
     metaCriticGameResult: {
-      href: 'need-for-speed-heat',
       text: 'Need for Speed Heat',
+      href: '/game/xbox-one/need-for-speed-heat',
     },
   },
   {
@@ -3358,8 +3914,8 @@ export const GAME_IDS = [
     gamePassId: 'C355T88BBX1S',
     howLongToBeatResult: { href: '46292', text: 'Need for Speed: Payback' },
     metaCriticGameResult: {
-      href: 'need-for-speed-payback',
       text: 'Need for Speed Payback',
+      href: '/game/xbox-one/need-for-speed-payback',
     },
   },
   {
@@ -3367,41 +3923,37 @@ export const GAME_IDS = [
     gamePassTitle: 'Neon Abyss',
     gamePassId: '9NC781DK18GN',
     howLongToBeatResult: { href: '77366', text: 'Neon Abyss' },
-    metaCriticGameResult: { href: 'neon-abyss', text: 'Neon Abyss' },
-  },
-  { title: 'MotoGP20', gamePassTitle: 'MotoGP™20', gamePassId: '9PJGNFWR6MHL' },
-  {
-    title: 'NHL 94 REWIND',
-    gamePassTitle: 'NHL® 94 REWIND',
-    gamePassId: '9PDGC1Z6ZHTP',
-    howLongToBeatResult: { href: '15544', text: "NHL '94" },
+    metaCriticGameResult: {
+      text: 'Neon Abyss',
+      href: '/game/xbox-one/neon-abyss',
+    },
   },
   {
     title: 'NHL 20',
     gamePassTitle: 'NHL® 20',
     gamePassId: 'C2HHTCSZRK9G',
     howLongToBeatResult: { href: '70143', text: 'NHL 20' },
-    metaCriticGameResult: { href: 'nhl-2001', text: 'NHL 2001' },
+    metaCriticGameResult: { text: 'NHL 20', href: '/game/xbox-one/nhl-20' },
   },
   {
-    title: 'NieR',
-    gamePassTitle: 'NieR:Automata™ BECOME AS GODS Edition',
-    gamePassId: 'BPPZVT8BZ15N',
-    howLongToBeatResult: { href: '6591', text: 'Nier' },
-    metaCriticGameResult: { href: 'nier-automata', text: 'NieR: Automata' },
+    title: 'NHL 94 REWIND',
+    gamePassTitle: 'NHL® 94 REWIND',
+    gamePassId: '9PDGC1Z6ZHTP',
+    howLongToBeatResult: { href: '15544', text: "NHL '94" },
+    metaCriticGameResult: {
+      text: 'NHL 94 Rewind',
+      href: '/game/xbox-one/nhl-94-rewind',
+    },
   },
   {
     title: 'Night Call',
     gamePassTitle: 'Night Call',
     gamePassId: '9NZKR4V4QGD4',
     howLongToBeatResult: { href: '69216', text: 'Night Call' },
-    metaCriticGameResult: { href: 'night-call', text: 'Night Call' },
-  },
-  {
-    title: 'NINJA GAIDEN II',
-    gamePassTitle: 'NINJA GAIDEN II',
-    gamePassId: 'BSCSRTX27ZH3',
-    howLongToBeatResult: { href: '6626', text: 'Ninja Gaiden II (2008)' },
+    metaCriticGameResult: {
+      text: 'Night Call',
+      href: '/game/xbox-one/night-call',
+    },
   },
   {
     title: 'Night in the Woods',
@@ -3409,16 +3961,9 @@ export const GAME_IDS = [
     gamePassId: 'C501VQFW8FQG',
     howLongToBeatResult: { href: '20078', text: 'Night in the Woods' },
     metaCriticGameResult: {
-      href: 'night-in-the-woods',
       text: 'Night in the Woods',
+      href: '/game/pc/night-in-the-woods',
     },
-  },
-  {
-    title: 'Outer Wilds',
-    gamePassTitle: 'Outer Wilds',
-    gamePassId: 'C596FKDKMQN7',
-    howLongToBeatResult: { href: '57527', text: 'Outer Wilds' },
-    metaCriticGameResult: { href: 'outer-wilds', text: 'Outer Wilds' },
   },
   {
     title: 'Ori and the Blind Forest',
@@ -3426,8 +3971,38 @@ export const GAME_IDS = [
     gamePassId: 'BW85KQB8Q31M',
     howLongToBeatResult: { href: '19265', text: 'Ori and the Blind Forest' },
     metaCriticGameResult: {
-      href: 'ori-and-the-blind-forest',
       text: 'Ori and the Blind Forest',
+      href: '/game/xbox-one/ori-and-the-blind-forest',
+    },
+  },
+  {
+    title: 'NieR',
+    gamePassTitle: 'NieR:Automata™ BECOME AS GODS Edition',
+    gamePassId: 'BPPZVT8BZ15N',
+    howLongToBeatResult: { href: '6591', text: 'Nier' },
+    metaCriticGameResult: {
+      text: 'NieR: Automata - Become as Gods Edition',
+      href: '/game/xbox-one/nier-automata---become-as-gods-edition',
+    },
+  },
+  {
+    title: 'Outer Wilds',
+    gamePassTitle: 'Outer Wilds',
+    gamePassId: 'C596FKDKMQN7',
+    howLongToBeatResult: { href: '57527', text: 'Outer Wilds' },
+    metaCriticGameResult: {
+      text: 'Outer Wilds',
+      href: '/game/xbox-one/outer-wilds',
+    },
+  },
+  {
+    title: 'Overcooked! 2',
+    gamePassTitle: 'Overcooked! 2',
+    gamePassId: 'BVJLKDG2TX8H',
+    howLongToBeatResult: { href: '57518', text: 'Overcooked! 2' },
+    metaCriticGameResult: {
+      text: 'Overcooked! 2',
+      href: '/game/xbox-one/overcooked!-2',
     },
   },
   {
@@ -3435,37 +4010,30 @@ export const GAME_IDS = [
     gamePassTitle: 'Oxenfree',
     gamePassId: 'BSK1GN27RB8R',
     howLongToBeatResult: { href: '33620', text: 'Oxenfree' },
-    metaCriticGameResult: { href: 'oxenfree', text: 'Oxenfree' },
-  },
-  {
-    title: 'Overcooked! 2',
-    gamePassTitle: 'Overcooked! 2',
-    gamePassId: 'BVJLKDG2TX8H',
-    howLongToBeatResult: { href: '57518', text: 'Overcooked! 2' },
-    metaCriticGameResult: { href: 'overcooked!-2', text: 'Overcooked! 2' },
+    metaCriticGameResult: { text: 'Oxenfree', href: '/game/pc/oxenfree' },
   },
   {
     title: 'Peggle',
     gamePassTitle: 'Peggle',
     gamePassId: 'BSCCQL7DZ9KD',
     howLongToBeatResult: { href: '6947', text: 'Peggle' },
-    metaCriticGameResult: { href: 'peggle-deluxe', text: 'Peggle Deluxe' },
-  },
-  {
-    title: 'PAYDAY 2',
-    gamePassTitle: 'PAYDAY 2: CRIMEWAVE EDITION',
-    gamePassId: 'C2Z9D406G0KQ',
-    howLongToBeatResult: { href: '12649', text: 'Payday 2' },
-    metaCriticGameResult: { href: 'payday-2', text: 'Payday 2' },
+    metaCriticGameResult: { text: 'Peggle 2', href: '/game/xbox-one/peggle-2' },
   },
   {
     title: 'Peggle 2',
     gamePassTitle: 'Peggle 2',
     gamePassId: 'BNCZHKWRZ7BR',
     howLongToBeatResult: { href: '15272', text: 'Peggle 2' },
+    metaCriticGameResult: { text: 'Peggle 2', href: '/game/xbox-one/peggle-2' },
+  },
+  {
+    title: 'PAYDAY 2',
+    gamePassTitle: 'PAYDAY 2: CRIMEWAVE EDITION',
+    gamePassId: 'C2Z9D406G0KQ',
+    howLongToBeatResult: { href: '12649', text: 'Payday 2' },
     metaCriticGameResult: {
-      href: 'bejeweled-2-peggle',
-      text: 'Bejeweled 2 / Peggle',
+      text: 'Payday 2: Crimewave Edition',
+      href: '/game/xbox-one/payday-2-crimewave-edition',
     },
   },
   {
@@ -3473,26 +4041,47 @@ export const GAME_IDS = [
     gamePassTitle: 'Perfect Dark',
     gamePassId: 'BQ70VB4MM1XM',
     howLongToBeatResult: { href: '6966', text: 'Perfect Dark (2000)' },
+    metaCriticGameResult: {
+      text: 'Perfect Dark Zero',
+      href: '/game/xbox-360/perfect-dark-zero',
+    },
   },
   {
     title: 'Perfect Dark Zero',
     gamePassTitle: 'Perfect Dark Zero',
     gamePassId: 'BZF7N4FQWHNR',
     howLongToBeatResult: { href: '6967', text: 'Perfect Dark Zero' },
+    metaCriticGameResult: {
+      text: 'Perfect Dark Zero',
+      href: '/game/xbox-360/perfect-dark-zero',
+    },
   },
   {
     title: 'PHOGS!',
     gamePassTitle: 'PHOGS!',
     gamePassId: '9P6X271HLG8Q',
     howLongToBeatResult: { href: '85738', text: 'Phogs!' },
-    metaCriticGameResult: { href: 'phogs!', text: 'PHOGS!' },
+    metaCriticGameResult: { text: 'PHOGS!', href: '/game/xbox-one/phogs!' },
   },
   {
     title: 'Pikuniku',
     gamePassTitle: 'Pikuniku',
     gamePassId: '9N8WRDC25K6J',
     howLongToBeatResult: { href: '64060', text: 'Pikuniku' },
-    metaCriticGameResult: { href: 'pikuniku', text: 'Pikuniku' },
+    metaCriticGameResult: { text: 'Pikuniku', href: '/game/xbox-one/pikuniku' },
+  },
+  {
+    title: 'Pillars of Eternity II',
+    gamePassTitle: 'Pillars of Eternity II: Deadfire - Ultimate Edition',
+    gamePassId: '9PJD2KMX7TZ6',
+    howLongToBeatResult: {
+      href: '44045',
+      text: 'Pillars of Eternity II: Deadfire',
+    },
+    metaCriticGameResult: {
+      text: 'Pillars of Eternity II: Deadfire',
+      href: '/game/xbox-one/pillars-of-eternity-ii-deadfire',
+    },
   },
   {
     title: 'Pillars of Eternity',
@@ -3500,8 +4089,8 @@ export const GAME_IDS = [
     gamePassId: 'BS34VNW7H61F',
     howLongToBeatResult: { href: '13434', text: 'Pillars of Eternity' },
     metaCriticGameResult: {
-      href: 'pillars-of-eternity',
-      text: 'Pillars of Eternity',
+      text: 'Pillars of Eternity: Complete Edition',
+      href: '/game/xbox-one/pillars-of-eternity-complete-edition',
     },
   },
   {
@@ -3509,7 +4098,10 @@ export const GAME_IDS = [
     gamePassTitle: 'Planet Coaster: Console Edition',
     gamePassId: '9NGRX7L5NB6M',
     howLongToBeatResult: { href: '40413', text: 'Planet Coaster' },
-    metaCriticGameResult: { href: 'planet-coaster', text: 'Planet Coaster' },
+    metaCriticGameResult: {
+      text: 'Planet Coaster: Console Edition',
+      href: '/game/xbox-one/planet-coaster-console-edition',
+    },
   },
   {
     title: 'Plants vs. Zombies',
@@ -3517,21 +4109,8 @@ export const GAME_IDS = [
     gamePassId: 'BR1D9CR82ZM8',
     howLongToBeatResult: { href: '7106', text: 'Plants vs. Zombies' },
     metaCriticGameResult: {
-      href: 'plants-vs-zombies',
-      text: 'Plants vs. Zombies',
-    },
-  },
-  {
-    title: 'Plants vs. Zombies Garden Warfare',
-    gamePassTitle: 'Plants vs. Zombies Garden Warfare',
-    gamePassId: 'BTJ0T8C04ZBV',
-    howLongToBeatResult: {
-      href: '33632',
-      text: 'Plants vs. Zombies: Garden Warfare 2',
-    },
-    metaCriticGameResult: {
-      href: 'plants-vs-zombies-garden-warfare-2',
       text: 'Plants vs Zombies: Garden Warfare 2',
+      href: '/game/xbox-one/plants-vs-zombies-garden-warfare-2',
     },
   },
   {
@@ -3540,8 +4119,21 @@ export const GAME_IDS = [
     gamePassId: 'C4HZC7LJG6PX',
     howLongToBeatResult: { href: '7106', text: 'Plants vs. Zombies' },
     metaCriticGameResult: {
-      href: 'plants-vs-zombies',
-      text: 'Plants vs. Zombies',
+      text: 'Plants vs Zombies: Garden Warfare 2',
+      href: '/game/xbox-one/plants-vs-zombies-garden-warfare-2',
+    },
+  },
+  {
+    title: 'Plants vs. Zombies Garden Warfare',
+    gamePassTitle: 'Plants vs. Zombies Garden Warfare',
+    gamePassId: 'BTJ0T8C04ZBV',
+    howLongToBeatResult: {
+      href: '17076',
+      text: 'Plants vs. Zombies: Garden Warfare',
+    },
+    metaCriticGameResult: {
+      text: 'Plants vs Zombies: Garden Warfare 2',
+      href: '/game/xbox-one/plants-vs-zombies-garden-warfare-2',
     },
   },
   {
@@ -3553,8 +4145,8 @@ export const GAME_IDS = [
       text: 'Plants vs. Zombies: Garden Warfare 2',
     },
     metaCriticGameResult: {
-      href: 'plants-vs-zombies-garden-warfare-2',
       text: 'Plants vs Zombies: Garden Warfare 2',
+      href: '/game/xbox-one/plants-vs-zombies-garden-warfare-2',
     },
   },
   {
@@ -3566,18 +4158,8 @@ export const GAME_IDS = [
       text: "PlayerUnknown's Battlegrounds",
     },
     metaCriticGameResult: {
-      href: 'playerunknowns-battlegrounds',
       text: "PlayerUnknown's Battlegrounds",
-    },
-  },
-  {
-    title: 'RAGE 2',
-    gamePassTitle: 'RAGE 2',
-    gamePassId: 'C2DCJ95ZXBMS',
-    howLongToBeatResult: { href: '58031', text: 'Rage 2' },
-    metaCriticGameResult: {
-      href: 'god-eater-2-rage-burst',
-      text: 'God Eater 2: Rage Burst',
+      href: '/game/xbox-one/playerunknowns-battlegrounds',
     },
   },
   {
@@ -3585,22 +4167,26 @@ export const GAME_IDS = [
     gamePassTitle: 'Quantum Break',
     gamePassId: 'BPNDKQN84N6L',
     howLongToBeatResult: { href: '19853', text: 'Quantum Break' },
-    metaCriticGameResult: { href: 'quantum-break', text: 'Quantum Break' },
+    metaCriticGameResult: {
+      text: 'Quantum Break',
+      href: '/game/xbox-one/quantum-break',
+    },
+  },
+  {
+    title: 'RAGE 2',
+    gamePassTitle: 'RAGE 2',
+    gamePassId: 'C2DCJ95ZXBMS',
+    howLongToBeatResult: { href: '58031', text: 'Rage 2' },
+    metaCriticGameResult: { text: 'RAGE 2', href: '/game/xbox-one/rage-2' },
   },
   {
     title: 'Rare Replay',
     gamePassTitle: 'Rare Replay',
     gamePassId: 'C22T53SQ7FLM',
     howLongToBeatResult: { href: '26800', text: 'Rare Replay' },
-  },
-  {
-    title: 'RESIDENT EVIL 7 biohazard',
-    gamePassTitle: 'RESIDENT EVIL 7 biohazard',
-    gamePassId: 'BVFDTJ1XF6CS',
-    howLongToBeatResult: { href: '38051', text: 'Resident Evil 7: Biohazard' },
     metaCriticGameResult: {
-      href: 'resident-evil-7-biohazard',
-      text: 'Resident Evil 7: biohazard',
+      text: 'Rare Replay',
+      href: '/game/xbox-one/rare-replay',
     },
   },
   {
@@ -3609,16 +4195,19 @@ export const GAME_IDS = [
     gamePassId: '9PBHXGWZTS2N',
     howLongToBeatResult: { href: '68318', text: 'Remnant: From the Ashes' },
     metaCriticGameResult: {
-      href: 'remnant-from-the-ashes---swamps-of-corsus',
-      text: 'Remnant: From the Ashes - Swamps of Corsus',
+      text: 'Remnant: From the Ashes - Subject 2923',
+      href: '/game/xbox-one/remnant-from-the-ashes---subject-2923',
     },
   },
   {
-    title: 'Rocket Arena',
-    gamePassTitle: 'Rocket Arena',
-    gamePassId: '9MX7Q207JGTW',
-    howLongToBeatResult: { href: '80744', text: 'Rocket Arena' },
-    metaCriticGameResult: { href: 'rocket-arena', text: 'Rocket Arena' },
+    title: 'RESIDENT EVIL 7 biohazard',
+    gamePassTitle: 'RESIDENT EVIL 7 biohazard',
+    gamePassId: 'BVFDTJ1XF6CS',
+    howLongToBeatResult: { href: '38051', text: 'Resident Evil 7: Biohazard' },
+    metaCriticGameResult: {
+      text: 'Resident Evil 7: biohazard',
+      href: '/game/xbox-one/resident-evil-7-biohazard',
+    },
   },
   {
     title: 'River City Girls',
@@ -3626,8 +4215,18 @@ export const GAME_IDS = [
     gamePassId: '9NN69HFJ8SX1',
     howLongToBeatResult: { href: '69993', text: 'River City Girls' },
     metaCriticGameResult: {
-      href: 'river-city-girls',
       text: 'River City Girls',
+      href: '/game/xbox-one/river-city-girls',
+    },
+  },
+  {
+    title: 'Rocket Arena',
+    gamePassTitle: 'Rocket Arena',
+    gamePassId: '9MX7Q207JGTW',
+    howLongToBeatResult: { href: '80744', text: 'Rocket Arena' },
+    metaCriticGameResult: {
+      text: 'Rocket Arena',
+      href: '/game/xbox-one/rocket-arena',
     },
   },
   {
@@ -3636,8 +4235,18 @@ export const GAME_IDS = [
     gamePassId: 'C10QTNC7JWNJ',
     howLongToBeatResult: { href: '14345', text: 'Ryse: Son of Rome' },
     metaCriticGameResult: {
-      href: 'ryse-son-of-rome',
       text: 'Ryse: Son of Rome',
+      href: '/game/xbox-one/ryse-son-of-rome',
+    },
+  },
+  {
+    title: 'Sea of Solitude',
+    gamePassTitle: 'Sea of Solitude',
+    gamePassId: 'C4060P46HH4D',
+    howLongToBeatResult: { href: '25029', text: 'Sea of Solitude' },
+    metaCriticGameResult: {
+      text: 'Sea of Solitude',
+      href: '/game/xbox-one/sea-of-solitude',
     },
   },
   {
@@ -3645,20 +4254,20 @@ export const GAME_IDS = [
     gamePassTitle: 'ScreamRide',
     gamePassId: 'BQ4M1XWXFKHB',
     howLongToBeatResult: { href: '21715', text: 'Screamride' },
-  },
-  {
-    title: 'Sea of Solitude',
-    gamePassTitle: 'Sea of Solitude',
-    gamePassId: 'C4060P46HH4D',
-    howLongToBeatResult: { href: '25029', text: 'Sea of Solitude' },
-    metaCriticGameResult: { href: 'sea-of-solitude', text: 'Sea of Solitude' },
+    metaCriticGameResult: {
+      text: 'ScreamRide',
+      href: '/game/xbox-one/screamride',
+    },
   },
   {
     title: 'Secret Neighbor',
     gamePassTitle: 'Secret Neighbor',
     gamePassId: '9P7GBPGT90L3',
     howLongToBeatResult: { href: '69815', text: 'Secret Neighbor' },
-    metaCriticGameResult: { href: 'secret-neighbor', text: 'Secret Neighbor' },
+    metaCriticGameResult: {
+      text: 'Secret Neighbor',
+      href: '/game/xbox-one/secret-neighbor',
+    },
   },
   {
     title: 'Shadow Warrior 2',
@@ -3666,66 +4275,73 @@ export const GAME_IDS = [
     gamePassId: 'BP79KKVGDDH1',
     howLongToBeatResult: { href: '39740', text: 'Shadow Warrior 2' },
     metaCriticGameResult: {
-      href: 'shadow-warrior-2',
       text: 'Shadow Warrior 2',
+      href: '/game/xbox-one/shadow-warrior-2',
     },
-  },
-  {
-    title: 'Shadows of the Damned',
-    gamePassTitle: 'Shadows of the Damned',
-    gamePassId: 'C136M2366DM0',
-    howLongToBeatResult: { href: '8368', text: 'Shadows of the Damned' },
-  },
-  {
-    title: 'Slay The Spire',
-    gamePassTitle: 'Slay The Spire',
-    gamePassId: '9P6W46XMDJM5',
-    howLongToBeatResult: { href: '51390', text: 'Slay the Spire' },
-    metaCriticGameResult: { href: 'slay-the-spire', text: 'Slay the Spire' },
   },
   {
     title: 'Skate 3',
     gamePassTitle: 'Skate 3',
     gamePassId: 'BNKDKQXMXRR2',
     howLongToBeatResult: { href: '8599', text: 'Skate 3' },
-    metaCriticGameResult: {
-      href: 'skate-park-tycoon',
-      text: 'Skate Park Tycoon',
-    },
+    metaCriticGameResult: { text: 'Skate 3', href: '/game/xbox-360/skate-3' },
   },
   {
     title: 'Slime Rancher',
     gamePassTitle: 'Slime Rancher',
     gamePassId: 'C2NC88M7NWZ1',
     howLongToBeatResult: { href: '33740', text: 'Slime Rancher' },
-    metaCriticGameResult: { href: 'slime-rancher', text: 'Slime Rancher' },
+    metaCriticGameResult: {
+      text: 'Slime Rancher',
+      href: '/game/xbox-one/slime-rancher',
+    },
+  },
+  {
+    title: 'Slay The Spire',
+    gamePassTitle: 'Slay The Spire',
+    gamePassId: '9P6W46XMDJM5',
+    howLongToBeatResult: { href: '51390', text: 'Slay the Spire' },
+    metaCriticGameResult: {
+      text: 'Slay the Spire',
+      href: '/game/xbox-one/slay-the-spire',
+    },
   },
   {
     title: 'Sniper Elite 4',
     gamePassTitle: 'Sniper Elite 4',
     gamePassId: 'BZ5VLVX84STW',
     howLongToBeatResult: { href: '40715', text: 'Sniper Elite 4' },
-    metaCriticGameResult: { href: 'sniper-elite-4', text: 'Sniper Elite 4' },
+    metaCriticGameResult: {
+      text: 'Sniper Elite 4',
+      href: '/game/xbox-one/sniper-elite-4',
+    },
   },
   {
     title: 'SOULCALIBUR VI',
     gamePassTitle: 'SOULCALIBUR VI',
     gamePassId: 'C3V22FQD8N84',
     howLongToBeatResult: { href: '60106', text: 'Soulcalibur VI' },
-    metaCriticGameResult: { href: 'soulcalibur-vi', text: 'SoulCalibur VI' },
-  },
-  {
-    title: 'Star Renegades',
-    gamePassTitle: 'Star Renegades',
-    gamePassId: '9PHH0RQ51S5V',
-    howLongToBeatResult: { href: '71955', text: 'Star Renegades' },
-    metaCriticGameResult: { href: 'star-renegades', text: 'Star Renegades' },
+    metaCriticGameResult: {
+      text: 'SoulCalibur VI',
+      href: '/game/xbox-one/soulcalibur-vi',
+    },
   },
   {
     title: 'SSX',
     gamePassTitle: 'SSX',
     gamePassId: 'BWK0Q0RQMH7V',
     howLongToBeatResult: { href: '9016', text: 'SSX' },
+    metaCriticGameResult: { text: 'SSX', href: '/game/xbox-360/ssx' },
+  },
+  {
+    title: 'Star Renegades',
+    gamePassTitle: 'Star Renegades',
+    gamePassId: '9PHH0RQ51S5V',
+    howLongToBeatResult: { href: '71955', text: 'Star Renegades' },
+    metaCriticGameResult: {
+      text: 'Star Renegades',
+      href: '/game/xbox-one/star-renegades',
+    },
   },
   {
     title: 'STAR WARS Jedi',
@@ -3736,21 +4352,18 @@ export const GAME_IDS = [
       text: 'Star Wars Jedi: Fallen Order',
     },
     metaCriticGameResult: {
-      href: 'star-wars-jedi-knight-dark-forces-ii',
-      text: 'Star Wars Jedi Knight: Dark Forces II',
+      text: 'Pinball FX3 - Star Wars: The Last Jedi',
+      href: '/game/xbox-one/pinball-fx3---star-wars-the-last-jedi',
     },
   },
   {
-    title: 'STAR WARS Battlefront',
-    gamePassTitle: 'STAR WARS™ Battlefront™',
-    gamePassId: 'BRXTM276DLPR',
-    howLongToBeatResult: {
-      href: '45153',
-      text: 'Star Wars: Battlefront II (2017)',
-    },
+    title: 'State of Decay',
+    gamePassTitle: 'State of Decay: Year-One',
+    gamePassId: 'C5JGRR1LFVW8',
+    howLongToBeatResult: { href: '9184', text: 'State of Decay' },
     metaCriticGameResult: {
-      href: 'star-wars-battlefront-ii',
-      text: 'Star Wars: Battlefront II',
+      text: 'State of Decay 2',
+      href: '/game/xbox-one/state-of-decay-2',
     },
   },
   {
@@ -3762,16 +4375,35 @@ export const GAME_IDS = [
       text: 'Star Wars: Battlefront II (2017)',
     },
     metaCriticGameResult: {
-      href: 'star-wars-battlefront-ii',
-      text: 'Star Wars: Battlefront II',
+      text: 'Star Wars Battlefront II',
+      href: '/game/xbox-one/star-wars-battlefront-ii',
     },
   },
   {
-    title: 'State of Decay',
-    gamePassTitle: 'State of Decay: Year-One',
-    gamePassId: 'C5JGRR1LFVW8',
-    howLongToBeatResult: { href: '9184', text: 'State of Decay' },
-    metaCriticGameResult: { href: 'state-of-decay', text: 'State of Decay' },
+    title: 'Stealth Inc 2',
+    gamePassTitle: 'Stealth Inc. 2: A Game of Clones',
+    gamePassId: 'BR26S2C6SKN1',
+    howLongToBeatResult: {
+      href: '22410',
+      text: 'Stealth Inc 2: A Game of Clones',
+    },
+    metaCriticGameResult: {
+      text: 'Stealth Inc 2: A Game of Clones',
+      href: '/game/xbox-one/stealth-inc-2-a-game-of-clones',
+    },
+  },
+  {
+    title: 'STAR WARS Battlefront',
+    gamePassTitle: 'STAR WARS™ Battlefront™',
+    gamePassId: 'BRXTM276DLPR',
+    howLongToBeatResult: {
+      href: '45153',
+      text: 'Star Wars: Battlefront II (2017)',
+    },
+    metaCriticGameResult: {
+      text: 'Star Wars Battlefront II',
+      href: '/game/xbox-one/star-wars-battlefront-ii',
+    },
   },
   {
     title: 'Stellaris',
@@ -3779,8 +4411,8 @@ export const GAME_IDS = [
     gamePassId: 'BWL72GR7Z7GK',
     howLongToBeatResult: { href: '37186', text: 'Stellaris' },
     metaCriticGameResult: {
-      href: 'stellaris-synthetic-dawn',
       text: 'Stellaris: Synthetic Dawn',
+      href: '/game/xbox-one/stellaris-synthetic-dawn',
     },
   },
   {
@@ -3789,8 +4421,8 @@ export const GAME_IDS = [
     gamePassId: '9NCT0QGGX6XD',
     howLongToBeatResult: { href: '68766', text: 'Stranger Things 3: The Game' },
     metaCriticGameResult: {
-      href: 'stranger-things-3-the-game',
       text: 'Stranger Things 3: The Game',
+      href: '/game/xbox-one/stranger-things-3-the-game',
     },
   },
   {
@@ -3799,8 +4431,8 @@ export const GAME_IDS = [
     gamePassId: '9MZVTHHJKD3G',
     howLongToBeatResult: { href: '44813', text: 'Streets of Rogue' },
     metaCriticGameResult: {
-      href: 'streets-of-rogue',
       text: 'Streets of Rogue',
+      href: '/game/xbox-one/streets-of-rogue',
     },
   },
   {
@@ -3809,8 +4441,8 @@ export const GAME_IDS = [
     gamePassId: 'BRZHFR5XBLQS',
     howLongToBeatResult: { href: '21278', text: 'Sunset Overdrive' },
     metaCriticGameResult: {
-      href: 'sunset-overdrive',
       text: 'Sunset Overdrive',
+      href: '/game/xbox-one/sunset-overdrive',
     },
   },
   {
@@ -3818,23 +4450,16 @@ export const GAME_IDS = [
     gamePassTitle: 'SUPERHOT: MIND CONTROL DELETE',
     gamePassId: '9NRH78B682L8',
     howLongToBeatResult: { href: '21723', text: 'SUPERHOT' },
-    metaCriticGameResult: { href: 'superhot-vr', text: 'SUPERHOT VR' },
+    metaCriticGameResult: { text: 'SUPERHOT', href: '/game/xbox-one/superhot' },
   },
   {
     title: 'Supraland',
     gamePassTitle: 'Supraland',
     gamePassId: '9PN6MTJX8LZD',
     howLongToBeatResult: { href: '62224', text: 'Supraland' },
-    metaCriticGameResult: { href: 'supraland', text: 'Supraland' },
-  },
-  {
-    title: 'Surviving Mars',
-    gamePassTitle: 'Surviving Mars',
-    gamePassId: 'BXC7CS90NX6S',
-    howLongToBeatResult: { href: '45951', text: 'Surviving Mars' },
     metaCriticGameResult: {
-      href: 'surviving-mars-green-planet',
-      text: 'Surviving Mars: Green Planet',
+      text: 'Supraland',
+      href: '/game/xbox-one/supraland',
     },
   },
   {
@@ -3843,8 +4468,18 @@ export const GAME_IDS = [
     gamePassId: 'BZBX8JFCDBPR',
     howLongToBeatResult: { href: '9608', text: 'Tales of Vesperia' },
     metaCriticGameResult: {
-      href: 'tales-of-vesperia-definitive-edition',
       text: 'Tales of Vesperia: Definitive Edition',
+      href: '/game/xbox-one/tales-of-vesperia-definitive-edition',
+    },
+  },
+  {
+    title: 'Surviving Mars',
+    gamePassTitle: 'Surviving Mars',
+    gamePassId: 'BXC7CS90NX6S',
+    howLongToBeatResult: { href: '45951', text: 'Surviving Mars' },
+    metaCriticGameResult: {
+      text: 'Surviving Mars',
+      href: '/game/xbox-one/surviving-mars',
     },
   },
   {
@@ -3852,26 +4487,7 @@ export const GAME_IDS = [
     gamePassTitle: 'Terraria',
     gamePassId: 'BTNPS60N3114',
     howLongToBeatResult: { href: '9705', text: 'Terraria' },
-    metaCriticGameResult: { href: 'terraria', text: 'Terraria' },
-  },
-  {
-    title: 'Stealth Inc. 2',
-    gamePassTitle: 'Stealth Inc. 2: A Game of Clones',
-    gamePassId: 'BR26S2C6SKN1',
-    metaCriticGameResult: {
-      href: 'stealth-inc-2-a-game-of-clones',
-      text: 'Stealth Inc 2: A Game of Clones',
-    },
-  },
-  {
-    title: 'The Dark Crystal',
-    gamePassTitle: 'The Dark Crystal: Age of Resistance Tactics',
-    gamePassId: '9NZWXT6VMGG8',
-    howLongToBeatResult: { href: '57460', text: 'The Dark Crystal' },
-    metaCriticGameResult: {
-      href: 'the-dark-crystal-age-of-resistance-tactics',
-      text: 'The Dark Crystal: Age of Resistance Tactics',
-    },
+    metaCriticGameResult: { text: 'Terraria', href: '/game/xbox-one/terraria' },
   },
   {
     title: 'The Dark Pictures Anthology',
@@ -3882,8 +4498,8 @@ export const GAME_IDS = [
       text: 'The Dark Pictures: Man of Medan',
     },
     metaCriticGameResult: {
-      href: 'the-dark-pictures-anthology-man-of-medan',
-      text: 'The Dark Pictures Anthology: Man of Medan',
+      text: 'The Dark Pictures Anthology: Volume 1',
+      href: '/game/xbox-one/the-dark-pictures-anthology-volume-1',
     },
   },
   {
@@ -3892,8 +4508,18 @@ export const GAME_IDS = [
     gamePassId: 'BQ1W1T1FC14W',
     howLongToBeatResult: { href: '9859', text: 'The Elder Scrolls V: Skyrim' },
     metaCriticGameResult: {
-      href: 'the-elder-scrolls-v-skyrim',
-      text: 'The Elder Scrolls V: Skyrim',
+      text: 'The Elder Scrolls V: Skyrim Special Edition',
+      href: '/game/xbox-one/the-elder-scrolls-v-skyrim-special-edition',
+    },
+  },
+  {
+    title: 'The Dark Crystal',
+    gamePassTitle: 'The Dark Crystal: Age of Resistance Tactics',
+    gamePassId: '9NZWXT6VMGG8',
+    howLongToBeatResult: { href: '57460', text: 'The Dark Crystal' },
+    metaCriticGameResult: {
+      text: 'Brunhilda and the Dark Crystal',
+      href: '/game/pc/brunhilda-and-the-dark-crystal',
     },
   },
   {
@@ -3902,8 +4528,8 @@ export const GAME_IDS = [
     gamePassId: 'BRKX5CRMRTC2',
     howLongToBeatResult: { href: '17596', text: 'The Elder Scrolls Online' },
     metaCriticGameResult: {
-      href: 'the-elder-scrolls-online-summerset',
       text: 'The Elder Scrolls Online: Summerset',
+      href: '/game/xbox-one/the-elder-scrolls-online-summerset',
     },
   },
   {
@@ -3912,8 +4538,8 @@ export const GAME_IDS = [
     gamePassId: 'C5150FZWS1K2',
     howLongToBeatResult: { href: '50275', text: 'The Jackbox Party Pack 4' },
     metaCriticGameResult: {
-      href: 'the-jackbox-party-pack-4',
       text: 'The Jackbox Party Pack 4',
+      href: '/game/xbox-one/the-jackbox-party-pack-4',
     },
   },
   {
@@ -3921,21 +4547,40 @@ export const GAME_IDS = [
     gamePassTitle: 'The Little Acre',
     gamePassId: 'BX89DK9KLJ89',
     howLongToBeatResult: { href: '41938', text: 'The Little Acre' },
-    metaCriticGameResult: { href: 'the-little-acre', text: 'The Little Acre' },
+    metaCriticGameResult: {
+      text: 'The Little Acre',
+      href: '/game/xbox-one/the-little-acre',
+    },
   },
   {
     title: 'The Long Dark',
     gamePassTitle: 'The Long Dark',
     gamePassId: 'C41ZDFQ82M1G',
     howLongToBeatResult: { href: '21471', text: 'The Long Dark' },
-    metaCriticGameResult: { href: 'the-long-dark', text: 'The Long Dark' },
+    metaCriticGameResult: {
+      text: 'The Long Dark',
+      href: '/game/xbox-one/the-long-dark',
+    },
+  },
+  {
+    title: 'The Outer Worlds',
+    gamePassTitle: 'The Outer Worlds',
+    gamePassId: 'BVTKN6CQ8W5F',
+    howLongToBeatResult: { href: '62935', text: 'The Outer Worlds' },
+    metaCriticGameResult: {
+      text: 'The Outer Worlds: Peril on Gorgon',
+      href: '/game/xbox-one/the-outer-worlds-peril-on-gorgon',
+    },
   },
   {
     title: 'The Messenger',
     gamePassTitle: 'The Messenger',
     gamePassId: '9P5C81K094KW',
     howLongToBeatResult: { href: '60176', text: 'The Messenger (2018)' },
-    metaCriticGameResult: { href: 'the-messenger', text: 'The Messenger' },
+    metaCriticGameResult: {
+      text: 'The Messenger',
+      href: '/game/xbox-one/the-messenger',
+    },
   },
   {
     title: 'The Sims 4',
@@ -3943,8 +4588,8 @@ export const GAME_IDS = [
     gamePassId: 'C08JXNK0VG5L',
     howLongToBeatResult: { href: '20992', text: 'The Sims 4' },
     metaCriticGameResult: {
-      href: 'the-sims-4-realm-of-magic',
-      text: 'The Sims 4: Realm of Magic',
+      text: 'The Sims 4',
+      href: '/game/xbox-one/the-sims-4',
     },
   },
   {
@@ -3952,7 +4597,10 @@ export const GAME_IDS = [
     gamePassTitle: 'The Surge 2',
     gamePassId: 'BSWTLFKMV96K',
     howLongToBeatResult: { href: '67880', text: 'The Surge 2' },
-    metaCriticGameResult: { href: 'the-surge-2', text: 'The Surge 2' },
+    metaCriticGameResult: {
+      text: 'The Surge 2',
+      href: '/game/xbox-one/the-surge-2',
+    },
   },
   {
     title: 'The Walking Dead',
@@ -3961,8 +4609,8 @@ export const GAME_IDS = [
     gamePassId: 'BQR7QS0F8SJ3',
     howLongToBeatResult: { href: '66845', text: 'The Walking Dead (2017)' },
     metaCriticGameResult: {
-      href: 'the-walking-dead-episode-5---no-time-left',
-      text: 'The Walking Dead: Episode 5 - No Time Left',
+      text: "OVERKILL's The Walking Dead",
+      href: '/game/xbox-one/overkills-the-walking-dead',
     },
   },
   {
@@ -3971,8 +4619,8 @@ export const GAME_IDS = [
     gamePassId: 'C512KLS2GPD3',
     howLongToBeatResult: { href: '66845', text: 'The Walking Dead (2017)' },
     metaCriticGameResult: {
-      href: 'the-walking-dead-episode-5---no-time-left',
-      text: 'The Walking Dead: Episode 5 - No Time Left',
+      text: "OVERKILL's The Walking Dead",
+      href: '/game/xbox-one/overkills-the-walking-dead',
     },
   },
   {
@@ -3981,8 +4629,8 @@ export const GAME_IDS = [
     gamePassId: 'BT7L901WBLXD',
     howLongToBeatResult: { href: '66845', text: 'The Walking Dead (2017)' },
     metaCriticGameResult: {
-      href: 'the-walking-dead-episode-5---no-time-left',
-      text: 'The Walking Dead: Episode 5 - No Time Left',
+      text: "OVERKILL's The Walking Dead",
+      href: '/game/xbox-one/overkills-the-walking-dead',
     },
   },
   {
@@ -3991,8 +4639,8 @@ export const GAME_IDS = [
     gamePassId: 'C2XNJC9WK15X',
     howLongToBeatResult: { href: '66845', text: 'The Walking Dead (2017)' },
     metaCriticGameResult: {
-      href: 'the-walking-dead-episode-5---no-time-left',
-      text: 'The Walking Dead: Episode 5 - No Time Left',
+      text: "OVERKILL's The Walking Dead",
+      href: '/game/xbox-one/overkills-the-walking-dead',
     },
   },
   {
@@ -4001,8 +4649,8 @@ export const GAME_IDS = [
     gamePassId: 'C2DQXX0CB42F',
     howLongToBeatResult: { href: '66845', text: 'The Walking Dead (2017)' },
     metaCriticGameResult: {
-      href: 'the-walking-dead-episode-5---no-time-left',
-      text: 'The Walking Dead: Episode 5 - No Time Left',
+      text: "OVERKILL's The Walking Dead",
+      href: '/game/xbox-one/overkills-the-walking-dead',
     },
   },
   {
@@ -4011,18 +4659,8 @@ export const GAME_IDS = [
     gamePassId: 'BW6B077FCH11',
     howLongToBeatResult: { href: '66845', text: 'The Walking Dead (2017)' },
     metaCriticGameResult: {
-      href: 'the-walking-dead-episode-5---no-time-left',
-      text: 'The Walking Dead: Episode 5 - No Time Left',
-    },
-  },
-  {
-    title: 'The Witcher 3',
-    gamePassTitle: 'The Witcher 3: Wild Hunt',
-    gamePassId: 'BR765873CQJD',
-    howLongToBeatResult: { href: '10270', text: 'The Witcher 3: Wild Hunt' },
-    metaCriticGameResult: {
-      href: 'the-witcher-3-wild-hunt',
-      text: 'The Witcher 3: Wild Hunt',
+      text: "OVERKILL's The Walking Dead",
+      href: '/game/xbox-one/overkills-the-walking-dead',
     },
   },
   {
@@ -4033,18 +4671,19 @@ export const GAME_IDS = [
       href: '85918',
       text: 'The Yakuza Remastered Collection',
     },
+    metaCriticGameResult: {
+      text: 'The Yakuza Remastered Collection',
+      href: '/game/xbox-one/the-yakuza-remastered-collection',
+    },
   },
   {
-    title: 'theHunter',
-    gamePassTitle: 'theHunter: Call of the Wild',
-    gamePassId: 'BXBJQ1932138',
-    howLongToBeatResult: {
-      href: '43633',
-      text: 'The Hunter: Call of the Wild',
-    },
+    title: 'The Witcher 3',
+    gamePassTitle: 'The Witcher 3: Wild Hunt',
+    gamePassId: 'BR765873CQJD',
+    howLongToBeatResult: { href: '10270', text: 'The Witcher 3: Wild Hunt' },
     metaCriticGameResult: {
-      href: 'thehunter-call-of-the-wild',
-      text: 'theHunter: Call of the Wild',
+      text: 'The Witcher 3: Wild Hunt',
+      href: '/game/xbox-one/the-witcher-3-wild-hunt',
     },
   },
   {
@@ -4056,8 +4695,21 @@ export const GAME_IDS = [
       text: 'Thronebreaker: The Witcher Tales',
     },
     metaCriticGameResult: {
-      href: 'thronebreaker-the-witcher-tales',
       text: 'Thronebreaker: The Witcher Tales',
+      href: '/game/xbox-one/thronebreaker-the-witcher-tales',
+    },
+  },
+  {
+    title: 'theHunter',
+    gamePassTitle: 'theHunter: Call of the Wild',
+    gamePassId: 'BXBJQ1932138',
+    howLongToBeatResult: {
+      href: '43633',
+      text: 'The Hunter: Call of the Wild',
+    },
+    metaCriticGameResult: {
+      text: 'theHunter: Call of the Wild',
+      href: '/game/xbox-one/thehunter-call-of-the-wild',
     },
   },
   {
@@ -4065,26 +4717,43 @@ export const GAME_IDS = [
     gamePassTitle: 'Titanfall',
     gamePassId: 'BPB9XVH92Z7T',
     howLongToBeatResult: { href: '16621', text: 'Titanfall' },
-    metaCriticGameResult: { href: 'titanfall', text: 'Titanfall' },
+    metaCriticGameResult: {
+      text: 'Titanfall 2',
+      href: '/game/xbox-one/titanfall-2',
+    },
   },
   {
     title: 'Titanfall 2',
     gamePassTitle: 'Titanfall® 2',
     gamePassId: 'C0X2HNVH08FB',
     howLongToBeatResult: { href: '38000', text: 'Titanfall 2' },
-    metaCriticGameResult: { href: 'titanfall-2', text: 'Titanfall 2' },
+    metaCriticGameResult: {
+      text: 'Titanfall 2',
+      href: '/game/xbox-one/titanfall-2',
+    },
   },
   {
-    title: "Tom Clancy's Rainbow Six Siege Deluxe Edition",
+    title: "Tom Clancy's Rainbow Six Siege ",
     gamePassTitle: "Tom Clancy's Rainbow Six® Siege Deluxe Edition",
     gamePassId: '9P30K2NXWH82',
+    howLongToBeatResult: {
+      href: '21279',
+      text: "Tom Clancy's Rainbow Six Siege",
+    },
+    metaCriticGameResult: {
+      text: "Tom Clancy's Rainbow Six Siege",
+      href: '/game/xbox-one/tom-clancys-rainbow-six-siege',
+    },
   },
   {
     title: 'Torchlight III',
     gamePassTitle: 'Torchlight III',
     gamePassId: '9N944BP7SMCG',
     howLongToBeatResult: { href: '74817', text: 'Torchlight III' },
-    metaCriticGameResult: { href: 'torchlight-iii', text: 'Torchlight III' },
+    metaCriticGameResult: {
+      text: 'Torchlight III',
+      href: '/game/xbox-one/torchlight-iii',
+    },
   },
   {
     title: 'Totally Reliable Delivery Service',
@@ -4095,8 +4764,8 @@ export const GAME_IDS = [
       text: 'Totally Reliable Delivery Service',
     },
     metaCriticGameResult: {
-      href: 'totally-reliable-delivery-service',
       text: 'Totally Reliable Delivery Service',
+      href: '/game/xbox-one/totally-reliable-delivery-service',
     },
   },
   {
@@ -4105,8 +4774,8 @@ export const GAME_IDS = [
     gamePassId: '9P32WWJ0PJJK',
     howLongToBeatResult: { href: '74885', text: 'Train Sim World 2020' },
     metaCriticGameResult: {
-      href: 'train-sim-world-2020',
       text: 'Train Sim World 2020',
+      href: '/game/xbox-one/train-sim-world-2020',
     },
   },
   {
@@ -4115,8 +4784,18 @@ export const GAME_IDS = [
     gamePassId: '9PKM0HK8HKFL',
     howLongToBeatResult: { href: '60043', text: 'Two Point Hospital' },
     metaCriticGameResult: {
-      href: 'two-point-hospital',
-      text: 'Two Point Hospital',
+      text: 'Two Point Hospital: JUMBO Edition',
+      href: '/game/xbox-one/two-point-hospital-jumbo-edition',
+    },
+  },
+  {
+    title: 'Unravel Two',
+    gamePassTitle: 'Unravel Two',
+    gamePassId: 'C4VKLMG1HLZW',
+    howLongToBeatResult: { href: '57358', text: 'Unravel Two' },
+    metaCriticGameResult: {
+      text: 'Unravel Two',
+      href: '/game/xbox-one/unravel-two',
     },
   },
   {
@@ -4124,51 +4803,62 @@ export const GAME_IDS = [
     gamePassTitle: 'Unravel',
     gamePassId: 'C11KKHB5H7QJ',
     howLongToBeatResult: { href: '26763', text: 'Unravel' },
-    metaCriticGameResult: { href: 'unravel', text: 'Unravel' },
-  },
-  {
-    title: 'Unravel Two',
-    gamePassTitle: 'Unravel Two',
-    gamePassId: 'C4VKLMG1HLZW',
-    howLongToBeatResult: { href: '57358', text: 'Unravel Two' },
-    metaCriticGameResult: { href: 'unravel-two', text: 'Unravel Two' },
+    metaCriticGameResult: {
+      text: 'Unravel Two',
+      href: '/game/xbox-one/unravel-two',
+    },
   },
   {
     title: 'Unruly Heroes',
     gamePassTitle: 'Unruly Heroes',
     gamePassId: '9NBC54MT6KHX',
     howLongToBeatResult: { href: '64458', text: 'Unruly Heroes' },
-    metaCriticGameResult: { href: 'unruly-heroes', text: 'Unruly Heroes' },
+    metaCriticGameResult: {
+      text: 'Unruly Heroes',
+      href: '/game/xbox-one/unruly-heroes',
+    },
   },
   {
     title: 'Viva Piñata',
     gamePassTitle: 'Viva Piñata',
     gamePassId: 'BSXSL6WBJ0V7',
     howLongToBeatResult: { href: '10976', text: 'Viva Piñata' },
-    metaCriticGameResult: { href: 'viva-pinata', text: 'Viva Pinata' },
+    metaCriticGameResult: {
+      text: 'Viva Pinata',
+      href: '/game/xbox-360/viva-pinata',
+    },
   },
   {
     title: 'Viva Piñata',
     gamePassTitle: 'Viva Piñata: TIP',
     gamePassId: 'BS1NPTPJGD4G',
     howLongToBeatResult: { href: '10976', text: 'Viva Piñata' },
-    metaCriticGameResult: { href: 'viva-pinata', text: 'Viva Pinata' },
+    metaCriticGameResult: {
+      text: 'Viva Pinata',
+      href: '/game/xbox-360/viva-pinata',
+    },
   },
   {
     title: 'Void Bastards',
     gamePassTitle: 'Void Bastards',
     gamePassId: '9N584LPFG1GM',
     howLongToBeatResult: { href: '67475', text: 'Void Bastards' },
-    metaCriticGameResult: { href: 'void-bastards', text: 'Void Bastards' },
+    metaCriticGameResult: {
+      text: 'Void Bastards: Bang Tydy',
+      href: '/game/xbox-one/void-bastards-bang-tydy',
+    },
   },
   {
     title: 'Warhammer',
     gamePassTitle: 'Warhammer: Vermintide 2',
     gamePassId: 'BXZWT67JBZJH',
-    howLongToBeatResult: { href: '51768', text: 'Warhammer: Vermintide 2' },
+    howLongToBeatResult: {
+      href: '11050',
+      text: 'Warhammer 40,000: Space Marine',
+    },
     metaCriticGameResult: {
-      href: 'warhammer-40000-dawn-of-war---dark-crusade',
-      text: 'Warhammer 40,000: Dawn of War - Dark Crusade',
+      text: 'Warhammer 40,000: Inquisitor - Martyr',
+      href: '/game/xbox-one/warhammer-40000-inquisitor---martyr',
     },
   },
   {
@@ -4177,8 +4867,8 @@ export const GAME_IDS = [
     gamePassId: 'BQ9T0JF0D3L4',
     howLongToBeatResult: { href: '42532', text: 'Wasteland 3' },
     metaCriticGameResult: {
-      href: 'wasteland-2-directors-cut',
-      text: "Wasteland 2: Director's Cut",
+      text: 'Wasteland 3',
+      href: '/game/xbox-one/wasteland-3',
     },
   },
   {
@@ -4186,23 +4876,19 @@ export const GAME_IDS = [
     gamePassTitle: 'We Happy Few',
     gamePassId: 'BPR2TBS2KMQJ',
     howLongToBeatResult: { href: '27102', text: 'We Happy Few' },
-    metaCriticGameResult: { href: 'we-happy-few', text: 'We Happy Few' },
+    metaCriticGameResult: {
+      text: 'We Happy Few',
+      href: '/game/xbox-one/we-happy-few',
+    },
   },
   {
     title: 'West of Dead',
     gamePassTitle: 'West of Dead',
     gamePassId: '9NTZCWK6P6GL',
     howLongToBeatResult: { href: '77696', text: 'West of Dead' },
-    metaCriticGameResult: { href: 'west-of-dead', text: 'West of Dead' },
-  },
-  {
-    title: "Wilmot's Warehouse",
-    gamePassTitle: "Wilmot's Warehouse",
-    gamePassId: '9NLKJK4M1VQK',
-    howLongToBeatResult: { href: '50395', text: "Wilmot's Warehouse" },
     metaCriticGameResult: {
-      href: 'wilmots-warehouse',
-      text: "Wilmot's Warehouse",
+      text: 'West of Dead',
+      href: '/game/xbox-one/west-of-dead',
     },
   },
   {
@@ -4211,8 +4897,18 @@ export const GAME_IDS = [
     gamePassId: 'C40HL7DFHWCX',
     howLongToBeatResult: { href: '26294', text: 'Wizard of Legend' },
     metaCriticGameResult: {
-      href: 'wizard-of-legend',
       text: 'Wizard of Legend',
+      href: '/game/xbox-one/wizard-of-legend',
+    },
+  },
+  {
+    title: "Wilmot's Warehouse",
+    gamePassTitle: "Wilmot's Warehouse",
+    gamePassId: '9NLKJK4M1VQK',
+    howLongToBeatResult: { href: '50395', text: "Wilmot's Warehouse" },
+    metaCriticGameResult: {
+      text: "Wilmot's Warehouse",
+      href: '/game/xbox-one/wilmots-warehouse',
     },
   },
   {
@@ -4221,8 +4917,8 @@ export const GAME_IDS = [
     gamePassId: 'C421ZX7RCG0W',
     howLongToBeatResult: { href: '11249', text: 'Wolfenstein (2009)' },
     metaCriticGameResult: {
-      href: 'return-to-castle-wolfenstein-enemy-territory',
-      text: 'Return to Castle Wolfenstein: Enemy Territory',
+      text: 'Wolfenstein II: The New Colossus',
+      href: '/game/xbox-one/wolfenstein-ii-the-new-colossus',
     },
   },
   {
@@ -4230,14 +4926,20 @@ export const GAME_IDS = [
     gamePassTitle: 'World War Z',
     gamePassId: 'BWQ5FC9WDJ6H',
     howLongToBeatResult: { href: '64828', text: 'World War Z (2019)' },
-    metaCriticGameResult: { href: 'world-war-z', text: 'World War Z' },
+    metaCriticGameResult: {
+      text: 'World War Z',
+      href: '/game/xbox-one/world-war-z',
+    },
   },
   {
     title: 'Worms W.M.D',
     gamePassTitle: 'Worms W.M.D',
     gamePassId: 'C4BZ7X545J1T',
     howLongToBeatResult: { href: '39481', text: 'Worms W.M.D' },
-    metaCriticGameResult: { href: 'worms-wmd', text: 'Worms W.M.D' },
+    metaCriticGameResult: {
+      text: 'Worms W.M.D',
+      href: '/game/xbox-one/worms-wmd',
+    },
   },
   {
     title: 'Yakuza 0',
@@ -4245,8 +4947,18 @@ export const GAME_IDS = [
     gamePassId: '9NPP17LHJ3MK',
     howLongToBeatResult: { href: '43056', text: 'Yakuza 0' },
     metaCriticGameResult: {
-      href: 'the-yakuza-remastered-collection',
-      text: 'The Yakuza Remastered Collection',
+      text: 'Yakuza 6: The Song of Life',
+      href: '/game/xbox-one/yakuza-6-the-song-of-life',
+    },
+  },
+  {
+    title: 'Wreckfest',
+    gamePassTitle: 'Wreckfest',
+    gamePassId: 'BRJNRZ9N734V',
+    howLongToBeatResult: { href: '16136', text: 'Wreckfest' },
+    metaCriticGameResult: {
+      text: 'Wreckfest',
+      href: '/game/xbox-one/wreckfest',
     },
   },
   {
@@ -4255,18 +4967,8 @@ export const GAME_IDS = [
     gamePassId: '9N3460XCS8BC',
     howLongToBeatResult: { href: '11423', text: 'Yakuza 3' },
     metaCriticGameResult: {
-      href: 'the-yakuza-remastered-collection',
-      text: 'The Yakuza Remastered Collection',
-    },
-  },
-  {
-    title: 'Yakuza 4 Remastered',
-    gamePassTitle: 'Yakuza 4 Remastered',
-    gamePassId: '9NXFD44B98P4',
-    howLongToBeatResult: { href: '11424', text: 'Yakuza 4 Remastered' },
-    metaCriticGameResult: {
-      href: 'yakuza-4-remastered',
-      text: 'Yakuza 4 Remastered',
+      text: 'Yakuza 3 Remastered',
+      href: '/game/xbox-one/yakuza-3-remastered',
     },
   },
   {
@@ -4275,8 +4977,8 @@ export const GAME_IDS = [
     gamePassId: '9NK23S9XBMZ6',
     howLongToBeatResult: { href: '22940', text: 'Yakuza 5 Remastered' },
     metaCriticGameResult: {
-      href: 'yakuza-5-remastered',
       text: 'Yakuza 5 Remastered',
+      href: '/game/xbox-one/yakuza-5-remastered',
     },
   },
   {
@@ -4284,14 +4986,30 @@ export const GAME_IDS = [
     gamePassTitle: 'Yakuza Kiwami',
     gamePassId: '9NBJ51BD0LTH',
     howLongToBeatResult: { href: '39484', text: 'Yakuza Kiwami' },
-    metaCriticGameResult: { href: 'yakuza-kiwami-2', text: 'Yakuza Kiwami 2' },
+    metaCriticGameResult: {
+      text: 'Yakuza Kiwami 2',
+      href: '/game/xbox-one/yakuza-kiwami-2',
+    },
+  },
+  {
+    title: 'Yakuza 4 Remastered',
+    gamePassTitle: 'Yakuza 4 Remastered',
+    gamePassId: '9NXFD44B98P4',
+    howLongToBeatResult: { href: '11424', text: 'Yakuza 4 Remastered' },
+    metaCriticGameResult: {
+      text: 'Yakuza 4 Remastered',
+      href: '/game/xbox-one/yakuza-4-remastered',
+    },
   },
   {
     title: 'Yakuza Kiwami 2',
     gamePassTitle: 'Yakuza Kiwami 2',
     gamePassId: '9PBJL0NLFMK9',
     howLongToBeatResult: { href: '49620', text: 'Yakuza Kiwami 2' },
-    metaCriticGameResult: { href: 'yakuza-kiwami-2', text: 'Yakuza Kiwami 2' },
+    metaCriticGameResult: {
+      text: 'Yakuza Kiwami 2',
+      href: '/game/xbox-one/yakuza-kiwami-2',
+    },
   },
   {
     title: 'Yooka-Laylee and the Impossible Lair',
@@ -4302,8 +5020,8 @@ export const GAME_IDS = [
       text: 'Yooka-Laylee and the Impossible Lair',
     },
     metaCriticGameResult: {
-      href: 'yooka-laylee-and-the-impossible-lair',
       text: 'Yooka-Laylee and the Impossible Lair',
+      href: '/game/xbox-one/yooka-laylee-and-the-impossible-lair',
     },
   },
   {
@@ -4311,13 +5029,19 @@ export const GAME_IDS = [
     gamePassTitle: 'Zuma',
     gamePassId: 'C4SG06H48738',
     howLongToBeatResult: { href: '11609', text: 'Zuma' },
-    metaCriticGameResult: { href: 'zumas-revenge!', text: "Zuma's Revenge!" },
+    metaCriticGameResult: {
+      text: 'Zuma Deluxe',
+      href: '/game/xbox-360/zuma-deluxe',
+    },
   },
   {
     title: "Zuma's Revenge!",
     gamePassTitle: "Zuma's Revenge!",
     gamePassId: 'BR9MPWXFBCRC',
     howLongToBeatResult: { href: '11611', text: "Zuma's Revenge!" },
-    metaCriticGameResult: { href: 'zumas-revenge!', text: "Zuma's Revenge!" },
+    metaCriticGameResult: {
+      text: "Zuma's Revenge!",
+      href: '/game/xbox-360/zumas-revenge!',
+    },
   },
 ]

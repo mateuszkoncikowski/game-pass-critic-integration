@@ -73,10 +73,17 @@ export async function getMetaCriticSearchResult(
       await goto(page, getMetacriticUrl(titleToSearch))
     }
 
-    return await page.$eval('.product_title a', (el) => ({
-      href: el.getAttribute('href'),
-      text: el.textContent.replace(/\s+/g, ' ').trim(),
-    }))
+    const results = await page.$$eval('.product_title a', (nodes) =>
+      nodes.slice(0, 4).map((node) => {
+        return {
+          text: node.textContent.replace(/\s+/g, ' ').trim(),
+          href: node.getAttribute('href'),
+        }
+      })
+    )
+
+    const matched = results.filter((result) => result.title === titleToSearch)
+    return matched.length > 0 ? matched[0] : results[0]
   } catch (error) {
     logger.error('Issue with Metacritic game fetching', {
       title: titleToSearch,
@@ -85,6 +92,8 @@ export async function getMetaCriticSearchResult(
       error,
     })
   } finally {
+    const pages = await browser.pages()
+    await Promise.all(pages.map((page) => page.close()))
     await browser.close()
   }
 }

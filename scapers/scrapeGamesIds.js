@@ -1,5 +1,17 @@
 import { Sema } from 'async-sema'
-import { find, head, pipe, prop, propEq, replace, split } from 'ramda'
+import {
+  cond,
+  find,
+  head,
+  includes,
+  pipe,
+  prop,
+  propEq,
+  replace,
+  split,
+  splitAt,
+  T,
+} from 'ramda'
 
 import { fetchGamePassGames } from '../clients/gamePassClient.js'
 import { getHowLongToBeatSearchResult } from '../clients/howLongToBeatClient.js'
@@ -73,6 +85,7 @@ const STATIC_TITLES = [
   { gamePassId: '9PJGNFWR6MHL', title: 'MotoGP 20' },
   { gamePassId: '9NXP19FZ7DZ4', title: 'Katana Zero' },
   { gamePassId: 'BR26S2C6SKN1', title: 'Stealth Inc 2' },
+  { gamePassId: 'BSHMMGRP84N4', title: 'Gears of War: Judgment' },
   { gamePassId: '', title: '' },
 ]
 
@@ -95,7 +108,11 @@ const getTitleFromGamePassAndClean = pipe(
   head,
   prop('ProductTitle'),
   replace(/ *\([^)]*\) */g, ''),
-  split(':'),
+  cond([
+    [includes('Halo'), splitAt(1000)],
+    [includes('Gears of War'), splitAt(1000)],
+    [T, split(':')],
+  ]),
   head,
   replace(/ - game preview/i, ''),
   replace(/ - microsoft store edition/i, ''),
