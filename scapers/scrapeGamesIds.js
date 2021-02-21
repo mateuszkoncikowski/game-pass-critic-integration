@@ -26,7 +26,6 @@ const s = new Sema(5, {
 const fetchGameIds = async (game, index, games) => {
   await s.acquire()
 
-  s.release()
   try {
     const gamePassTitle = getTitleFromGamePass(game)
     const titleToSearch = getTitleToSearch(game)
