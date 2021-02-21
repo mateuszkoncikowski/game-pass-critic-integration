@@ -42,6 +42,7 @@ const fetchGameIds = async (game, index, games) => {
       )}`,
       {
         titleToSearch,
+        gamePassId: game.gamePassId,
         howLongToBeatResult,
         metaCriticGameResult,
       }
@@ -69,6 +70,9 @@ const STATIC_TITLES = [
   { gamePassId: '9PN3VDFTB5HZ', title: "The Bard's Tale" },
   { gamePassId: '9PF6BS5DGNLX', title: 'Deliver Us The Moon' },
   { gamePassId: '9N88HSBP6RJ8', title: 'MotoGP 20' },
+  { gamePassId: '9PJGNFWR6MHL', title: 'MotoGP 20' },
+  { gamePassId: '9NXP19FZ7DZ4', title: 'Katana Zero' },
+  { gamePassId: 'BR26S2C6SKN1', title: 'Stealth Inc 2' },
   { gamePassId: '', title: '' },
 ]
 
@@ -115,7 +119,9 @@ const getTitleFromGamePassAndClean = pipe(
   replace(/bundle/i, ''),
   replace(/win10/i, ''),
   replace(/game of the year edition/i, ''),
-  replace(/EA SPORTS /i, '')
+  replace(/ea sports /i, ''),
+  replace(/season update /i, ''),
+  replace(/deluxe edition/i, '')
 )
 
 ;(async () => {

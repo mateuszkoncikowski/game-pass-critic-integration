@@ -1,10 +1,14 @@
 import { logger } from '../shared/logger.js'
-import { openPage } from './puppeteerClient.js'
+import { goto, openPage } from './puppeteerClient.js'
 
 const METACRITIC_URL = 'https://www.metacritic.com'
+const getMetacriticUrl = (titleToSearch, platform) =>
+  `${METACRITIC_URL}/search/game/${titleToSearch}/results${
+    platform ? `?plats[${platform}]=1&search_type=advanced}` : ''
+  }`
 
 export async function getGameScore(game) {
-  const url = `${METACRITIC_URL}/game/pc/${game.metaCriticGameResult.href}`
+  const url = `${METACRITIC_URL}/${game.metaCriticGameResult.href}`
   let metaScore, userScore
   const [page, browser] = await openPage(url)
 
@@ -41,16 +45,36 @@ export async function getMetaCriticSearchResult(
 ) {
   const platform = {
     pc: '3',
+    xbox360: '2',
     xbox: '80000',
   }
-  const url = `${METACRITIC_URL}/search/game/${titleToSearch}/results?plats[${
+  const url = getMetacriticUrl(
+    titleToSearch,
     isPcOnly ? platform.pc : platform.xbox
-  }]=1&search_type=advanced`
+  )
   const [page, browser] = await openPage(url)
 
   try {
+    const numberOfResults = await page.$$eval(
+      '.search_results .result',
+      (els) => els.length
+    )
+
+    if (numberOfResults === 0) {
+      await goto(page, getMetacriticUrl(titleToSearch, platform.xbox360))
+    }
+
+    const fallbackNumberOfResults = await page.$$eval(
+      '.search_results .result',
+      (els) => els.length
+    )
+
+    if (fallbackNumberOfResults === 0) {
+      await goto(page, getMetacriticUrl(titleToSearch))
+    }
+
     return await page.$eval('.product_title a', (el) => ({
-      href: el.getAttribute('href').slice(9),
+      href: el.getAttribute('href'),
       text: el.textContent.replace(/\s+/g, ' ').trim(),
     }))
   } catch (error) {

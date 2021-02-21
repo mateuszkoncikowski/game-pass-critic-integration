@@ -7,10 +7,13 @@ export const openPage = async (url) => {
 
   const page = await browser.newPage()
 
-  await page.goto(url, {
-    waitUntil: 'load',
-    timeout: 0,
-  })
+  await goto(page, url)
 
   return [page, browser]
+}
+
+export const goto = async (page, url) => {
+  await page.goto(url, {
+    waitUntil: 'load',
+  })
 }

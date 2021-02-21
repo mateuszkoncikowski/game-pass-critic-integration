@@ -37,7 +37,7 @@ export async function getHowLongToBeatSearchResult(titleToSearch, gameId) {
       text: el.textContent.replace(/\s+/g, ' ').trim(),
     }))
   } catch (error) {
-    logger.error('Looking for HowLongToBeat id crashed', {
+    logger.error('Issue with HowLongToBeat game fetching', {
       title: titleToSearch,
       gameId,
     })
