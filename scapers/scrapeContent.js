@@ -5,6 +5,8 @@ import { fetchGamePassGames } from '../clients/gamePassClient.js'
 import { getGameTimeToBeat } from '../clients/howLongToBeatClient.js'
 import { getGameScore } from '../clients/metacriticClient.js'
 import { GAME_IDS } from '../data/scrapedIds.js'
+import { getGameTitle } from '../meta/gamePassGame.js'
+import { logger } from '../shared/logger.js'
 import {
   removeResultsFile,
   runWithTimer,
@@ -19,11 +21,11 @@ const scrapeGamesContent = async () => {
   await Promise.all(games.map(fetchGameContent))
 }
 
-const s = new Sema(5, {
+const s = new Sema(1, {
   capacity: 100,
 })
 
-const fetchGameContent = async (game) => {
+const fetchGameContent = async (game, index, games) => {
   await s.acquire()
 
   try {
@@ -33,6 +35,18 @@ const fetchGameContent = async (game) => {
       getGameScore(gameIds),
       getGameTimeToBeat(gameIds),
     ])
+
+    logger.info(
+      `Scraped game content (${index + 1} / ${games.length}): ${getGameTitle(
+        game
+      )}`,
+      {
+        title: getGameTitle(game),
+        gamePassId: game.gamePassId,
+        metaCriticContent,
+        howLongToBeatContent,
+      }
+    )
 
     const scrapedGame = {
       gameIds,

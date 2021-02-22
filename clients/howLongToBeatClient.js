@@ -1,5 +1,5 @@
 import { logger } from '../shared/logger.js'
-import { openPage } from './puppeteerClient.js'
+import { closePage, openPage } from './puppeteerClient.js'
 
 const HOW_LONG_URL = 'https://howlongtobeat.com'
 
@@ -23,7 +23,7 @@ export async function getGameTimeToBeat(game) {
       error,
     })
   } finally {
-    await browser.close()
+    await closePage(browser)
   }
 }
 
@@ -42,6 +42,6 @@ export async function getHowLongToBeatSearchResult(titleToSearch, gameId) {
       gameId,
     })
   } finally {
-    await browser.close()
+    await closePage(browser)
   }
 }

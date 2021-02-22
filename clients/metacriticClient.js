@@ -1,5 +1,5 @@
 import { logger } from '../shared/logger.js'
-import { goto, openPage } from './puppeteerClient.js'
+import { closePage, goto, openPage } from './puppeteerClient.js'
 
 const METACRITIC_URL = 'https://www.metacritic.com'
 const getMetacriticUrl = (titleToSearch, platform) =>
@@ -29,7 +29,7 @@ export async function getGameScore(game) {
       error,
     })
   } finally {
-    await browser.close()
+    await closePage(browser)
   }
 
   return {
@@ -92,8 +92,6 @@ export async function getMetaCriticSearchResult(
       error,
     })
   } finally {
-    const pages = await browser.pages()
-    await Promise.all(pages.map((page) => page.close()))
-    await browser.close()
+    await closePage(browser)
   }
 }

@@ -49,9 +49,9 @@ const fetchGameIds = async (game, index, games) => {
     ])
 
     logger.info(
-      `Scraped game (${index + 1} / ${games.length}): ${getTitleFromGamePass(
-        game
-      )}`,
+      `Scraped game ids (${index + 1} / ${
+        games.length
+      }): ${getTitleFromGamePass(game)}`,
       {
         titleToSearch,
         gamePassId: game.gamePassId,

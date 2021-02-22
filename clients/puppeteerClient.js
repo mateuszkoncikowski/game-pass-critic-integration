@@ -17,3 +17,9 @@ export const goto = async (page, url) => {
     waitUntil: 'load',
   })
 }
+
+export const closePage = async (browser) => {
+  const pages = await browser.pages()
+  await Promise.all(pages.map((page) => page.close()))
+  await browser.close()
+}
