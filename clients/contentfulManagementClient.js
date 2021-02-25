@@ -1,5 +1,6 @@
 import Bottleneck from 'bottleneck'
 import contentful from 'contentful-management'
+import { map, path, pipe } from 'ramda'
 
 import { CONTENTFUL_SPACE, CONTENTFUL_TOKEN } from '../shared/config.js'
 
@@ -9,27 +10,76 @@ const contentfulClient = createClient({
   accessToken: CONTENTFUL_TOKEN,
 })
 
-const getEnvironment = () =>
-  contentfulClient
-    .getSpace(CONTENTFUL_SPACE)
-    .then((space) => space.getEnvironment('master'))
+const getEnvironment = async () => {
+  const space = await contentfulClient.getSpace(CONTENTFUL_SPACE)
+  return space.getEnvironment('master')
+}
 
-export const createContentfulGamePass = (game) =>
+export const createContentfulGamePassGame = (game) =>
   getEnvironment().then((environment) =>
-    environment.createEntryWithId('gamePassGame', game.gamePassId, {
-      fields: {
-        title: {
-          'en-US': game['LocalizedProperties'][0]['ProductTitle'],
+    environment
+      .createEntryWithId('gamePassGame', game.gamePassId, {
+        fields: {
+          title: {
+            'en-US': path(['gameIds', 'gamePassTitle'])(game),
+          },
+          metaCriticScore: {
+            'en-US': pipe(
+              path(['metaCriticContent', 'metaScore']),
+              parseInt
+            )(game),
+          },
+          metaCriticUserScore: {
+            'en-US': pipe(
+              path(['metaCriticContent', 'userScore']),
+              parseFloat
+            )(game),
+          },
+          metaCriticHref: {
+            'en-US': path(['gameIds', 'metaCriticGameResult', 'href'])(game),
+          },
+          howLongToBeatCategories: {
+            'en-US': pipe(
+              path(['howLongToBeatContent', 'gameTimes']),
+              map((game) => game[0])
+            )(game),
+          },
+          howLongToBeatHours: {
+            'en-US': pipe(
+              path(['howLongToBeatContent', 'gameTimes']),
+              map((game) => game[1])
+            )(game),
+          },
+          howLongToBeatGameId: {
+            'en-US': pipe(
+              path(['gameIds', 'howLongToBeatResult', 'href']),
+              parseInt
+            )(game),
+          },
         },
-        metaCriticScore: {
-          'en-US': game.metaCriticScore,
-        },
-        howLongToBeatInAverage: {
-          'en-US': game.howLongToBeatInAverage,
-        },
-      },
-    })
+      })
+      .catch((error) => {
+        console.log(error, game)
+      })
   )
+
+export const createContentfulGamePassGames = async (games) => {
+  const limiter = new Bottleneck({
+    reservoir: 10,
+    reservoirRefreshAmount: 100,
+    reservoirRefreshInterval: 60 * 1000,
+    maxConcurrent: 1,
+    minTime: 333,
+  })
+
+  return await limiter.schedule(() => {
+    const allTasks = games.map(
+      async (game) => await createContentfulGamePassGame(game)
+    )
+
+    return Promise.all(allTasks)
+  })
+}
 
 export const removeAllContentfulGames = () => {
   const limiter = new Bottleneck({
@@ -51,4 +101,9 @@ export const removeAllContentfulGames = () => {
       })
     )
   )
+}
+
+export const fetchContentfulGames = async () => {
+  const environment = await getEnvironment()
+  return environment.getEntries({ content_type: 'gamePassGame', limit: 1000 })
 }

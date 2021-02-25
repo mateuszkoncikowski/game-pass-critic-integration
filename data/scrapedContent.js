@@ -1,4 +1,4 @@
-const CONTENT = [
+export const SCRAPED_CONTENT = [
   {
     gameIds: {
       title: 'A Plague Tale',
