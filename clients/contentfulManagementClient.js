@@ -1,7 +1,8 @@
 import Bottleneck from 'bottleneck'
 import contentful from 'contentful-management'
-import { map, path, pipe } from 'ramda'
+import { map, path, pipe, prop } from 'ramda'
 
+import { getGameTitle } from '../meta/gamePassGame.js'
 import { CONTENTFUL_SPACE, CONTENTFUL_TOKEN } from '../shared/config.js'
 
 const { createClient } = contentful
@@ -13,6 +14,22 @@ const contentfulClient = createClient({
 const getEnvironment = async () => {
   const space = await contentfulClient.getSpace(CONTENTFUL_SPACE)
   return space.getEnvironment('master')
+}
+
+export const createContentfulGameDraft = (game) => {
+  getEnvironment().then((environment) => {
+    environment
+      .createEntryWithId('gamePassGame', game.gamePassId, {
+        fields: {
+          title: {
+            'en-US': getGameTitle(game),
+          },
+        },
+      })
+      .catch((error) => {
+        console.log(error, game)
+      })
+  })
 }
 
 export const createContentfulGamePassGame = (game) =>
@@ -103,7 +120,9 @@ export const removeAllContentfulGames = () => {
   )
 }
 
-export const fetchContentfulGames = async () => {
+export const fetchContentfulGameIds = async () => {
   const environment = await getEnvironment()
-  return environment.getEntries({ content_type: 'gamePassGame', limit: 1000 })
+  return environment
+    .getEntries({ content_type: 'gamePassGame', limit: 1000 })
+    .then((res) => pipe(prop('items'), map(path(['sys', 'id'])))(res))
 }
